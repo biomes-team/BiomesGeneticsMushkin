@@ -1,0 +1,1 @@
+It would be ideal to increase the size of the cap gene icons in XML, something like drawSize 1.2 or 1.3.
