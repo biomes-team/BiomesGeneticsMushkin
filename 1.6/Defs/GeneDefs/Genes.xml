@@ -5,7 +5,7 @@
     <GeneDef>
         <defName>BGM_BlindingSpores</defName>
         <label>blinding spores</label>
-        <description>Carriers of this gene can perform an animal warcall, using a powerful bellow and psychic connection to call an animal to fight for them.</description>
+        <description>Carriers of this gene have the ability to produce a thick cloud of smoke-like fungal spores. The cloud decreases the vision of those within and prevents turrets from targetting those within.</description>
         <iconPath>UI/Ability-Genes/Blinding_Spores</iconPath>
         <displayCategory>Ability</displayCategory>
         <abilities>
@@ -51,7 +51,7 @@
     <GeneDef>
         <defName>BGM_FirefoamSpores</defName>
         <label>firefoam spores</label>
-        <description>Carriers of this gene can perform an animal warcall, using a powerful bellow and psychic connection to call an animal to fight for them.</description>
+        <description>Carriers of this gene are capable of producing a cone of fire-suppressent fungal spores from specialized organs.</description>
         <iconPath>UI/Ability-Genes/Firefoam_Spores</iconPath>
         <displayCategory>Ability</displayCategory>
         <abilities>
@@ -97,7 +97,7 @@
     <GeneDef>
         <defName>BGM_HealingSpores</defName>
         <label>healing spores</label>
-        <description>Carriers of this gene can perform an animal warcall, using a powerful bellow and psychic connection to call an animal to fight for them.</description>
+        <description>Carriers of this gene can produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
         <iconPath>UI/Ability-Genes/Healing_Spores</iconPath>
         <displayCategory>Ability</displayCategory>
         <abilities>
