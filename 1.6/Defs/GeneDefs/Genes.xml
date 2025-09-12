@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_BlindingSpores</defName>
+        <label>blinding spores</label>
+        <description>Carriers of this gene can perform an animal warcall, using a powerful bellow and psychic connection to call an animal to fight for them.</description>
+        <iconPath>UI/Ability-Genes/Blinding_Spores</iconPath>
+        <displayCategory>Ability</displayCategory>
+        <abilities>
+            <li>BGM_BlindingSpores</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BGM_BlindingSpores</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_FirefoamSpores</defName>
+        <label>firefoam spores</label>
+        <description>Carriers of this gene can perform an animal warcall, using a powerful bellow and psychic connection to call an animal to fight for them.</description>
+        <iconPath>UI/Ability-Genes/Firefoam_Spores</iconPath>
+        <displayCategory>Ability</displayCategory>
+        <abilities>
+            <li>BGM_FirefoamSpores</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BGM_FirefoamSpores</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_HealingSpores</defName>
+        <label>healing spores</label>
+        <description>Carriers of this gene can perform an animal warcall, using a powerful bellow and psychic connection to call an animal to fight for them.</description>
+        <iconPath>UI/Ability-Genes/Healing_Spores</iconPath>
+        <displayCategory>Ability</displayCategory>
+        <abilities>
+            <li>BGM_HealingSpores</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BGM_HealingSpores</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+
+</Defs>

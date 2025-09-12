@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- TODO -->
+    <HediffDef>
+        <defName>BGM_HealingSpores</defName>
+        <label>healing spores</label>
+        <description>The sense of being called upon by a leader to work harder.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <maxSeverity>1</maxSeverity>
+        <isBad>false</isBad>
+        <!-- IMPORTANT -->
+        <!-- The code goes in increments of one. The stage at severity 0 is for non immune pawns -->
+        <!-- While the stage at severity 1 is for immune pawns -->
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <statFactors>
+                    <InjuryHealingFactor>3</InjuryHealingFactor>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.3</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>1</minSeverity>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+                <disappearsAfterTicks>12500</disappearsAfterTicks>
+            </li>
+        <li Class="HediffCompProperties_DisappearsOnDeath" />
+        </comps>
+    </HediffDef>
+
+</Defs>

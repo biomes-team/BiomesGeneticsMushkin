@@ -1,0 +1,6 @@
+the icons don't fit the blue background
+
+Draegon originally wanted to have the spores as the background, without that blue default one, no?
+In that case the icons would be needed to be reexported, separating the spores to a new image and add it with harmony
+
+Or, just make the icons smaller, that works too

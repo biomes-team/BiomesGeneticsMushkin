@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>BGM_SporePuff</defName>
+        <graphicData>
+            <texPath>Things/Mote/AirPuff</texPath>
+            <color>(190, 255, 153)</color>
+            <renderInstanced>true</renderInstanced>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.04</fadeInTime>
+        <solidTime>0.03</solidTime>
+        <fadeOutTime>1</fadeOutTime>
+    </FleckDef>
+
+</Defs>
