@@ -4,14 +4,15 @@
     <FleckDef ParentName="FleckBase_Thrown">
         <defName>BGM_SporePuff</defName>
         <graphicData>
-            <texPath>Things/Mote/AirPuff</texPath>
-            <color>(190, 255, 153)</color>
+            <texPath>Things/Mote/Smoke</texPath>
             <renderInstanced>true</renderInstanced>
+            <color>(190, 255, 153)</color>
         </graphicData>
         <altitudeLayer>MoteOverhead</altitudeLayer>
-        <fadeInTime>0.04</fadeInTime>
-        <solidTime>0.03</solidTime>
-        <fadeOutTime>1</fadeOutTime>
+        <fadeInTime>0.50</fadeInTime>
+        <solidTime>6</solidTime>
+        <fadeOutTime>3.2</fadeOutTime>
+        <growthRate>0.005</growthRate>
     </FleckDef>
 
 </Defs>

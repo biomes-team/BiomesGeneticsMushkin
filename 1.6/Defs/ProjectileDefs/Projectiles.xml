@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef>
+        <defName>BGM_Proj_ToxSpores</defName>
+        <label>foam</label>
+        <thingClass>BiomesGeneticsMushkin.Projectile_ToxGas</thingClass>
+        <category>Projectile</category>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <useHitPoints>False</useHitPoints>
+        <neverMultiSelect>True</neverMultiSelect>
+        <graphicData>
+            <texPath>Things/Projectile/FoamLong/Foam</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Extinguish</damageDef>
+            <speed>27</speed>
+            <damageAmountBase>9999</damageAmountBase>
+            <arcHeightFactor>0.4</arcHeightFactor>
+            <armorPenetrationBase>0.8</armorPenetrationBase>
+            <stoppingPower>1</stoppingPower>
+            <shadowSize>0</shadowSize>
+            <filthCount>1</filthCount>
+            <landedEffecter>ExtinguisherPuffSmall</landedEffecter>
+            <numExtraHitCells>4</numExtraHitCells>
+            <soundImpact>Foam_Impact</soundImpact>
+        </projectile>
+    </ThingDef>
+
+</Defs>

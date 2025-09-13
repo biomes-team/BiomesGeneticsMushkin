@@ -1,7 +1,6 @@
 ﻿using RimWorld;
 using UnityEngine;
 using Verse;
-using Verse.Noise;
 
 namespace BiomesGeneticsMushkin
 {
@@ -17,7 +16,6 @@ namespace BiomesGeneticsMushkin
 
 			foreach (Pawn targetPawn in parent.pawn.Map.mapPawns.AllPawnsSpawned)
 			{
-				Log.Message(targetPawn);
 				if (targetPawn.Position.DistanceToSquared(parent.pawn.Position) > Props.range)
 				{
 					continue;

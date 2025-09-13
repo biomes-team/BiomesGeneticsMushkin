@@ -34,7 +34,7 @@
         <defName>BGM_FirefoamSpores</defName>
         <label>foam spores</label>
         <description>Spray thick fire-retardant foam from glands in the neck up through the mouth. The foam will cover a small area and extinguish any fire it touches.</description>
-        <iconPath>UI/Icons/Genes/Gene_FoamSpray</iconPath>
+        <iconPath>UI/Ability-Genes/Firefoam_Spores</iconPath>
         <charges>3</charges>
         <cooldownTicksRange>30000</cooldownTicksRange>
         <warmupStartSound>FoamSpray_Warmup</warmupStartSound>
@@ -78,6 +78,7 @@
         </verbProperties>
     </AbilityDef>
 
+    <!-- TODO -->
     <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
         <defName>BGM_HealingSpores</defName>
         <label>healing spores</label>
@@ -87,10 +88,105 @@
         <comps>
             <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
                 <hediffDef>BGM_HealingSpores</hediffDef>
-                <range>7</range>
+                <range>10</range>
                 <effecter>BGM_SporePuff</effecter>
                 <xenotypesImmuneToDebuff>
                 </xenotypesImmuneToDebuff>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- TODO -->
+    <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
+        <defName>BGM_PsySpores</defName>
+        <label>psy spores</label>
+        <description>Release compressed smoke from concealed vents. Smoke reduces the accuracy of any shot fired through it, and prevents turrets from locking on entirely.</description>
+        <iconPath>UI/Ability-Genes/Psy_Spores</iconPath>
+        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <comps>
+            <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
+                <hediffDef>BGM_PsySpores</hediffDef>
+                <range>10</range>
+                <effecter>BGM_SporePuff</effecter>
+                <xenotypesImmuneToDebuff>
+                </xenotypesImmuneToDebuff>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- TODO -->
+    <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
+        <defName>BGM_RapportSpores</defName>
+        <label>rapport spores</label>
+        <description>Release compressed smoke from concealed vents. Smoke reduces the accuracy of any shot fired through it, and prevents turrets from locking on entirely.</description>
+        <iconPath>UI/Ability-Genes/Rapport_Spores</iconPath>
+        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <comps>
+            <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
+                <hediffDef>BGM_RapportSpores</hediffDef>
+                <range>10</range>
+                <effecter>BGM_SporePuff</effecter>
+                <xenotypesImmuneToDebuff />
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- TODO -->
+    <AbilityDef>
+        <defName>BGM_ToxSpores</defName>
+        <label>foam spores</label>
+        <description>Spray thick fire-retardant foam from glands in the neck up through the mouth. The foam will cover a small area and extinguish any fire it touches.</description>
+        <iconPath>UI/Ability-Genes/Tox_Spores</iconPath>
+        <charges>3</charges>
+        <cooldownTicksRange>30000</cooldownTicksRange>
+        <warmupStartSound>FoamSpray_Warmup</warmupStartSound>
+        <hostile>false</hostile>
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>4.9</range>
+            <warmupTime>1</warmupTime>
+            <soundCast>FoamSpray_Resolve</soundCast>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilitySprayLiquid">
+                <projectileDef>BGM_Proj_ToxSpores</projectileDef>
+                <numCellsToHit>9</numCellsToHit>
+                <sprayEffecter>FoamSpray_Directional</sprayEffecter>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- TODO -->
+    <AbilityDef>
+        <defName>BGM_SproutSpores</defName>
+        <label>sprout spores</label>
+        <description>Release compressed smoke from concealed vents. Smoke reduces the accuracy of any shot fired through it, and prevents turrets from locking on entirely.</description>
+        <iconPath>UI/Ability-Genes/Sprout_Spores</iconPath>
+        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <targetRequired>false</targetRequired>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>1</warmupTime>
+            <range>3.9</range>
+            <drawAimPie>false</drawAimPie>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="BiomesGeneticsMushkin.CompProperties_SpawnMushrooms">
+                <range>3.5</range>
+                <plantsToSpawn>
+                    <li>Plant_Nutrifungus</li>
+                    <li>Boomshroom</li>
+                </plantsToSpawn>
             </li>
         </comps>
     </AbilityDef>

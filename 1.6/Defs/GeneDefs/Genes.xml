@@ -140,5 +140,186 @@
     </GeneDef>
 
     <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_PsySpores</defName>
+        <label>psy spores</label>
+        <description>Carriers of this gene can produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
+        <iconPath>UI/Ability-Genes/Psy_Spores</iconPath>
+        <displayCategory>Ability</displayCategory>
+        <abilities>
+            <li>BGM_PsySpores</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BGM_PsySpores</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
 
+    <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_RapportSpores</defName>
+        <label>healing spores</label>
+        <description>Carriers of this gene can produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
+        <iconPath>UI/Ability-Genes/Rapport_Spores</iconPath>
+        <displayCategory>Ability</displayCategory>
+        <abilities>
+            <li>BGM_RapportSpores</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BGM_RapportSpores</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_ToxSpores</defName>
+        <label>healing spores</label>
+        <description>Carriers of this gene can produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
+        <iconPath>UI/Ability-Genes/Tox_Spores</iconPath>
+        <displayCategory>Ability</displayCategory>
+        <abilities>
+            <li>BGM_ToxSpores</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BGM_ToxSpores</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_SproutSpores</defName>
+        <label>sprout spores</label>
+        <description>Carriers of this gene can produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
+        <iconPath>UI/Ability-Genes/Sprout_Spores</iconPath>
+        <displayCategory>Ability</displayCategory>
+        <abilities>
+            <li>BGM_SproutSpores</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BGM_SproutSpores</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
 </Defs>
