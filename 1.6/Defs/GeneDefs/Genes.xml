@@ -143,7 +143,7 @@
     <GeneDef>
         <defName>BGM_PsySpores</defName>
         <label>psy spores</label>
-        <description>Carriers of this gene can produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
+        <description>Carriers of this gene can produce a puff of fungal spores from specialized organs that enhance the psychic sensitivity of those affected.</description>
         <iconPath>UI/Ability-Genes/Psy_Spores</iconPath>
         <displayCategory>Ability</displayCategory>
         <abilities>
@@ -189,7 +189,7 @@
     <GeneDef>
         <defName>BGM_RapportSpores</defName>
         <label>healing spores</label>
-        <description>Carriers of this gene can produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
+        <description>Carriers of this gene are capable of producing fungal spores that increase the social skills and recreation gain of those affected. </description>
         <iconPath>UI/Ability-Genes/Rapport_Spores</iconPath>
         <displayCategory>Ability</displayCategory>
         <abilities>
@@ -235,7 +235,7 @@
     <GeneDef>
         <defName>BGM_ToxSpores</defName>
         <label>healing spores</label>
-        <description>Carriers of this gene can produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
+        <description>Carriers of this gene can spew clouds of toxic fungal spores that burn the lungs and poison those within.</description>
         <iconPath>UI/Ability-Genes/Tox_Spores</iconPath>
         <displayCategory>Ability</displayCategory>
         <abilities>
@@ -281,7 +281,7 @@
     <GeneDef>
         <defName>BGM_SproutSpores</defName>
         <label>sprout spores</label>
-        <description>Carriers of this gene can produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
+        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
         <iconPath>UI/Ability-Genes/Sprout_Spores</iconPath>
         <displayCategory>Ability</displayCategory>
         <abilities>
