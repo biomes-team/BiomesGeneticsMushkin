@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- TODO -->
+    <GeneDef ParentName="GeneHairStyleBase">
+        <defName>BGM_BaseCap</defName>
+        <label>base mushroom cap</label>
+        <labelShortAdj>base cap</labelShortAdj>
+        <description>Carriers of this gene can only grow short hair.</description>
+        <iconPath>UI/Genes/Gene_BaseCap</iconPath>
+        <displayOrderInCategory>55</displayOrderInCategory>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Base/Base</texPath>
+                <colorType>Hair</colorType>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>false</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>crop</symbol>
+                </li>
+                <li>
+                    <symbol>fuzz</symbol>
+                </li>
+                <li>
+                    <symbol>stub</symbol>
+                </li>
+                <li>
+                    <symbol>patch</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>crop</symbol>
+                </li>
+                <li>
+                    <symbol>fuzz</symbol>
+                </li>
+                <li>
+                    <symbol>stub</symbol>
+                </li>
+                <li>
+                    <symbol>patch</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+    <GeneDef ParentName="GeneHairStyleBase">
+        <defName>BGM_AnimatorCap</defName>
+        <label>animator mushroom cap</label>
+        <labelShortAdj>animator cap</labelShortAdj>
+        <description>Carriers of this gene can only grow short hair.</description>
+        <iconPath>UI/Genes/Gene_AnimatorCap</iconPath>
+        <displayOrderInCategory>55</displayOrderInCategory>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Animator/Animator</texPath>
+                <colorType>Hair</colorType>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>false</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>crop</symbol>
+                </li>
+                <li>
+                    <symbol>fuzz</symbol>
+                </li>
+                <li>
+                    <symbol>stub</symbol>
+                </li>
+                <li>
+                    <symbol>patch</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>crop</symbol>
+                </li>
+                <li>
+                    <symbol>fuzz</symbol>
+                </li>
+                <li>
+                    <symbol>stub</symbol>
+                </li>
+                <li>
+                    <symbol>patch</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+    <GeneDef ParentName="GeneHairStyleBase">
+        <defName>BGM_BattalionCap</defName>
+        <label>battalion mushroom cap</label>
+        <labelShortAdj>animator cap</labelShortAdj>
+        <description>Carriers of this gene can only grow short hair.</description>
+        <iconPath>UI/Genes/Gene_BattalionCap</iconPath>
+        <displayOrderInCategory>55</displayOrderInCategory>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Battalion/Battalion</texPath>
+                <colorType>Hair</colorType>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>false</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>crop</symbol>
+                </li>
+                <li>
+                    <symbol>fuzz</symbol>
+                </li>
+                <li>
+                    <symbol>stub</symbol>
+                </li>
+                <li>
+                    <symbol>patch</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>crop</symbol>
+                </li>
+                <li>
+                    <symbol>fuzz</symbol>
+                </li>
+                <li>
+                    <symbol>stub</symbol>
+                </li>
+                <li>
+                    <symbol>patch</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+    <GeneDef ParentName="GeneHairStyleBase">
+        <defName>BGM_MycelialTenderCap</defName>
+        <label>mycelia tender mushroom cap</label>
+        <labelShortAdj>mycelia tender cap</labelShortAdj>
+        <description>Carriers of this gene can only grow short hair.</description>
+        <iconPath>UI/Genes/Gene_MyceliaTenderCap</iconPath>
+        <displayOrderInCategory>55</displayOrderInCategory>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Myceliatender/Myceliatender</texPath>
+                <colorType>Hair</colorType>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>false</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>crop</symbol>
+                </li>
+                <li>
+                    <symbol>fuzz</symbol>
+                </li>
+                <li>
+                    <symbol>stub</symbol>
+                </li>
+                <li>
+                    <symbol>patch</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>crop</symbol>
+                </li>
+                <li>
+                    <symbol>fuzz</symbol>
+                </li>
+                <li>
+                    <symbol>stub</symbol>
+                </li>
+                <li>
+                    <symbol>patch</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+    <GeneDef ParentName="GeneHairStyleBase">
+        <defName>BGM_SocialiteCap</defName>
+        <label>socialite mushroom cap</label>
+        <labelShortAdj>socialite cap</labelShortAdj>
+        <description>Carriers of this gene can only grow short hair.</description>
+        <iconPath>UI/Genes/Gene_SocialiteCap</iconPath>
+        <displayOrderInCategory>55</displayOrderInCategory>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Socialite/Socialite</texPath>
+                <colorType>Hair</colorType>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>false</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>crop</symbol>
+                </li>
+                <li>
+                    <symbol>fuzz</symbol>
+                </li>
+                <li>
+                    <symbol>stub</symbol>
+                </li>
+                <li>
+                    <symbol>patch</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>crop</symbol>
+                </li>
+                <li>
+                    <symbol>fuzz</symbol>
+                </li>
+                <li>
+                    <symbol>stub</symbol>
+                </li>
+                <li>
+                    <symbol>patch</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+    <GeneDef ParentName="GeneHairStyleBase">
+        <defName>BGM_SovereignCap</defName>
+        <label>sovereign mushroom cap</label>
+        <labelShortAdj>sovereign cap</labelShortAdj>
+        <description>Carriers of this gene can only grow short hair.</description>
+        <iconPath>UI/Genes/Gene_SovereignCap</iconPath>
+        <displayOrderInCategory>55</displayOrderInCategory>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Sovereign/Sovereign</texPath>
+                <colorType>Hair</colorType>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>false</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>crop</symbol>
+                </li>
+                <li>
+                    <symbol>fuzz</symbol>
+                </li>
+                <li>
+                    <symbol>stub</symbol>
+                </li>
+                <li>
+                    <symbol>patch</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>crop</symbol>
+                </li>
+                <li>
+                    <symbol>fuzz</symbol>
+                </li>
+                <li>
+                    <symbol>stub</symbol>
+                </li>
+                <li>
+                    <symbol>patch</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+</Defs>

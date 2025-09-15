@@ -106,7 +106,11 @@
                     <RangedCooldownFactor>1.25</RangedCooldownFactor>
                     <ShootingAccuracyPawn>0.75</ShootingAccuracyPawn>
                     <AimingDelayFactor>1.25</AimingDelayFactor>
+                    <JoyGainFactor>1.25</JoyGainFactor>
                 </statFactors>
+                <statOffsets>
+                    <SocialImpact>0.25</SocialImpact>
+                </statOffsets>
                 <capMods>
                     <li>
                         <capacity>Breathing</capacity>
@@ -116,8 +120,19 @@
             </li>
             <li>
                 <minSeverity>1</minSeverity>
+                <statFactors>
+                    <MeleeDamageFactor>0.75</MeleeDamageFactor>
+                    <MeleeCooldownFactor>1.25</MeleeCooldownFactor>
+                    <MeleeArmorPenetration>0.75</MeleeArmorPenetration>
+                    <MeleeHitChance>0.75</MeleeHitChance>
+                    <MeleeDodgeChance>0.75</MeleeDodgeChance>
+                    <RangedCooldownFactor>1.25</RangedCooldownFactor>
+                    <ShootingAccuracyPawn>0.75</ShootingAccuracyPawn>
+                    <AimingDelayFactor>1.25</AimingDelayFactor>
+                    <JoyGainFactor>1.25</JoyGainFactor>
+                </statFactors>
                 <statOffsets>
-                    <PsychicSensitivity>1</PsychicSensitivity>
+                    <SocialImpact>0.25</SocialImpact>
                 </statOffsets>
             </li>
         </stages>

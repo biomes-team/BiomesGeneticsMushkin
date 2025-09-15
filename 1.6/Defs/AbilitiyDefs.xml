@@ -90,8 +90,7 @@
                 <hediffDef>BGM_HealingSpores</hediffDef>
                 <range>10</range>
                 <effecter>BGM_SporePuff</effecter>
-                <xenotypesImmuneToDebuff>
-                </xenotypesImmuneToDebuff>
+                <xenotypesImmuneToDebuff />
             </li>
         </comps>
     </AbilityDef>
@@ -108,8 +107,7 @@
                 <hediffDef>BGM_PsySpores</hediffDef>
                 <range>10</range>
                 <effecter>BGM_SporePuff</effecter>
-                <xenotypesImmuneToDebuff>
-                </xenotypesImmuneToDebuff>
+                <xenotypesImmuneToDebuff />
             </li>
         </comps>
     </AbilityDef>
@@ -134,7 +132,7 @@
     <!-- TODO -->
     <AbilityDef>
         <defName>BGM_ToxSpores</defName>
-        <label>foam spores</label>
+        <label>tox spores</label>
         <description>Spray thick fire-retardant foam from glands in the neck up through the mouth. The foam will cover a small area and extinguish any fire it touches.</description>
         <iconPath>UI/Ability-Genes/Tox_Spores</iconPath>
         <charges>3</charges>
@@ -188,6 +186,40 @@
                     <li>Boomshroom</li>
                 </plantsToSpawn>
             </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- TODO -->
+    <AbilityDef ParentName="AbilityTouchBase">
+        <defName>BGM_ResurrectionSpores</defName>
+        <label>resurrection spores</label>
+        <description>Use special glands in the wrists to quickly tend someone's wounds.</description>
+        <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <warmupMote>Mote_CoagulateStencil</warmupMote>
+        <warmupEffecter>Coagulate</warmupEffecter>
+        <warmupStartSound>Coagulate_Cast</warmupStartSound>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <displayOrder>400</displayOrder>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <drawAimPie>false</drawAimPie>
+            <range>-1</range>
+            <warmupTime>1</warmupTime>
+            <targetParams>
+                <canTargetAnimals>true</canTargetAnimals>
+                <canTargetSelf>false</canTargetSelf>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetBloodfeeders>true</canTargetBloodfeeders>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="BiomesGeneticsMushkin.CompProperties_ResurrectionSpores" />
         </comps>
     </AbilityDef>
 </Defs>
