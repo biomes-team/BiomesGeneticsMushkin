@@ -30,9 +30,11 @@ namespace BiomesGeneticsMushkin
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{
 			base.Apply(target, dest);
-			if (target.Pawn is null) return;
+			if (target.Thing is Corpse corpse)
+			{
+				TryResurrectWithSideEffects(corpse.InnerPawn);
 
-			TryResurrectWithSideEffects(target.Pawn);
+			}
 		}
 
 
@@ -44,6 +46,7 @@ namespace BiomesGeneticsMushkin
 
 			if (!ResurrectionUtility.TryResurrect(pawn))
 			{
+				Log.Message("HELLO");
 				return false;
 			}
 			AddHediffWithoutDeathRisk(pawn, HediffDefOf.ResurrectionSickness);
