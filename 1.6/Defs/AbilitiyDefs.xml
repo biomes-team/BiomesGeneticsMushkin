@@ -219,4 +219,68 @@
             <li Class="BiomesGeneticsMushkin.CompProperties_ResurrectionSpores" />
         </comps>
     </AbilityDef>
+
+
+    <!-- TODO -->
+    <AbilityDef ParentName="AbilityTouchBase">
+        <defName>BGM_FungalReanimation</defName>
+        <label>fungal reanimation</label>
+        <description>Use special glands in the wrists to quickly tend someone's wounds.</description>
+        <iconPath>UI/Ability-Genes/FungalReanimation</iconPath>
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <warmupMote>Mote_CoagulateStencil</warmupMote>
+        <warmupEffecter>Coagulate</warmupEffecter>
+        <warmupStartSound>Coagulate_Cast</warmupStartSound>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <displayOrder>400</displayOrder>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <drawAimPie>false</drawAimPie>
+            <range>-1</range>
+            <warmupTime>1</warmupTime>
+            <targetParams>
+                <canTargetCorpses>true</canTargetCorpses>
+                <onlyTargetCorpses>true</onlyTargetCorpses>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="BiomesGeneticsMushkin.CompProperties_FungalReanimation">
+                <reanimationGene>BGM_FungalUndead</reanimationGene>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- TODO -->
+    <AbilityDef>
+        <defName>BGM_BuddingBirth</defName>
+        <label>budding birth</label>
+        <description>Release compressed smoke from concealed vents. Smoke reduces the accuracy of any shot fired through it, and prevents turrets from locking on entirely.</description>
+        <iconPath>UI/Genes/Gene_BuddingBirth</iconPath>
+        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <targetRequired>false</targetRequired>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <showWhenDrafted>false</showWhenDrafted>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>1</warmupTime>
+            <range>-1</range>
+            <drawAimPie>false</drawAimPie>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="BiomesGeneticsMushkin.CompProperties_BuddingBirth">
+                <excludeGenes></excludeGenes>
+            </li>
+        </comps>
+    </AbilityDef>
+
 </Defs>

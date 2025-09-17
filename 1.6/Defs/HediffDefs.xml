@@ -145,4 +145,25 @@
         </comps>
     </HediffDef>
 
+
+    <!-- TODO -->
+    <HediffDef>
+        <defName>BGM_FungalUndead</defName>
+        <label>fungal undead decay</label>
+        <description>The sense of being called upon by a leader to work harder.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <maxSeverity>1</maxSeverity>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_KillAfterDays">
+                <days>6</days>
+            </li>
+        </comps>
+    </HediffDef>
+
 </Defs>

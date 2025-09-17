@@ -2,7 +2,7 @@
 <Defs>
 
     <XenotypeDef Name="BGM_BaseMush" Abstract="True">
-        <inheritable>true</inheritable>
+        <inheritable>false</inheritable>
         <iconPath>UI/Xenotype/Mushkin</iconPath>
         <genes>
             <li>UVSensitivity_Intense</li>
@@ -11,8 +11,8 @@
             <li>DarkVision</li>
             <li>StrongStomach</li>
             <li>RobustDigestion</li>
-            <!-- Symbiosis -->
-            <!-- Budding birth -->
+            <li>Skin_SheerWhite</li>
+            <li>BGM_BuddingBirth</li>
         </genes>
     </XenotypeDef>
 
@@ -86,7 +86,7 @@
             <li>AcidSpray</li>
             <li>BGM_ResurrectionSpores</li>
             <li>BGM_ToxSpores</li>
-            <!-- Thrall spores -->
+            <li>BGM_FungalReanimation</li>
         </genes>
     </XenotypeDef>
 

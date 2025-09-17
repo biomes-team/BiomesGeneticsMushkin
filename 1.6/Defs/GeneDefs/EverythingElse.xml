@@ -369,4 +369,144 @@
         </symbolPack>
     </GeneDef>
 
+    <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_FungalReanimation</defName>
+        <label>fungal reanimation</label>
+        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
+        <displayCategory>Ability</displayCategory>
+        <abilities>
+            <li>BGM_FungalReanimation</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BGM_FungalReanimation</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_BuddingBirth</defName>
+        <label>budding birth</label>
+        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
+        <displayCategory>Ability</displayCategory>
+        <abilities>
+            <li>BGM_BuddingBirth</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BGM_BuddingBirth</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_FungalUndead</defName>
+        <label>fungal undead</label>
+        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <iconPath>UI/Genes/Gene_FungalUndead</iconPath>
+        <geneClass>BiomesGeneticsMushkin.Gene_FungalUndead</geneClass>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <disabledWorkTags>
+            <li>ManualSkilled</li>
+            <li>Caring</li>
+            <li>Social</li>
+            <li>Intellectual</li>
+            <li>Animals</li>
+            <li>Artistic</li>
+        </disabledWorkTags>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
 </Defs>
