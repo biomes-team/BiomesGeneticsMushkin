@@ -1,6 +1,4 @@
-﻿using Verse;
-using RimWorld;
-using System.Collections.Generic;
+﻿using RimWorld;
 
 namespace BiomesGeneticsMushkin
 {
@@ -10,7 +8,5 @@ namespace BiomesGeneticsMushkin
 		{
 			compClass = typeof(AbilityComp_BuddingBirth);
 		}
-
-		public List<GeneDef> excludeGenes;
 	}
 }

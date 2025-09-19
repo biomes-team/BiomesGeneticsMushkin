@@ -374,7 +374,7 @@
         <defName>BGM_FungalReanimation</defName>
         <label>fungal reanimation</label>
         <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
-        <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
+        <iconPath>UI/Genes/FungalReanimation</iconPath>
         <displayCategory>Ability</displayCategory>
         <abilities>
             <li>BGM_FungalReanimation</li>

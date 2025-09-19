@@ -9,6 +9,7 @@ namespace BiomesGeneticsMushkin
 	{
 		public static Pawn Clone(Pawn pawn)
 		{
+
 			PawnKindDef kindDef = pawn.kindDef;
 			Faction faction = pawn.Faction;
 			Gender? fixedGender = pawn.gender;
@@ -80,6 +81,7 @@ namespace BiomesGeneticsMushkin
 			};
 			Pawn baby = PawnGenerator.GeneratePawn(request);
 			baby.Name = NameTriple.FromString(pawn.Name.ToString());
+			baby.NamePawnDialog();
 			if (ModsConfig.BiotechActive)
 			{
 				baby.ageTracker.growthPoints = 0;

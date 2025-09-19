@@ -182,8 +182,8 @@
             <li Class="BiomesGeneticsMushkin.CompProperties_SpawnMushrooms">
                 <range>3.5</range>
                 <plantsToSpawn>
-                    <li>Plant_Nutrifungus</li>
-                    <li>Boomshroom</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Plant_Nutrifungus</li>
+                    <li MayRequire="Ludeon.Rimworld.Odyssey">Boomshroom</li>
 					<li>Glowstool</li>
                 </plantsToSpawn>
             </li>
@@ -278,9 +278,7 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="BiomesGeneticsMushkin.CompProperties_BuddingBirth">
-                <excludeGenes></excludeGenes>
-            </li>
+            <li Class="BiomesGeneticsMushkin.CompProperties_BuddingBirth" />
         </comps>
     </AbilityDef>
 
