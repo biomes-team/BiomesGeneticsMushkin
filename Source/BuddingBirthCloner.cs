@@ -80,8 +80,7 @@ namespace BiomesGeneticsMushkin
 				DontGivePreArrivalPathway = true
 			};
 			Pawn baby = PawnGenerator.GeneratePawn(request);
-			baby.Name = NameTriple.FromString(pawn.Name.ToString());
-			baby.NamePawnDialog();
+			baby.babyNamingDeadline = Find.TickManager.TicksGame + GenDate.TicksPerDay;
 			if (ModsConfig.BiotechActive)
 			{
 				baby.ageTracker.growthPoints = 0;
@@ -104,6 +103,7 @@ namespace BiomesGeneticsMushkin
 			baby.Drawer.renderer.SetAllGraphicsDirty();
 			baby.Notify_DisabledWorkTypesChanged();
 			baby.relations.AddDirectRelation(PawnRelationDefOf.Parent, pawn);
+			Find.WindowStack.Add(baby.NamePawnDialog());
 			return baby;
 		}
 
