@@ -6,7 +6,7 @@
         <defName>BGM_BaseCap</defName>
         <label>base mushroom cap</label>
         <labelShortAdj>base cap</labelShortAdj>
-        <description>Carriers of this gene can only grow short hair.</description>
+        <description>The fungus that grants this gene makes the carrier grow a simple mushroom cap in place of hair.</description>
         <iconPath>UI/Genes/Gene_BaseCap</iconPath>
         <displayOrderInCategory>55</displayOrderInCategory>
         <hairTagFilter>
@@ -69,7 +69,7 @@
         <defName>BGM_AnimatorCap</defName>
         <label>animator mushroom cap</label>
         <labelShortAdj>animator cap</labelShortAdj>
-        <description>Carriers of this gene can only grow short hair.</description>
+        <description>The fungus that grants this gene makes the carrier grow a wide mushroom cap in place of hair.</description>
         <iconPath>UI/Genes/Gene_AnimatorCap</iconPath>
         <displayOrderInCategory>55</displayOrderInCategory>
         <hairTagFilter>
@@ -132,7 +132,7 @@
         <defName>BGM_BattalionCap</defName>
         <label>battalion mushroom cap</label>
         <labelShortAdj>animator cap</labelShortAdj>
-        <description>Carriers of this gene can only grow short hair.</description>
+        <description>The fungus that grants this gene makes the carrier grow an armor-like mushroom cap in place of hair.</description>
         <iconPath>UI/Genes/Gene_BattalionCap</iconPath>
         <displayOrderInCategory>55</displayOrderInCategory>
         <hairTagFilter>
@@ -195,7 +195,7 @@
         <defName>BGM_MycelialTenderCap</defName>
         <label>mycelia tender mushroom cap</label>
         <labelShortAdj>mycelia tender cap</labelShortAdj>
-        <description>Carriers of this gene can only grow short hair.</description>
+        <description>The fungus that grants this gene makes the carrier grow a sprout-like mushroom cap in place of hair.</description>
         <iconPath>UI/Genes/Gene_MyceliaTenderCap</iconPath>
         <displayOrderInCategory>55</displayOrderInCategory>
         <hairTagFilter>
@@ -258,7 +258,7 @@
         <defName>BGM_SocialiteCap</defName>
         <label>socialite mushroom cap</label>
         <labelShortAdj>socialite cap</labelShortAdj>
-        <description>Carriers of this gene can only grow short hair.</description>
+        <description>The fungus that grants this gene makes the carrier grow a tall and lacy mushroom cap in place of hair.</description>
         <iconPath>UI/Genes/Gene_SocialiteCap</iconPath>
         <displayOrderInCategory>55</displayOrderInCategory>
         <hairTagFilter>
@@ -321,7 +321,7 @@
         <defName>BGM_SovereignCap</defName>
         <label>sovereign mushroom cap</label>
         <labelShortAdj>sovereign cap</labelShortAdj>
-        <description>Carriers of this gene can only grow short hair.</description>
+        <description>The fungus that grants this gene makes the carrier grow a large, grand mushroom cap in place of hair.</description>
         <iconPath>UI/Genes/Gene_SovereignCap</iconPath>
         <displayOrderInCategory>55</displayOrderInCategory>
         <hairTagFilter>
