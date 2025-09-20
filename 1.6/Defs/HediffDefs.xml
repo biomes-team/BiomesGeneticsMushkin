@@ -145,7 +145,6 @@
         </comps>
     </HediffDef>
 
-
     <!-- TODO -->
     <HediffDef>
         <defName>BGM_FungalUndead</defName>
@@ -162,6 +161,30 @@
         <comps>
             <li Class="HediffCompProperties_KillAfterDays">
                 <days>6</days>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!-- TODO -->
+    <HediffDef>
+        <defName>BGM_SwitchCasteExhaustion</defName>
+        <label>caste change exhaustion</label>
+        <description>The sense of being called upon by a leader to work harder.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <maxSeverity>1</maxSeverity>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <statFactors>
+                    <RestFallRateFactor>1.25</RestFallRateFactor>
+                </statFactors>
+                <hungerRateFactor>1.25</hungerRateFactor>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>240000</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
             </li>
         </comps>
     </HediffDef>

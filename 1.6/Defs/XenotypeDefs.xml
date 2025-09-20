@@ -44,7 +44,7 @@
             <li>MoveSpeed_Slow</li>
             <li>Robust</li>
             <li>AptitudeRemarkable_Social</li>
-            <!-- Swap caste -->
+            <li>BGM_CasteSwap</li>
         </genes>
     </XenotypeDef>
 
