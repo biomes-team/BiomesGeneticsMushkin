@@ -420,7 +420,7 @@
         <defName>BGM_BuddingBirth</defName>
         <label>budding birth</label>
         <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
-        <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
+        <iconPath>UI/Genes/Gene_BuddingBirth</iconPath>
         <displayCategory>Ability</displayCategory>
         <abilities>
             <li>BGM_BuddingBirth</li>
