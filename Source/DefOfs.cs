@@ -13,5 +13,6 @@ namespace BiomesGeneticsMushkin
 
 		public static XenotypeDef BGM_Mushkin;
 		public static HediffDef BGM_FungalUndead;
+		public static HediffDef BGM_FungalParasite;
 	}
 }

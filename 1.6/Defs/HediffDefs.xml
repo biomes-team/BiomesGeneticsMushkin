@@ -189,4 +189,35 @@
         </comps>
     </HediffDef>
 
+    <!-- TODO -->
+    <HediffDef>
+        <defName>BGM_FungalParasite</defName>
+        <label>fungal parasite</label>
+        <description>The sense of being called upon by a leader to work harder.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <maxSeverity>1</maxSeverity>
+        <lethalSeverity>1</lethalSeverity>
+        <initialSeverity>0.0001</initialSeverity>
+        <isBad>true</isBad>
+        <tendable>true</tendable>
+        <stages>
+            <li>
+                <statFactors>
+                    <RestFallRateFactor>1.25</RestFallRateFactor>
+                </statFactors>
+                <hungerRateFactor>1.25</hungerRateFactor>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <baseTendDurationHours>24</baseTendDurationHours>
+                <severityPerDayTended>-0.11</severityPerDayTended>
+            </li>
+            <li Class="HediffCompProperties_Immunizable">
+                <severityPerDayNotImmune>0.2</severityPerDayNotImmune>
+                <hidden>true</hidden>
+            </li>
+        </comps>
+    </HediffDef>
+
 </Defs>
