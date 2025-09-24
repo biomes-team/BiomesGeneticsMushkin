@@ -5,7 +5,7 @@
     <HediffDef>
         <defName>BGM_HealingSpores</defName>
         <label>healing spores</label>
-        <description>The sense of being called upon by a leader to work harder.</description>
+        <description>Helpful fungal spores have made their way into the body, increasing the rate of healing.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <maxSeverity>1</maxSeverity>
         <isBad>false</isBad>
@@ -46,7 +46,7 @@
     <HediffDef>
         <defName>BGM_PsySpores</defName>
         <label>psy spores</label>
-        <description>The sense of being called upon by a leader to work harder.</description>
+        <description>Fungal spores have made their way into the body, increasing psychic sensitivity.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <maxSeverity>1</maxSeverity>
         <isBad>false</isBad>
@@ -87,7 +87,7 @@
     <HediffDef>
         <defName>BGM_RapportSpores</defName>
         <label>rapport spores</label>
-        <description>The sense of being called upon by a leader to work harder.</description>
+        <description>Fungal spores have made their way into the body, increasing social skills and sense of joy, but decreasing combat effectiveness.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <maxSeverity>1</maxSeverity>
         <isBad>false</isBad>
@@ -149,7 +149,7 @@
     <HediffDef>
         <defName>BGM_FungalUndead</defName>
         <label>fungal undead decay</label>
-        <description>The sense of being called upon by a leader to work harder.</description>
+        <description>Unique fungal mycelia have been embedded in this human, temporarily resurrecting them back to a twisted form of life. They will die in a few days.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <maxSeverity>1</maxSeverity>
         <isBad>false</isBad>
@@ -168,8 +168,8 @@
     <!-- TODO -->
     <HediffDef>
         <defName>BGM_SwitchCasteExhaustion</defName>
-        <label>caste change exhaustion</label>
-        <description>The sense of being called upon by a leader to work harder.</description>
+        <label>caste swap exhaustion</label>
+        <description>The swapping of Mushkin caste changes how the fungi in the body manifest, temporarily tiring the affected.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <maxSeverity>1</maxSeverity>
         <isBad>false</isBad>
@@ -188,26 +188,220 @@
             </li>
         </comps>
     </HediffDef>
+	
+	<HediffDef ParentName="InfectionBase">
+    <defName>BMT_MuscleMycelium</defName>
+    <label>muscle mycelium</label>
+    <description>Parasitic fungi in the muscles. These cause weakness and a lack of coordination.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <makesSickThought>true</makesSickThought>
+    <tendable>true</tendable>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>48</baseTendDurationHours>
+        <disappearsAtTotalTendQuality>3</disappearsAtTotalTendQuality>
+      </li>
+    </comps>
+  </HediffDef>
 
     <!-- TODO -->
     <HediffDef>
         <defName>BGM_FungalParasite</defName>
         <label>fungal parasite</label>
-        <description>The sense of being called upon by a leader to work harder.</description>
+        <description>Unfortunately for the bearer of this fungi, it has formed a parasitic bond with its host, slowly killing them as it feeds off their body. The mycelia have a chance to invade various body parts, causing other unpleasant conditions. This can sometimes be staved off with bionics or replacing the organ.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <maxSeverity>1</maxSeverity>
         <lethalSeverity>1</lethalSeverity>
         <initialSeverity>0.0001</initialSeverity>
         <isBad>true</isBad>
         <tendable>true</tendable>
-        <stages>
-            <li>
-                <statFactors>
-                    <RestFallRateFactor>1.25</RestFallRateFactor>
-                </statFactors>
-                <hungerRateFactor>1.25</hungerRateFactor>
-            </li>
-        </stages>
+    <stages>
+      <li>
+        <label>initial</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <label>initial</label>
+        <minSeverity>0.04</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+		    <statFactors>
+            <RestFallRateFactor>1.10</RestFallRateFactor>
+            </statFactors>
+            <hungerRateFactor>1.10</hungerRateFactor>
+      </li>
+      <li>
+        <label>minor</label>
+        <minSeverity>0.2</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+		    <statFactors>
+            <RestFallRateFactor>1.2</RestFallRateFactor>
+            </statFactors>
+            <hungerRateFactor>1.2</hungerRateFactor>
+      </li>
+      <li>
+        <label>moderate</label>
+        <minSeverity>0.40</minSeverity>
+        <vomitMtbDays>5</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+		    <statFactors>
+            <RestFallRateFactor>1.4</RestFallRateFactor>
+            </statFactors>
+            <hungerRateFactor>1.4</hungerRateFactor>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>Cataract</hediff>
+            <mtbDays>146</mtbDays>
+            <partsToAffect>
+              <li>Eye</li>
+            </partsToAffect>
+          </li>
+          <li Class="HediffGiver_Random">
+            <hediff>Asthma</hediff>
+            <mtbDays>438</mtbDays>
+            <partsToAffect>
+              <li>Lung</li>
+            </partsToAffect>
+          </li>
+          <li Class="HediffGiver_Random">
+            <hediff>HeartArteryBlockage</hediff>
+            <mtbDays>545</mtbDays>
+            <partsToAffect>
+              <li>Heart</li>
+            </partsToAffect>
+          </li>
+          <li Class="HediffGiver_Random">
+            <hediff>BMT_MuscleMycelium</hediff>
+            <mtbDays>251</mtbDays>
+            <partsToAffect>
+              <li>Heart</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>serious</label>
+        <minSeverity>0.60</minSeverity>
+        <vomitMtbDays>1</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+		    <statFactors>
+            <RestFallRateFactor>1.6</RestFallRateFactor>
+            </statFactors>
+            <hungerRateFactor>1.6</hungerRateFactor>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>Cataract</hediff>
+            <mtbDays>37</mtbDays>
+            <partsToAffect>
+              <li>Eye</li>
+            </partsToAffect>
+          </li>
+          <li Class="HediffGiver_Random">
+            <hediff>Asthma</hediff>
+            <mtbDays>111</mtbDays>
+            <partsToAffect>
+              <li>Lung</li>
+            </partsToAffect>
+          </li>
+          <li Class="HediffGiver_Random">
+            <hediff>HeartArteryBlockage</hediff>
+            <mtbDays>147</mtbDays>
+            <partsToAffect>
+              <li>Heart</li>
+            </partsToAffect>
+          </li>
+          <li Class="HediffGiver_Random">
+            <hediff>BMT_MuscleMycelium</hediff>
+            <mtbDays>171</mtbDays>
+            <partsToAffect>
+              <li>Heart</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>extreme</label>
+        <minSeverity>0.80</minSeverity>
+        <vomitMtbDays>0.5</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.10</setMax>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+		    <statFactors>
+            <RestFallRateFactor>2</RestFallRateFactor>
+            </statFactors>
+            <hungerRateFactor>2</hungerRateFactor>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>Cataract</hediff>
+            <mtbDays>13</mtbDays>
+            <partsToAffect>
+              <li>Eye</li>
+            </partsToAffect>
+          </li>
+          <li Class="HediffGiver_Random">
+            <hediff>Asthma</hediff>
+            <mtbDays>39</mtbDays>
+            <partsToAffect>
+              <li>Lung</li>
+            </partsToAffect>
+          </li>
+          <li Class="HediffGiver_Random">
+            <hediff>HeartArteryBlockage</hediff>
+            <mtbDays>27</mtbDays>
+            <partsToAffect>
+              <li>Heart</li>
+            </partsToAffect>
+          </li>
+          <li Class="HediffGiver_Random">
+            <hediff>BMT_MuscleMycelium</hediff>
+            <mtbDays>55</mtbDays>
+            <partsToAffect>
+              <li>Heart</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
         <comps>
             <li Class="HediffCompProperties_TendDuration">
                 <baseTendDurationHours>24</baseTendDurationHours>
