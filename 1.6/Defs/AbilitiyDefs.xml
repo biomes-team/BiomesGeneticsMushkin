@@ -322,4 +322,80 @@
         </comps>
     </AbilityDef>
 
+    <!-- TODO -->
+    <AbilityDef ParentName="AbilityTouchBase">
+        <defName>BGM_InfectiousSpores</defName>
+        <label>infectious spores</label>
+        <description>The fungi that form a symbiosis the carriers of this gene allow the user to produce a genetic copy of themselves off of their body without pregnancy.</description>
+        <iconPath>UI/Ability-Genes/Infectious_Spores</iconPath>
+        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <hostile>false</hostile>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <showWhenDrafted>false</showWhenDrafted>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <drawAimPie>false</drawAimPie>
+            <range>-1</range>
+            <warmupTime>1</warmupTime>
+            <targetParams>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetEntities>false</canTargetEntities>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="BiomesGeneticsMushkin.CompProperties_InfectiousSpores">
+                <xenotypeToTransform>BGM_Mushkin</xenotypeToTransform>
+                <geneOverriddenByParasitism>BGM_BaseCap</geneOverriddenByParasitism> <!-- Dummy -->
+                <parasitismGene>BGM_FungalParasitism</parasitismGene>
+                <parasitismChance>0.1</parasitismChance>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- TODO -->
+    <AbilityDef ParentName="AbilityTouchBase">
+        <defName>BGM_FungalParasitism</defName>
+        <label>infectious spores</label>
+        <description>The fungi that form a symbiosis the carriers of this gene allow the user to produce a genetic copy of themselves off of their body without pregnancy.</description>
+        <iconPath>UI/Genes/Gene_FungalParasitism</iconPath>
+        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <hostile>false</hostile>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <showWhenDrafted>false</showWhenDrafted>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <drawAimPie>false</drawAimPie>
+            <range>-1</range>
+            <warmupTime>1</warmupTime>
+            <targetParams>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetEntities>false</canTargetEntities>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="BiomesGeneticsMushkin.CompProperties_FungalParasitism">
+                <resistantXenotypes>
+                    <li>BGM_Mushkin</li>
+                    <li>BGM_Sovereign</li>
+                    <li>BGM_Socialite</li>
+                    <li>BGM_Necrospores</li>
+                    <li>BGM_Battalions</li>
+                    <li>BGM_MyceliaTender</li>
+                </resistantXenotypes>
+                <parasitismGene>BGM_FungalParasitism</parasitismGene>
+                <resistanceChance>0.1</resistanceChance>
+            </li>
+        </comps>
+    </AbilityDef>
+
 </Defs>

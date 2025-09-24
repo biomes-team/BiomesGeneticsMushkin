@@ -555,4 +555,105 @@
         </symbolPack>
     </GeneDef>
 
+    <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_InfectiousSpores</defName>
+        <label>infectious spores</label>
+        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <iconPath>UI/Ability-Genes/Infectious_Spores</iconPath>
+        <displayCategory>Ability</displayCategory>
+        <abilities>
+            <li>BGM_InfectiousSpores</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BGM_InfectiousSpores</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatMet>0</biostatMet>
+        <biostatCpx>0</biostatCpx>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_FungalParasitism</defName>
+        <label>fungal parasitism</label>
+        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <iconPath>UI/Genes/Gene_FungalParasitism</iconPath>
+        <displayCategory>Ability</displayCategory> <!-- Missing the hediff-->
+        <aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
+        <abilities>
+            <li>BGM_FungalParasitism</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BGM_FungalParasitism</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatMet>0</biostatMet>
+        <biostatCpx>0</biostatCpx>
+        <statFactors>
+            <LifespanFactor>0.6</LifespanFactor>
+            <CancerRate>5</CancerRate>
+            <ImmunityGainSpeed>0.92</ImmunityGainSpeed>
+            <painFactor>0</painFactor>
+            <MeleeDamageFactor>1.5</MeleeDamageFactor>
+            <!-- increases carry capacity -->
+        </statFactors>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
 </Defs>
