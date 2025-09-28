@@ -82,7 +82,7 @@
     <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
         <defName>BGM_HealingSpores</defName>
         <label>healing spores</label>
-        <description>This fungal gene allows the user to produce a puff of spores from their cap that induce faster healing in those around them.</description>
+        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that induce faster healing in those around them.</description>
         <iconPath>UI/Ability-Genes/Healing_Spores</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <comps>
@@ -99,7 +99,7 @@
     <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
         <defName>BGM_PsySpores</defName>
         <label>psy spores</label>
-        <description>This fungal gene allows the user to produce a puff of spores from their cap that increase the psychic sensitivity of those around them.</description>
+        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that increase the psychic sensitivity of those around them.</description>
         <iconPath>UI/Ability-Genes/Psy_Spores</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <comps>
@@ -116,7 +116,7 @@
     <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
         <defName>BGM_RapportSpores</defName>
         <label>rapport spores</label>
-        <description>This fungal gene allows the user to produce a puff of spores from their cap that increase the social abilities of those around them.</description>
+        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that increase the social abilities of those around them.</description>
         <iconPath>UI/Ability-Genes/Rapport_Spores</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <comps>
@@ -133,7 +133,7 @@
     <AbilityDef>
         <defName>BGM_ToxSpores</defName>
         <label>tox spores</label>
-        <description>This fungal gene allows the user to produce a cloud of toxic gas-like spores in a cloud nearby.</description>
+        <description>This fungal gene allows the carrier to produce a cloud of toxic gas-like spores in a cloud nearby.</description>
         <iconPath>UI/Ability-Genes/Tox_Spores</iconPath>
         <charges>3</charges>
         <cooldownTicksRange>30000</cooldownTicksRange>
@@ -194,7 +194,7 @@
     <AbilityDef ParentName="AbilityTouchBase">
         <defName>BGM_ResurrectionSpores</defName>
         <label>resurrection spores</label>
-        <description>The fungi that form symbiosis with the carriers of this gene allow the user to resurrect those they touch if they are still fresh. It does not always work out very well, however.</description>
+        <description>The fungi that form symbiosis with the carriers of this gene allow them to resurrect those they touch if they are still fresh. It does not always work out very well, however.</description>
         <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
         <stunTargetWhileCasting>true</stunTargetWhileCasting>
         <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
@@ -226,7 +226,7 @@
     <AbilityDef ParentName="AbilityTouchBase">
         <defName>BGM_FungalReanimation</defName>
         <label>fungal reanimation</label>
-        <description>The fungi within the carriers of this gene allow the user to reanimate the dead as fungal zombies. The fungal zombies slowly deteriorate as the fungi consume their body for energy.</description>
+        <description>The fungi within the carriers of this gene allow them to reanimate the dead as fungal zombies. The fungal zombies slowly deteriorate as the fungi consume their body for energy.</description>
         <iconPath>UI/Ability-Genes/FungalReanimation</iconPath>
         <stunTargetWhileCasting>true</stunTargetWhileCasting>
         <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
@@ -259,7 +259,7 @@
     <AbilityDef>
         <defName>BGM_BuddingBirth</defName>
         <label>budding birth</label>
-        <description>The fungi that form a symbiosis the carriers of this gene allow the user to produce a genetic copy of themselves off of their body without pregnancy.</description>
+        <description>The fungi that form a symbiosis the carriers of this gene allows those of either sex to produce a genetic copy of themselves from their flesh without pregnancy.</description>
         <iconPath>UI/Genes/Gene_BuddingBirth</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <targetRequired>false</targetRequired>
@@ -286,7 +286,7 @@
     <AbilityDef ParentName="AbilityTouchBase">
         <defName>BGM_CasteSwap</defName>
         <label>caste swap</label>
-        <description>The fungi that form a symbiosis the carriers of this gene allow the user to produce a genetic copy of themselves off of their body without pregnancy.</description>
+        <description>The fungi that form a symbiosis the carriers of this gene allow them to produce a genetic copy of themselves off of their body without pregnancy.</description>
         <iconPath>UI/Ability-Genes/CasteSwap</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <hostile>false</hostile>
@@ -326,7 +326,7 @@
     <AbilityDef ParentName="AbilityTouchBase">
         <defName>BGM_InfectiousSpores</defName>
         <label>infectious spores</label>
-        <description>The fungi that form a symbiosis the carriers of this gene allow the user to produce a genetic copy of themselves off of their body without pregnancy.</description>
+        <description>The fungi that form a symbiosis the carriers of this gene allow them to produce a genetic copy of themselves off of their body without pregnancy.</description>
         <iconPath>UI/Ability-Genes/Infectious_Spores</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <hostile>false</hostile>
@@ -361,7 +361,7 @@
     <AbilityDef ParentName="AbilityTouchBase">
         <defName>BGM_FungalParasitism</defName>
         <label>infectious spores</label>
-        <description>The fungi that form a symbiosis the carriers of this gene allow the user to produce a genetic copy of themselves off of their body without pregnancy.</description>
+        <description>The fungi that form a symbiosis the carriers of this gene allow them to produce a genetic copy of themselves off of their body without pregnancy.</description>
         <iconPath>UI/Genes/Gene_FungalParasitism</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <hostile>false</hostile>
@@ -398,4 +398,41 @@
         </comps>
     </AbilityDef>
 
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BMT_FungalCoagulate</defName>
+    <label>fungal coagulation</label>
+    <description>Use specialized fungal organs to patch up bleeding wounds.</description>
+    <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <warmupMote>Mote_CoagulateStencil</warmupMote>
+    <warmupEffecter>Coagulate</warmupEffecter>
+    <warmupStartSound>Coagulate_Cast</warmupStartSound>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <displayOrder>400</displayOrder>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityCoagulate">
+        <tendQualityRange>0.4~0.8</tendQualityRange>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Manipulation</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
 </Defs>

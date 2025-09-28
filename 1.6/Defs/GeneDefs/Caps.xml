@@ -321,7 +321,7 @@
         <defName>BGM_SovereignCap</defName>
         <label>sovereign mushroom cap</label>
         <labelShortAdj>sovereign cap</labelShortAdj>
-        <description>The fungus that grants this gene makes the carrier grow a large, grand mushroom cap in place of hair.</description>
+        <description>The fungus that grants this gene makes the carrier grow a large, grand mushroom cap in place of hair, fit for a ruler.</description>
         <iconPath>UI/Genes/Gene_SovereignCap</iconPath>
         <displayOrderInCategory>55</displayOrderInCategory>
         <hairTagFilter>

@@ -20,8 +20,8 @@
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Mushkin</defName>
         <label>mushkin</label>
-        <description>Hussars are engineered soldiers. They fight aggressively and with precision, heal fast, thrive in extreme temperatures, and freely ingest military drugs. They have a genetic dependence on go-juice, which also makes them less likely to rebel against their commanders.\n\nWhile hussars' emotions make them dangerous in combat, they can't relate to baseliner humans. They are famous for their blood-red eyes and "hussar stare", a dead expression that unsettles many people. Their lack of expression and burning aggressive nature has led to many violent misunderstandings.\n\nIn most societies where they live, hussars are kept separated from the rest of the population. Hussars are single-purpose tools - and they generally aren't bothered by the fact.</description>
-        <descriptionShort>Hussars are engineered soldiers. They fight aggressively and with precision, heal fast, thrive in extreme temperatures, and freely ingest military drugs. They have a genetic dependence on go-juice.</descriptionShort>
+        <description>Mushkin are humans that have formed a cellular-level bond with a unique species of fungus. This bond is most often symbiotic but on rare occasion proves otherwise.\n\nTheir unrivaled connection to this fungus grants mushkin unique spore-based abilities, from boosting psychic sensitivity to temporarily raising the dead as fungal zombies.\n\nMushkin society has developed around this connection to form a caste-like system, with the rare ruling caste being able to direct the fungal growth within others, granting them otherwise inaccesible spore abilities related to their new caste.</description>
+        <descriptionShort>Mushkin are fungal-bonded humans. They have a caste-based culture and have many spore-based abilities. They tend to live in dark environments.</descriptionShort>
         <combatPowerFactor>1</combatPowerFactor>
         <genes>
             <li>BGM_BaseCap</li>
@@ -33,8 +33,8 @@
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Sovereign</defName>
         <label>sovereign</label>
-        <description>Hussars are engineered soldiers. They fight aggressively and with precision, heal fast, thrive in extreme temperatures, and freely ingest military drugs. They have a genetic dependence on go-juice, which also makes them less likely to rebel against their commanders.\n\nWhile hussars' emotions make them dangerous in combat, they can't relate to baseliner humans. They are famous for their blood-red eyes and "hussar stare", a dead expression that unsettles many people. Their lack of expression and burning aggressive nature has led to many violent misunderstandings.\n\nIn most societies where they live, hussars are kept separated from the rest of the population. Hussars are single-purpose tools - and they generally aren't bothered by the fact.</description>
-        <descriptionShort>Hussars are engineered soldiers. They fight aggressively and with precision, heal fast, thrive in extreme temperatures, and freely ingest military drugs. They have a genetic dependence on go-juice.</descriptionShort>
+        <description>The sovereign caste of mushkin act as the leaders in the social heirarchy and have unique abilities, including command over the fungus within them itself. This allows them to change the caste of other mushkin to better suit the needs of their settlement as well as turn otherwise normal humans into mushkin.\n\nTheir fungal density grants them unique regeneration capabilities and agelessness. In most mushkin societies, there is only one sovereign per settlement.</description>
+        <descriptionShort>Sovereign mushkin tend to be the leaders in their society and have unique sbilities granted by their firmer bond with the fungus.</descriptionShort>
         <combatPowerFactor>1</combatPowerFactor>
         <genes>
             <li>BGM_SovereignCap</li>
@@ -53,8 +53,8 @@
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Socialite</defName>
         <label>socialite</label>
-        <description>Hussars are engineered soldiers. They fight aggressively and with precision, heal fast, thrive in extreme temperatures, and freely ingest military drugs. They have a genetic dependence on go-juice, which also makes them less likely to rebel against their commanders.\n\nWhile hussars' emotions make them dangerous in combat, they can't relate to baseliner humans. They are famous for their blood-red eyes and "hussar stare", a dead expression that unsettles many people. Their lack of expression and burning aggressive nature has led to many violent misunderstandings.\n\nIn most societies where they live, hussars are kept separated from the rest of the population. Hussars are single-purpose tools - and they generally aren't bothered by the fact.</description>
-        <descriptionShort>Hussars are engineered soldiers. They fight aggressively and with precision, heal fast, thrive in extreme temperatures, and freely ingest military drugs. They have a genetic dependence on go-juice.</descriptionShort>
+        <description>The socialite caste of mushkin are especially suited to social situations and lack in strength compared to even normal humans.\n\nTheir bond with the fungus within their body especially affects the structure of their neural tissue, making violence and cruelty more difficult for them and granting increased psychic sensitivity.\n\nDue to their lack of physical traits, socialites tend to be in the back lines using their spores and improving morale.</description>
+        <descriptionShort>Socialite mushkin are best suited to avoiding danger, instead assisting in social capacities such as trade.</descriptionShort>
         <combatPowerFactor>1</combatPowerFactor>
         <genes>
             <li>BGM_SocialiteCap</li>
@@ -78,8 +78,8 @@
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Necrospores</defName>
         <label>necrospores</label>
-        <description>Hussars are engineered soldiers. They fight aggressively and with precision, heal fast, thrive in extreme temperatures, and freely ingest military drugs. They have a genetic dependence on go-juice, which also makes them less likely to rebel against their commanders.\n\nWhile hussars' emotions make them dangerous in combat, they can't relate to baseliner humans. They are famous for their blood-red eyes and "hussar stare", a dead expression that unsettles many people. Their lack of expression and burning aggressive nature has led to many violent misunderstandings.\n\nIn most societies where they live, hussars are kept separated from the rest of the population. Hussars are single-purpose tools - and they generally aren't bothered by the fact.</description>
-        <descriptionShort>Hussars are engineered soldiers. They fight aggressively and with precision, heal fast, thrive in extreme temperatures, and freely ingest military drugs. They have a genetic dependence on go-juice.</descriptionShort>
+        <description>Biological necromancers, the necrospore mushkin caste have the ability to resurrect the recently dead and raise corpses as temporary allies until the fungus consumes them.\n\nWhile they can resurrect the freshly dead, it is not foolproof and is best used as a last resort. Many lives have been lost once again when the resurrection does not stick.\n\nShould they be forced into combat, necrospores can use toxic spore clouds and acid sprays to debilitate their enemies.</description>
+        <descriptionShort>Necrospore caste mushkin can resurrect the recently dead, turn corpses into temporary allies, and debilitate enemies with acid and toxic spores.</descriptionShort>
         <combatPowerFactor>1</combatPowerFactor>
         <genes>
             <li>BGM_AnimatorCap</li>
@@ -96,8 +96,8 @@
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Battalions</defName>
         <label>battalions</label>
-        <description>Hussars are engineered soldiers. They fight aggressively and with precision, heal fast, thrive in extreme temperatures, and freely ingest military drugs. They have a genetic dependence on go-juice, which also makes them less likely to rebel against their commanders.\n\nWhile hussars' emotions make them dangerous in combat, they can't relate to baseliner humans. They are famous for their blood-red eyes and "hussar stare", a dead expression that unsettles many people. Their lack of expression and burning aggressive nature has led to many violent misunderstandings.\n\nIn most societies where they live, hussars are kept separated from the rest of the population. Hussars are single-purpose tools - and they generally aren't bothered by the fact.</description>
-        <descriptionShort>Hussars are engineered soldiers. They fight aggressively and with precision, heal fast, thrive in extreme temperatures, and freely ingest military drugs. They have a genetic dependence on go-juice.</descriptionShort>
+        <description>Useful almost solely for combat, the battalion caste of mushkin culture is naturally quite robust. Their body's healing capacity and damage deflection are bolstered by the fungal density within their body.\n\nThe fungus in their brains promotes increased aggression but also aids in reducing buildup of harmful waste and sleep-inducing hormones.\n\nThe unique organs within their caps also allow them to produce large clouds of smoke-liike spore clouds, blocking them from view from the likes of turrets and ranged combatants.</description>
+        <descriptionShort>Battalion caste mushkin are ill-suited to anything but combat, with the fungus in their brains and body increasing aggression but making them naturally well-armored.</descriptionShort>
         <combatPowerFactor>1</combatPowerFactor>
         <genes>
             <li>BGM_BattalionCap</li>
@@ -127,8 +127,8 @@
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_MyceliaTender</defName>
         <label>mycelial-Tender</label>
-        <description>Hussars are engineered soldiers. They fight aggressively and with precision, heal fast, thrive in extreme temperatures, and freely ingest military drugs. They have a genetic dependence on go-juice, which also makes them less likely to rebel against their commanders.\n\nWhile hussars' emotions make them dangerous in combat, they can't relate to baseliner humans. They are famous for their blood-red eyes and "hussar stare", a dead expression that unsettles many people. Their lack of expression and burning aggressive nature has led to many violent misunderstandings.\n\nIn most societies where they live, hussars are kept separated from the rest of the population. Hussars are single-purpose tools - and they generally aren't bothered by the fact.</description>
-        <descriptionShort>Hussars are engineered soldiers. They fight aggressively and with precision, heal fast, thrive in extreme temperatures, and freely ingest military drugs. They have a genetic dependence on go-juice.</descriptionShort>
+        <description>Mycelial-tenders, so named for their deft hand at manipulating the growth of fungi, are most often used as farmers in any settlement fortunate enough to have one of their kind.\n\nThe fungi they are bonded with grants them natural aptitude with more tender tasks such as caring for plants, fungi, and animals. Their natural aptitude also extends to being skilled at providing nutrition both in their ability to instantly sprout various fungi as well as cooking them up into meals. Unique organs within their caps allow them to produce globs of fire-retardant spores.</description>
+        <descriptionShort>The mycelial-tender caste mushkin are naturally suited to more tender tasks, from caring to food sources to preparing them as meals. They can snuff out fires with a spray of spores.</descriptionShort>
         <combatPowerFactor>1</combatPowerFactor>
         <genes>
             <li>BGM_MycelialTenderCap</li>
@@ -138,6 +138,7 @@
             <li>BGM_SproutSpores</li>
             <li>BGM_HealingSpores</li>
             <li>BGM_FirefoamSpores</li>
+            <li>BMT_FungalCoagulate</li>			
         </genes>
     </XenotypeDef>
 </Defs>
