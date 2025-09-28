@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- TODO -->
+    <ThoughtDef>
+        <defName>BGM_Proj_ToxSpores</defName>
+        <thoughtClass>BiomesGeneticsMushkin.Thought_FungalSymbiosis</thoughtClass>
+        <!-- <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>-->
+        <stackLimit>100</stackLimit>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>Fungal symbiosis</label>
+                <description>The psychic harmonizer implant makes me feel some of the emotions of the person using it as long as we're close together.</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+            <li>
+                <label>Fungal symbiosis (Alone)</label>
+                <description>I feel alone.</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

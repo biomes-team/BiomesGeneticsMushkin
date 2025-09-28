@@ -3,6 +3,7 @@ using Verse;
 
 namespace BiomesGeneticsMushkin
 {
+#pragma warning disable CS0649
 	[DefOf]
 	internal static class DefOfs
 	{

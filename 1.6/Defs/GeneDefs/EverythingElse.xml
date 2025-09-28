@@ -657,4 +657,51 @@
         </symbolPack>
     </GeneDef>
 
+    <!-- TODO -->
+    <GeneDef>
+        <defName>BGM_FungalSymbiosis</defName>
+        <label>fungal symbiosis</label>
+        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <geneClass>BiomesGeneticsMushkin.Gene_FungalSymbiosis</geneClass>
+        <iconPath>UI/Genes/Gene_FungalSymbiosis</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
+        <biostatMet>0</biostatMet>
+        <biostatCpx>0</biostatCpx>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>warcaller</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>war</symbol>
+                </li>
+                <li>
+                    <symbol>animal</symbol>
+                </li>
+                <li>
+                    <symbol>cry</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>caller</symbol>
+                </li>
+                <li>
+                    <symbol>crier</symbol>
+                </li>
+                <li>
+                    <symbol>hailer</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+        <modExtensions>
+            <li Class="BiomesGeneticsMushkin.ModExtension">
+                <symbiosisThought>BGM_Proj_ToxSpores</symbiosisThought>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
 </Defs>
