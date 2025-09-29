@@ -3,7 +3,7 @@
 
     <!-- TODO -->
     <ThoughtDef>
-        <defName>BGM_Proj_ToxSpores</defName>
+        <defName>BGM_Proj_FungalSymbiosis</defName>
         <thoughtClass>BiomesGeneticsMushkin.Thought_FungalSymbiosis</thoughtClass>
         <!-- <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>-->
         <stackLimit>100</stackLimit>
@@ -11,12 +11,12 @@
         <stages>
             <li>
                 <label>Fungal symbiosis</label>
-                <description>The psychic harmonizer implant makes me feel some of the emotions of the person using it as long as we're close together.</description>
+                <description>The psychic bond I share with others of my kind allows me to feel some of what they feel when they are around.</description>
                 <baseMoodEffect>8</baseMoodEffect>
             </li>
             <li>
                 <label>Fungal symbiosis (Alone)</label>
-                <description>I feel alone.</description>
+                <description>I feel alone without others of my kind around.</description>
                 <baseMoodEffect>-8</baseMoodEffect>
             </li>
         </stages>

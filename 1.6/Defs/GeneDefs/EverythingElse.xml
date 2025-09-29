@@ -1,197 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+		<GeneCategoryDef>
+			<defName>CoreFungal</defName>
+			<label>fungal</label>
+			<displayPriorityInXenotype>999</displayPriorityInXenotype>
+		</GeneCategoryDef>
 
-    <!-- TODO -->
+		<GeneCategoryDef>
+			<defName>Fungal</defName>
+			<label>fungalbase</label>
+			<displayPriorityInXenotype>700</displayPriorityInXenotype>
+		</GeneCategoryDef>
+		
+		<GeneCategoryDef>
+			<defName>SporesFungal</defName>
+			<label>fungal</label>
+			<displayPriorityInXenotype>800</displayPriorityInXenotype>
+		</GeneCategoryDef>
+		
     <GeneDef>
         <defName>BGM_BlindingSpores</defName>
         <label>blinding spores</label>
-        <description>Carriers of this gene have the ability to produce a thick cloud of smoke-like fungal spores. The cloud decreases the vision of those within and prevents turrets from targetting those within.</description>
+        <description>The unique fungi within the host grants the ability to produce a thick cloud of smoke-like fungal spores. The cloud decreases the vision of those within and prevents turrets from targetting those within.</description>
         <iconPath>UI/Ability-Genes/Blinding_Spores</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>SporesFungal</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_BlindingSpores</li>
         </abilities>
         <descriptionHyperlinks>
             <AbilityDef>BGM_BlindingSpores</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>-3</biostatMet>
+        <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
     </GeneDef>
 
-    <!-- TODO -->
     <GeneDef>
         <defName>BGM_FirefoamSpores</defName>
         <label>firefoam spores</label>
-        <description>Carriers of this gene are capable of producing a cone of fire-suppressent fungal spores from specialized organs.</description>
+        <description>The unique fungi within the host makes them capable of producing a cone of fire-suppressent fungal spores from specialized organs.</description>
         <iconPath>UI/Ability-Genes/Firefoam_Spores</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>SporesFungal</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_FirefoamSpores</li>
         </abilities>
         <descriptionHyperlinks>
             <AbilityDef>BGM_FirefoamSpores</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>-3</biostatMet>
+        <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
     </GeneDef>
 
-    <!-- TODO -->
     <GeneDef>
         <defName>BGM_HealingSpores</defName>
         <label>healing spores</label>
-        <description>Carriers of this gene can produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
+        <description>The unique fungi within the host allows them to produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
         <iconPath>UI/Ability-Genes/Healing_Spores</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>SporesFungal</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_HealingSpores</li>
         </abilities>
         <descriptionHyperlinks>
             <AbilityDef>BGM_HealingSpores</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>-3</biostatMet>
+        <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
     </GeneDef>
 
-    <!-- TODO -->
     <GeneDef>
         <defName>BGM_PsySpores</defName>
         <label>psy spores</label>
-        <description>Carriers of this gene can produce a puff of fungal spores from specialized organs that enhance the psychic sensitivity of those affected.</description>
+        <description>The unique fungi within the host allows them to produce a puff of fungal spores from specialized organs that enhance the psychic sensitivity of those affected.</description>
         <iconPath>UI/Ability-Genes/Psy_Spores</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>SporesFungal</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_PsySpores</li>
         </abilities>
         <descriptionHyperlinks>
             <AbilityDef>BGM_PsySpores</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>-3</biostatMet>
+        <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
     </GeneDef>
 
-    <!-- TODO -->
     <GeneDef>
         <defName>BGM_RapportSpores</defName>
         <label>rapport spores</label>
-        <description>Carriers of this gene are capable of producing fungal spores that increase the social skills and recreation gain of those affected. </description>
+        <description>The unique fungi within the host allows them to produce fungal spores that increase the social skills and recreation gain of those affected.</description>
         <iconPath>UI/Ability-Genes/Rapport_Spores</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>SporesFungal</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_RapportSpores</li>
         </abilities>
@@ -200,182 +106,70 @@
         </descriptionHyperlinks>
         <biostatMet>-3</biostatMet>
         <biostatCpx>1</biostatCpx>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
     </GeneDef>
 
-    <!-- TODO -->
     <GeneDef>
         <defName>BGM_ToxSpores</defName>
         <label>tox spores</label>
-        <description>Carriers of this gene can spew clouds of toxic fungal spores that burn the lungs and poison those within.</description>
+        <description>The unique fungi within the host allows them to spew clouds of toxic fungal spores that burn the lungs and poison those within.</description>
         <iconPath>UI/Ability-Genes/Tox_Spores</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>SporesFungal</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_ToxSpores</li>
         </abilities>
         <descriptionHyperlinks>
             <AbilityDef>BGM_ToxSpores</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>-3</biostatMet>
+        <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
     </GeneDef>
 
-    <!-- TODO -->
     <GeneDef>
         <defName>BGM_SproutSpores</defName>
         <label>sprout spores</label>
-        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <description>Specialized symbiosis with other fungi allows the host to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
         <iconPath>UI/Ability-Genes/Sprout_Spores</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>SporesFungal</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_SproutSpores</li>
         </abilities>
         <descriptionHyperlinks>
             <AbilityDef>BGM_SproutSpores</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>-3</biostatMet>
+        <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
     </GeneDef>
 
-    <!-- TODO -->
     <GeneDef>
         <defName>BGM_ResurrectionSpores</defName>
         <label>resurrection spores</label>
-        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <description>The unique fungi within the host allow them to resurrect the recently dead they touch thanks to specialized mycelia that temporarily spread into the corpse.</description>
         <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>SporesFungal</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
-            <li>BGM_ResurrectionSpores</li>
+            <li>BGM_ResurrectionMycelia</li>
         </abilities>
         <descriptionHyperlinks>
-            <AbilityDef>BGM_ResurrectionSpores</AbilityDef>
+            <AbilityDef>BGM_ResurrectionMycelia</AbilityDef>
         </descriptionHyperlinks>
         <biostatMet>-3</biostatMet>
-        <biostatCpx>1</biostatCpx>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
+        <biostatCpx>2</biostatCpx>
     </GeneDef>
 
-    <!-- TODO -->
     <GeneDef>
         <defName>BGM_FungalReanimation</defName>
         <label>fungal reanimation</label>
-        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <description>The unique fungi within the host allows them to reanimate the dead as temporary allies, using specialized mycelia that infest the corpse.</description>
         <iconPath>UI/Genes/FungalReanimation</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>Fungal</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_FungalReanimation</li>
         </abilities>
@@ -384,90 +178,33 @@
         </descriptionHyperlinks>
         <biostatMet>-3</biostatMet>
         <biostatCpx>1</biostatCpx>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
     </GeneDef>
 
-    <!-- TODO -->
     <GeneDef>
         <defName>BGM_BuddingBirth</defName>
-        <label>budding birth</label>
-        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <label>fruiting birth</label>
+        <description>The symbiotic fungi within the host grants them the ability to sprout a genetic clone of themselves off of their body without pregnancy.</description>
         <iconPath>UI/Genes/Gene_BuddingBirth</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>Fungal</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
-            <li>BGM_BuddingBirth</li>
+            <li>BGM_FruitingBirth</li>
         </abilities>
         <descriptionHyperlinks>
-            <AbilityDef>BGM_BuddingBirth</AbilityDef>
+            <AbilityDef>BGM_FruitingBirth</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>-3</biostatMet>
+        <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
     </GeneDef>
 
-    <!-- TODO -->
     <GeneDef>
         <defName>BGM_FungalUndead</defName>
         <label>fungal undead</label>
-        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <description>This gene is given by a specialized caste of mushkin, turning what was a corpse into a temporary ally. They will die once more within days.</description>
         <iconPath>UI/Genes/Gene_FungalUndead</iconPath>
         <geneClass>BiomesGeneticsMushkin.Gene_FungalUndead</geneClass>
+		<displayCategory>Fungal</displayCategory>
         <biostatMet>-3</biostatMet>
         <biostatCpx>1</biostatCpx>
         <disabledWorkTags>
@@ -478,137 +215,79 @@
             <li>Animals</li>
             <li>Artistic</li>
         </disabledWorkTags>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
     </GeneDef>
 
-    <!-- TODO -->
     <GeneDef>
         <defName>BGM_CasteSwap</defName>
         <label>caste swap</label>
-        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <description>The fungus within this host allows them to manipulate the fungus within others, changing the way it is expressed in their body.</description>
         <iconPath>UI/Ability-Genes/CasteSwap</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>Fungal</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_CasteSwap</li>
         </abilities>
         <descriptionHyperlinks>
             <AbilityDef>BGM_CasteSwap</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>0</biostatMet>
-        <biostatCpx>0</biostatCpx>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
+        <biostatMet>1</biostatMet>
+        <biostatCpx>1</biostatCpx>
     </GeneDef>
 
-    <!-- TODO -->
     <GeneDef>
         <defName>BGM_InfectiousSpores</defName>
         <label>infectious spores</label>
-        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <description>The unique fungi within the host allows them to spread it into new hosts via spores, where it bonds with their body on a cellular level.</description>
         <iconPath>UI/Ability-Genes/Infectious_Spores</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>SporesFungal</displayCategory>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_InfectiousSpores</li>
         </abilities>
         <descriptionHyperlinks>
             <AbilityDef>BGM_InfectiousSpores</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>0</biostatMet>
-        <biostatCpx>0</biostatCpx>
-        <symbolPack>
-            <wholeNameSymbols>
-                <li>
-                    <symbol>warcaller</symbol>
-                </li>
-            </wholeNameSymbols>
-            <prefixSymbols>
-                <li>
-                    <symbol>war</symbol>
-                </li>
-                <li>
-                    <symbol>animal</symbol>
-                </li>
-                <li>
-                    <symbol>cry</symbol>
-                </li>
-            </prefixSymbols>
-            <suffixSymbols>
-                <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
-                </li>
-            </suffixSymbols>
-        </symbolPack>
+        <biostatMet>2</biostatMet>
+        <biostatCpx>1</biostatCpx>
     </GeneDef>
 
-    <!-- TODO -->
-    <GeneDef>
+  <GeneDef>
+    <defName>BMT_FungalCoagulate</defName>
+    <label>fungal coagulation</label>
+    <labelShortAdj>coagulation</labelShortAdj>
+    <description>The unique fungi within the host allows them to instantly patch up wounds with special fast-growing mycelia, instantly stopping bleeding.</description>
+    <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
+    <prerequisite>BGM_FungalSymbiosis</prerequisite>
+	<displayCategory>Fungal</displayCategory>
+	<displayOrderInCategory>-1</displayOrderInCategory>
+    <abilities>
+      <li>BMT_FungalCoagulate</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BMT_FungalCoagulate</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <minAgeActive>3</minAgeActive>
+    <symbolPack>
+      <suffixSymbols>
+        <li><symbol>life</symbol></li>
+        <li><symbol>clotter</symbol></li>
+        <li><symbol>tender</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+      <GeneDef>
         <defName>BGM_FungalParasitism</defName>
         <label>fungal parasitism</label>
-        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <description>The unique fungi within the host has formed a parasitic bond instead of a symbiotic one, slowly devouring the host for sustenance.  The spreading mycelia within the body tends to cause increasingly negative conditions. It does however have the positive side effects of disabling pain and extending the physical limits of the host. Their gradually degrading condition can be attenuated but not ceased with periodic medical care.</description>
         <geneClass>BiomesGeneticsMushkin.Gene_FungalParasitism</geneClass>
         <iconPath>UI/Genes/Gene_FungalParasitism</iconPath>
-        <displayCategory>Ability</displayCategory>
+        <displayCategory>Fungal</displayCategory>
+		<displayOrderInCategory>40</displayOrderInCategory>
         <aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
         <abilities>
             <li>BGM_FungalParasitism</li>
@@ -616,8 +295,8 @@
         <descriptionHyperlinks>
             <AbilityDef>BGM_FungalParasitism</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>0</biostatMet>
-        <biostatCpx>0</biostatCpx>
+        <biostatMet>-5</biostatMet>
+        <biostatCpx>1</biostatCpx>
         <painFactor>0</painFactor>
         <statFactors>
             <LifespanFactor>0.6</LifespanFactor>
@@ -629,102 +308,71 @@
         <symbolPack>
             <wholeNameSymbols>
                 <li>
-                    <symbol>warcaller</symbol>
+                    <symbol>parasitic</symbol>
                 </li>
             </wholeNameSymbols>
             <prefixSymbols>
                 <li>
-                    <symbol>war</symbol>
+                    <symbol>infected</symbol>
                 </li>
                 <li>
-                    <symbol>animal</symbol>
+                    <symbol>infested</symbol>
                 </li>
                 <li>
-                    <symbol>cry</symbol>
+                    <symbol>parasite</symbol>
                 </li>
             </prefixSymbols>
             <suffixSymbols>
                 <li>
-                    <symbol>caller</symbol>
-                </li>
-                <li>
-                    <symbol>crier</symbol>
-                </li>
-                <li>
-                    <symbol>hailer</symbol>
+                    <symbol>host</symbol>
                 </li>
             </suffixSymbols>
         </symbolPack>
     </GeneDef>
-
-    <!-- TODO -->
-    <GeneDef>
+  
+      <GeneDef>
         <defName>BGM_FungalSymbiosis</defName>
         <label>fungal symbiosis</label>
-        <description>Specialized symbiosis with other fungi allow the carrier of this gene to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+        <description>The unique fungi within the host forms a symbiotic bond and is similar in nature to cordyceps, albeit a variant that has been designed to work with the human body. It grants them increased metabolism thanks to the fungus helping reduce waste chemicals and wasted nutrients in the host. This connection also grants a simple psychic connection to others with the same condition.</description>
         <geneClass>BiomesGeneticsMushkin.Gene_FungalSymbiosis</geneClass>
         <iconPath>UI/Genes/Gene_FungalSymbiosis</iconPath>
-        <displayCategory>Miscellaneous</displayCategory>
-        <aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
-        <biostatMet>0</biostatMet>
-        <biostatCpx>0</biostatCpx>
+        <displayCategory>CoreFungal</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+        <biostatMet>6</biostatMet>
+        <biostatCpx>2</biostatCpx>
         <symbolPack>
             <wholeNameSymbols>
                 <li>
-                    <symbol>warcaller</symbol>
+                    <symbol>fungal</symbol>
                 </li>
             </wholeNameSymbols>
             <prefixSymbols>
                 <li>
-                    <symbol>war</symbol>
+                    <symbol>mush</symbol>
                 </li>
                 <li>
-                    <symbol>animal</symbol>
+                    <symbol>fungi</symbol>
                 </li>
                 <li>
-                    <symbol>cry</symbol>
+                    <symbol>mycelial</symbol>
                 </li>
             </prefixSymbols>
             <suffixSymbols>
                 <li>
-                    <symbol>caller</symbol>
+                    <symbol>mushroom</symbol>
                 </li>
                 <li>
-                    <symbol>crier</symbol>
+                    <symbol>fungus</symbol>
                 </li>
                 <li>
-                    <symbol>hailer</symbol>
+                    <symbol>shroom</symbol>
                 </li>
             </suffixSymbols>
         </symbolPack>
         <modExtensions>
             <li Class="BiomesGeneticsMushkin.ModExtension">
-                <symbiosisThought>BGM_Proj_ToxSpores</symbiosisThought>
+                <symbiosisThought>BGM_Proj_FungalSymbiosis</symbiosisThought>
             </li>
         </modExtensions>
     </GeneDef>
-
-  <GeneDef>
-    <defName>BMT_FungalCoagulate</defName>
-    <label>fungal coagulation</label>
-    <labelShortAdj>coagulation</labelShortAdj>
-    <description>Carriers of this gene have a special bond with fungi that allows them to instantly patch up wounds, stopping bleeding.</description>
-    <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
-    <prerequisite>Hemogenic</prerequisite>
-    <abilities>
-      <li>BMT_FungalCoagulate</li>
-    </abilities>
-    <descriptionHyperlinks>
-      <AbilityDef>BMT_FungalCoagulate</AbilityDef>
-    </descriptionHyperlinks>
-    <biostatMet>-1</biostatMet>
-    <minAgeActive>3</minAgeActive>
-    <symbolPack>
-      <suffixSymbols>
-        <li><symbol>life</symbol></li>
-        <li><symbol>clotter</symbol></li>
-        <li><symbol>tender</symbol></li>
-      </suffixSymbols>
-    </symbolPack>
-  </GeneDef>
 </Defs>

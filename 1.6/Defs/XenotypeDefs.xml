@@ -5,7 +5,8 @@
         <inheritable>false</inheritable>
         <iconPath>UI/Xenotype/Mushkin</iconPath>
         <genes>
-            <li>UVSensitivity_Intense</li>
+		    <li>BGM_FungalSymbiosis</li>           
+		    <li>UVSensitivity_Intense</li>
             <li>Sterile</li>
             <li>Beard_NoBeardOnly</li>
             <li>DarkVision</li>
@@ -16,11 +17,10 @@
         </genes>
     </XenotypeDef>
 
-    <!-- TODO -->
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Mushkin</defName>
         <label>mushkin</label>
-        <description>Mushkin are humans that have formed a cellular-level bond with a unique species of fungus. This bond is most often symbiotic but on rare occasion proves otherwise.\n\nTheir unrivaled connection to this fungus grants mushkin unique spore-based abilities, from boosting psychic sensitivity to temporarily raising the dead as fungal zombies.\n\nMushkin society has developed around this connection to form a caste-like system, with the rare ruling caste being able to direct the fungal growth within others, granting them otherwise inaccesible spore abilities related to their new caste.</description>
+        <description>Mushkin are humans that have formed a cellular-level bond with a unique species of genetically engineered fungus. This bond is most often symbiotic but on rare occasion proves otherwise. The fungus renders the xenotype effectively sterile for ordinary reproduction but does grant a unique form of it.\n\nTheir unrivaled connection to this fungus grants mushkin unique spore-based abilities, from boosting psychic sensitivity to temporarily raising the dead as fungal zombies.\n\nMushkin society has developed around this connection to form a caste-like system, with the rare ruling caste being able to direct the fungal growth within others, granting them otherwise inaccesible spore abilities related to their new caste.</description>
         <descriptionShort>Mushkin are fungal-bonded humans. They have a caste-based culture and have many spore-based abilities. They tend to live in dark environments.</descriptionShort>
         <combatPowerFactor>1</combatPowerFactor>
         <genes>
@@ -29,7 +29,6 @@
         </genes>
     </XenotypeDef>
 
-    <!-- TODO -->
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Sovereign</defName>
         <label>sovereign</label>
@@ -49,7 +48,6 @@
         </genes>
     </XenotypeDef>
 
-    <!-- TODO -->
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Socialite</defName>
         <label>socialite</label>
@@ -74,7 +72,6 @@
         </genes>
     </XenotypeDef>
 
-    <!-- TODO -->
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Necrospores</defName>
         <label>necrospores</label>
@@ -92,11 +89,10 @@
         </genes>
     </XenotypeDef>
 
-    <!-- TODO -->
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Battalions</defName>
         <label>battalions</label>
-        <description>Useful almost solely for combat, the battalion caste of mushkin culture is naturally quite robust. Their body's healing capacity and damage deflection are bolstered by the fungal density within their body.\n\nThe fungus in their brains promotes increased aggression but also aids in reducing buildup of harmful waste and sleep-inducing hormones.\n\nThe unique organs within their caps also allow them to produce large clouds of smoke-liike spore clouds, blocking them from view from the likes of turrets and ranged combatants.</description>
+        <description>Useful almost solely for combat, the battalion caste of mushkin culture is naturally quite robust. Their body's healing and resistance to most damage is bolstered by the increased density of specialized mycelia in their body.\n\nThe fungus in their brains promotes increased aggression but also aids in reducing buildup of harmful waste and sleep-inducing hormones. Their increased strength and durability makes them excel at mining.\n\nThe unique organs within their caps also allow them to produce large clouds of smoke-liike spore clouds, blocking them from view from the likes of turrets and ranged combatants.</description>
         <descriptionShort>Battalion caste mushkin are ill-suited to anything but combat, with the fungus in their brains and body increasing aggression but making them naturally well-armored.</descriptionShort>
         <combatPowerFactor>1</combatPowerFactor>
         <genes>
@@ -109,9 +105,13 @@
             <li>Robust</li>
             <li>Body_Hulk</li>
             <li>Pain_Reduced</li>
+			<li>MoveSpeed_VeryQuick</li>
+			<li>MeleeDamage_Strong</li>
             <li>BGM_BlindingSpores</li>
+		    <li>FireResistant</li>
+			<li>AptitudeRemarkable_Mining</li>
+			<li>AptitudeStrong_Melee</li>
             <li>AptitudeTerrible_Construction</li>
-            <li>AptitudeTerrible_Mining</li>
             <li>AptitudeTerrible_Cooking</li>
             <li>AptitudeTerrible_Plants</li>
             <li>AptitudeTerrible_Animals</li>
@@ -123,22 +123,25 @@
         </genes>
     </XenotypeDef>
 
-    <!-- TODO -->
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_MyceliaTender</defName>
         <label>mycelial-Tender</label>
-        <description>Mycelial-tenders, so named for their deft hand at manipulating the growth of fungi, are most often used as farmers in any settlement fortunate enough to have one of their kind.\n\nThe fungi they are bonded with grants them natural aptitude with more tender tasks such as caring for plants, fungi, and animals. Their natural aptitude also extends to being skilled at providing nutrition both in their ability to instantly sprout various fungi as well as cooking them up into meals. Unique organs within their caps allow them to produce globs of fire-retardant spores.</description>
+        <description>Mycelial-tenders, so named for their deft hand at manipulating the growth of fungi, are most often used as farmers in any settlement fortunate enough to have one of their kind.\n\nThe fungi they are bonded with grants them natural aptitude with more tender tasks such as caring for plants, fungi, and animals. Their natural aptitude also extends to being skilled at providing nutrition both in their ability to instantly sprout various fungi as well as cooking them up into meals.\n\nTheir aptitude in caring tasks comes at the cost of being poor at more mental tasks. Unique organs within their caps allow them to produce globs of fire-retardant spores.</description>
         <descriptionShort>The mycelial-tender caste mushkin are naturally suited to more tender tasks, from caring to food sources to preparing them as meals. They can snuff out fires with a spray of spores.</descriptionShort>
         <combatPowerFactor>1</combatPowerFactor>
         <genes>
-            <li>BGM_MycelialTenderCap</li>
+			<li>BGM_MycelialTenderCap</li>
             <li>AptitudeRemarkable_Plants</li>
             <li>AptitudeRemarkable_Animals</li>
             <li>AptitudeStrong_Cooking</li>
+            <li>AptitudePoor_Intellectual</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudeTerrible_Shooting</li>
             <li>BGM_SproutSpores</li>
             <li>BGM_HealingSpores</li>
             <li>BGM_FirefoamSpores</li>
-            <li>BMT_FungalCoagulate</li>			
+            <li>BMT_FungalCoagulate</li>	
+			<li>Nearsighted</li>			
         </genes>
     </XenotypeDef>
 </Defs>
