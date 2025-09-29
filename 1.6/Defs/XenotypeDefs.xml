@@ -34,7 +34,7 @@
         <label>sovereign</label>
         <description>The sovereign caste of mushkin act as the leaders in the social heirarchy and have unique abilities, including command over the fungus within them itself. This allows them to change the caste of other mushkin to better suit the needs of their settlement as well as turn otherwise normal humans into mushkin.\n\nTheir fungal density grants them unique regeneration capabilities and agelessness. In most mushkin societies, there is only one sovereign per settlement.</description>
         <descriptionShort>Sovereign mushkin tend to be the leaders in their society and have unique sbilities granted by their firmer bond with the fungus.</descriptionShort>
-        <combatPowerFactor>1</combatPowerFactor>
+        <combatPowerFactor>2</combatPowerFactor>
         <genes>
             <li>BGM_SovereignCap</li>
             <li>TotalHealing</li>
@@ -77,7 +77,7 @@
         <label>necrospores</label>
         <description>Biological necromancers, the necrospore mushkin caste have the ability to resurrect the recently dead and raise corpses as temporary allies until the fungus consumes them.\n\nWhile they can resurrect the freshly dead, it is not foolproof and is best used as a last resort. Many lives have been lost once again when the resurrection does not stick.\n\nShould they be forced into combat, necrospores can use toxic spore clouds and acid sprays to debilitate their enemies.</description>
         <descriptionShort>Necrospore caste mushkin can resurrect the recently dead, turn corpses into temporary allies, and debilitate enemies with acid and toxic spores.</descriptionShort>
-        <combatPowerFactor>1</combatPowerFactor>
+        <combatPowerFactor>1.25</combatPowerFactor>
         <genes>
             <li>BGM_AnimatorCap</li>
             <li>PsychicAbility_Extreme</li>
@@ -94,7 +94,7 @@
         <label>battalions</label>
         <description>Useful almost solely for combat, the battalion caste of mushkin culture is naturally quite robust. Their body's healing and resistance to most damage is bolstered by the increased density of specialized mycelia in their body.\n\nThe fungus in their brains promotes increased aggression but also aids in reducing buildup of harmful waste and sleep-inducing hormones. Their increased strength and durability makes them excel at mining.\n\nThe unique organs within their caps also allow them to produce large clouds of smoke-liike spore clouds, blocking them from view from the likes of turrets and ranged combatants.</description>
         <descriptionShort>Battalion caste mushkin are ill-suited to anything but combat, with the fungus in their brains and body increasing aggression but making them naturally well-armored.</descriptionShort>
-        <combatPowerFactor>1</combatPowerFactor>
+        <combatPowerFactor>1.5</combatPowerFactor>
         <genes>
             <li>BGM_BattalionCap</li>
             <li>Superclotting</li>
