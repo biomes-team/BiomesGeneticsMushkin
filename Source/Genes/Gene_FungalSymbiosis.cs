@@ -3,7 +3,7 @@ using Verse;
 
 namespace BiomesGeneticsMushkin
 {
-	public class Gene_FungalSymbiosis : Gene
+	public class Gene_FungalSymbiosis : MushkinGene
 	{
 		private FungalSymbiosisMapComponent mapComp;
 		private ModExtension modExtension;

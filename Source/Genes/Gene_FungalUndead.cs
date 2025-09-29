@@ -1,8 +1,6 @@
-﻿using Verse;
-
-namespace BiomesGeneticsMushkin
+﻿namespace BiomesGeneticsMushkin
 {
-	internal class Gene_FungalUndead : Gene
+	internal class Gene_FungalUndead : MushkinGene
 	{
 		public override void PostAdd()
 		{

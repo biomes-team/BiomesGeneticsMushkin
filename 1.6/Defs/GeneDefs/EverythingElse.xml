@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-		<GeneCategoryDef>
-			<defName>CoreFungal</defName>
-			<label>fungal</label>
-			<displayPriorityInXenotype>999</displayPriorityInXenotype>
-		</GeneCategoryDef>
+    <GeneCategoryDef>
+        <defName>CoreFungal</defName>
+        <label>fungal</label>
+        <displayPriorityInXenotype>999</displayPriorityInXenotype>
+    </GeneCategoryDef>
 
-		<GeneCategoryDef>
-			<defName>Fungal</defName>
-			<label>fungalbase</label>
-			<displayPriorityInXenotype>700</displayPriorityInXenotype>
-		</GeneCategoryDef>
-		
-		<GeneCategoryDef>
-			<defName>SporesFungal</defName>
-			<label>fungal</label>
-			<displayPriorityInXenotype>800</displayPriorityInXenotype>
-		</GeneCategoryDef>
-		
+    <GeneCategoryDef>
+        <defName>Fungal</defName>
+        <label>fungalbase</label>
+        <displayPriorityInXenotype>700</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneCategoryDef>
+        <defName>SporesFungal</defName>
+        <label>fungal</label>
+        <displayPriorityInXenotype>800</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
     <GeneDef>
         <defName>BGM_BlindingSpores</defName>
         <label>blinding spores</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The unique fungi within the host grants the ability to produce a thick cloud of smoke-like fungal spores. The cloud decreases the vision of those within and prevents turrets from targetting those within.</description>
         <iconPath>UI/Ability-Genes/Blinding_Spores</iconPath>
         <displayCategory>SporesFungal</displayCategory>
-		<displayOrderInCategory>-1</displayOrderInCategory>
-		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_BlindingSpores</li>
         </abilities>
@@ -39,11 +40,12 @@
     <GeneDef>
         <defName>BGM_FirefoamSpores</defName>
         <label>firefoam spores</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The unique fungi within the host makes them capable of producing a cone of fire-suppressent fungal spores from specialized organs.</description>
         <iconPath>UI/Ability-Genes/Firefoam_Spores</iconPath>
         <displayCategory>SporesFungal</displayCategory>
-		<displayOrderInCategory>-1</displayOrderInCategory>
-		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_FirefoamSpores</li>
         </abilities>
@@ -57,11 +59,12 @@
     <GeneDef>
         <defName>BGM_HealingSpores</defName>
         <label>healing spores</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The unique fungi within the host allows them to produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
         <iconPath>UI/Ability-Genes/Healing_Spores</iconPath>
         <displayCategory>SporesFungal</displayCategory>
-		<displayOrderInCategory>-1</displayOrderInCategory>
-		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_HealingSpores</li>
         </abilities>
@@ -75,11 +78,12 @@
     <GeneDef>
         <defName>BGM_PsySpores</defName>
         <label>psy spores</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The unique fungi within the host allows them to produce a puff of fungal spores from specialized organs that enhance the psychic sensitivity of those affected.</description>
         <iconPath>UI/Ability-Genes/Psy_Spores</iconPath>
         <displayCategory>SporesFungal</displayCategory>
-		<displayOrderInCategory>-1</displayOrderInCategory>
-		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_PsySpores</li>
         </abilities>
@@ -93,11 +97,12 @@
     <GeneDef>
         <defName>BGM_RapportSpores</defName>
         <label>rapport spores</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The unique fungi within the host allows them to produce fungal spores that increase the social skills and recreation gain of those affected.</description>
         <iconPath>UI/Ability-Genes/Rapport_Spores</iconPath>
         <displayCategory>SporesFungal</displayCategory>
-		<displayOrderInCategory>-1</displayOrderInCategory>
-		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_RapportSpores</li>
         </abilities>
@@ -111,11 +116,12 @@
     <GeneDef>
         <defName>BGM_ToxSpores</defName>
         <label>tox spores</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The unique fungi within the host allows them to spew clouds of toxic fungal spores that burn the lungs and poison those within.</description>
         <iconPath>UI/Ability-Genes/Tox_Spores</iconPath>
         <displayCategory>SporesFungal</displayCategory>
-		<displayOrderInCategory>-1</displayOrderInCategory>
-		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_ToxSpores</li>
         </abilities>
@@ -129,11 +135,12 @@
     <GeneDef>
         <defName>BGM_SproutSpores</defName>
         <label>sprout spores</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>Specialized symbiosis with other fungi allows the host to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
         <iconPath>UI/Ability-Genes/Sprout_Spores</iconPath>
         <displayCategory>SporesFungal</displayCategory>
-		<displayOrderInCategory>-1</displayOrderInCategory>
-		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_SproutSpores</li>
         </abilities>
@@ -147,11 +154,12 @@
     <GeneDef>
         <defName>BGM_ResurrectionSpores</defName>
         <label>resurrection spores</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The unique fungi within the host allow them to resurrect the recently dead they touch thanks to specialized mycelia that temporarily spread into the corpse.</description>
         <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
         <displayCategory>SporesFungal</displayCategory>
-		<displayOrderInCategory>-1</displayOrderInCategory>
-		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_ResurrectionMycelia</li>
         </abilities>
@@ -165,11 +173,12 @@
     <GeneDef>
         <defName>BGM_FungalReanimation</defName>
         <label>fungal reanimation</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The unique fungi within the host allows them to reanimate the dead as temporary allies, using specialized mycelia that infest the corpse.</description>
         <iconPath>UI/Genes/FungalReanimation</iconPath>
         <displayCategory>Fungal</displayCategory>
-		<displayOrderInCategory>-1</displayOrderInCategory>
-		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_FungalReanimation</li>
         </abilities>
@@ -183,11 +192,12 @@
     <GeneDef>
         <defName>BGM_BuddingBirth</defName>
         <label>fruiting birth</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The symbiotic fungi within the host grants them the ability to sprout a genetic clone of themselves off of their body without pregnancy.</description>
         <iconPath>UI/Genes/Gene_BuddingBirth</iconPath>
         <displayCategory>Fungal</displayCategory>
-		<displayOrderInCategory>-1</displayOrderInCategory>
-		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_FruitingBirth</li>
         </abilities>
@@ -201,10 +211,10 @@
     <GeneDef>
         <defName>BGM_FungalUndead</defName>
         <label>fungal undead</label>
+        <geneClass>BiomesGeneticsMushkin.Gene_FungalUndead</geneClass>
         <description>This gene is given by a specialized caste of mushkin, turning what was a corpse into a temporary ally. They will die once more within days.</description>
         <iconPath>UI/Genes/Gene_FungalUndead</iconPath>
-        <geneClass>BiomesGeneticsMushkin.Gene_FungalUndead</geneClass>
-		<displayCategory>Fungal</displayCategory>
+        <displayCategory>Fungal</displayCategory>
         <biostatMet>-3</biostatMet>
         <biostatCpx>1</biostatCpx>
         <disabledWorkTags>
@@ -220,11 +230,12 @@
     <GeneDef>
         <defName>BGM_CasteSwap</defName>
         <label>caste swap</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The fungus within this host allows them to manipulate the fungus within others, changing the way it is expressed in their body.</description>
         <iconPath>UI/Ability-Genes/CasteSwap</iconPath>
         <displayCategory>Fungal</displayCategory>
-		<displayOrderInCategory>-1</displayOrderInCategory>
-		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_CasteSwap</li>
         </abilities>
@@ -238,11 +249,12 @@
     <GeneDef>
         <defName>BGM_InfectiousSpores</defName>
         <label>infectious spores</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The unique fungi within the host allows them to spread it into new hosts via spores, where it bonds with their body on a cellular level.</description>
         <iconPath>UI/Ability-Genes/Infectious_Spores</iconPath>
         <displayCategory>SporesFungal</displayCategory>
-		<displayOrderInCategory>-1</displayOrderInCategory>
-		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
             <li>BGM_InfectiousSpores</li>
         </abilities>
@@ -253,41 +265,48 @@
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 
-  <GeneDef>
-    <defName>BMT_FungalCoagulate</defName>
-    <label>fungal coagulation</label>
-    <labelShortAdj>coagulation</labelShortAdj>
-    <description>The unique fungi within the host allows them to instantly patch up wounds with special fast-growing mycelia, instantly stopping bleeding.</description>
-    <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
-    <prerequisite>BGM_FungalSymbiosis</prerequisite>
-	<displayCategory>Fungal</displayCategory>
-	<displayOrderInCategory>-1</displayOrderInCategory>
-    <abilities>
-      <li>BMT_FungalCoagulate</li>
-    </abilities>
-    <descriptionHyperlinks>
-      <AbilityDef>BMT_FungalCoagulate</AbilityDef>
-    </descriptionHyperlinks>
-    <biostatMet>-1</biostatMet>
-    <biostatCpx>1</biostatCpx>
-    <minAgeActive>3</minAgeActive>
-    <symbolPack>
-      <suffixSymbols>
-        <li><symbol>life</symbol></li>
-        <li><symbol>clotter</symbol></li>
-        <li><symbol>tender</symbol></li>
-      </suffixSymbols>
-    </symbolPack>
-  </GeneDef>
-  
-      <GeneDef>
+    <GeneDef>
+        <defName>BMT_FungalCoagulate</defName>
+        <label>fungal coagulation</label>
+        <labelShortAdj>coagulation</labelShortAdj>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
+        <description>The unique fungi within the host allows them to instantly patch up wounds with special fast-growing mycelia, instantly stopping bleeding.</description>
+        <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <displayCategory>Fungal</displayCategory>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <abilities>
+            <li>BMT_FungalCoagulate</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BMT_FungalCoagulate</AbilityDef>
+        </descriptionHyperlinks>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+        <minAgeActive>3</minAgeActive>
+        <symbolPack>
+            <suffixSymbols>
+                <li>
+                    <symbol>life</symbol>
+                </li>
+                <li>
+                    <symbol>clotter</symbol>
+                </li>
+                <li>
+                    <symbol>tender</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef>
         <defName>BGM_FungalParasitism</defName>
         <label>fungal parasitism</label>
-        <description>The unique fungi within the host has formed a parasitic bond instead of a symbiotic one, slowly devouring the host for sustenance.  The spreading mycelia within the body tends to cause increasingly negative conditions. It does however have the positive side effects of disabling pain and extending the physical limits of the host. Their gradually degrading condition can be attenuated but not ceased with periodic medical care.</description>
+        <description>The unique fungi within the host has formed a parasitic bond instead of a symbiotic one, slowly devouring the host for sustenance. The spreading mycelia within the body tends to cause increasingly negative conditions. It does however have the positive side effects of disabling pain and extending the physical limits of the host. Their gradually degrading condition can be attenuated but not ceased with periodic medical care.</description>
         <geneClass>BiomesGeneticsMushkin.Gene_FungalParasitism</geneClass>
         <iconPath>UI/Genes/Gene_FungalParasitism</iconPath>
         <displayCategory>Fungal</displayCategory>
-		<displayOrderInCategory>40</displayOrderInCategory>
+        <displayOrderInCategory>40</displayOrderInCategory>
         <aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
         <abilities>
             <li>BGM_FungalParasitism</li>
@@ -329,15 +348,15 @@
             </suffixSymbols>
         </symbolPack>
     </GeneDef>
-  
-      <GeneDef>
+
+    <GeneDef>
         <defName>BGM_FungalSymbiosis</defName>
         <label>fungal symbiosis</label>
         <description>The unique fungi within the host forms a symbiotic bond and is similar in nature to cordyceps, albeit a variant that has been designed to work with the human body. It grants them increased metabolism thanks to the fungus helping reduce waste chemicals and wasted nutrients in the host. This connection also grants a simple psychic connection to others with the same condition.</description>
         <geneClass>BiomesGeneticsMushkin.Gene_FungalSymbiosis</geneClass>
         <iconPath>UI/Genes/Gene_FungalSymbiosis</iconPath>
         <displayCategory>CoreFungal</displayCategory>
-		<displayOrderInCategory>50</displayOrderInCategory>
+        <displayOrderInCategory>50</displayOrderInCategory>
         <biostatMet>6</biostatMet>
         <biostatCpx>2</biostatCpx>
         <symbolPack>
