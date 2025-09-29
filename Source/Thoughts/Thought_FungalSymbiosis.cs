@@ -10,7 +10,7 @@ namespace BiomesGeneticsMushkin
 		{
 			get
 			{
-				mapComp ??= pawn.Map.GetComponent<FungalSymbiosisMapComponent>();
+				mapComp ??= pawn.MapHeld.GetComponent<FungalSymbiosisMapComponent>();
 				return mapComp;
 			}
 		}

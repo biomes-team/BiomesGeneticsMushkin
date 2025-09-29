@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using Verse;
 
 namespace BiomesGeneticsMushkin
 {
@@ -8,5 +9,7 @@ namespace BiomesGeneticsMushkin
 		{
 			compClass = typeof(AbilityComp_BuddingBirth);
 		}
+
+		public HediffDef hediffWhenUsed;
 	}
 }

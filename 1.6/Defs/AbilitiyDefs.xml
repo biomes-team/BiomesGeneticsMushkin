@@ -266,7 +266,9 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="BiomesGeneticsMushkin.CompProperties_BuddingBirth" />
+            <li Class="BiomesGeneticsMushkin.CompProperties_BuddingBirth">
+                <hediffWhenUsed>BGM_FruitingBirthExhaustion</hediffWhenUsed>
+            </li>
         </comps>
     </AbilityDef>
 

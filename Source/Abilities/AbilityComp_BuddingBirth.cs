@@ -13,6 +13,10 @@ namespace BiomesGeneticsMushkin
 			base.Apply(target, dest);
 			Pawn babyClone = BuddingBirthCloner.Clone(parent.pawn);
 			GenSpawn.Spawn(babyClone, parent.pawn.Position, parent.pawn.Map);
+			if (Props.hediffWhenUsed is not null)
+			{
+				parent.pawn.health?.AddHediff(Props.hediffWhenUsed);
+			}
 		}
 	}
 }
