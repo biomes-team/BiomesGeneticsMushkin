@@ -28,18 +28,24 @@ namespace BiomesGeneticsMushkin
 		public override void PostAdd()
 		{
 			base.PostAdd();
-			MapComp.pawnsWithFungalSymbiosis.AddDistinct(pawn);
-			Thought_FungalSymbiosis thought = (Thought_FungalSymbiosis)ThoughtMaker.MakeThought(ModExtension.symbiosisThought);
-			thought.permanent = true;
-			pawn.needs?.mood?.thoughts?.memories?.TryGainMemory(thought);
+			if (pawn.Spawned)
+			{
+				MapComp.pawnsWithFungalSymbiosis.AddDistinct(pawn);
+				Thought_FungalSymbiosis thought = (Thought_FungalSymbiosis)ThoughtMaker.MakeThought(ModExtension.symbiosisThought);
+				thought.permanent = true;
+				pawn.needs?.mood?.thoughts?.memories?.TryGainMemory(thought);
+			}
 		}
 
 
 		public override void PostRemove()
 		{
 			base.PostRemove();
-			MapComp.pawnsWithFungalSymbiosis.Remove(pawn);
-			pawn.needs?.mood?.thoughts?.memories?.RemoveMemoriesOfDef(ModExtension.symbiosisThought);
+			if (pawn.Spawned)
+			{
+				MapComp.pawnsWithFungalSymbiosis.Remove(pawn);
+				pawn.needs?.mood?.thoughts?.memories?.RemoveMemoriesOfDef(ModExtension.symbiosisThought);
+			}
 		}
 	}
 }

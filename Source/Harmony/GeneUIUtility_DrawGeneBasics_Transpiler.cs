@@ -15,16 +15,9 @@ namespace BiomesGeneticsMushkin
 
 		private static void ChangeGeneBackground(GeneDef gene, ref CachedTexture texture)
 		{
-			Log.Message("Went in");
 			if (gene.geneClass.SameOrSubclassOf<MushkinGene>())
 			{
-				Log.Message("Is of type");
-				Log.Message("Texture should be changed");
-				Log.Message(texture.Texture.ToString());
-				Log.Message(MushkinBackground.Texture.ToString());
 				texture = MushkinBackground;
-				Log.Message(texture.Texture.ToString());
-				Log.Message(MushkinBackground.Texture.ToString());
 			}
 		}
 
@@ -58,11 +51,6 @@ namespace BiomesGeneticsMushkin
 			}
 			else
 			{
-				codeMatcher.Insert(instructionsToInsert);
-				foreach (var instruction in codeMatcher.InstructionEnumeration())
-				{
-					Log.Message(instruction.ToString());
-				}
 				return codeMatcher.InstructionEnumeration();
 			}
 		}
