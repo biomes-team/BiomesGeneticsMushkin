@@ -82,6 +82,11 @@
             <li>BGM_AnimatorCap</li>
             <li>PsychicAbility_Extreme</li>
             <li>ToxicEnvironmentResistance_Total</li>
+			<li>WoundHealing_Slow</li>
+			<li>MeleeDamage_Weak</li>
+			<li>AptitudeTerrible_Plants</li>
+			<li>AptitudeTerrible_Cooking</li>
+			<li>AptitudeTerrible_Animals</li>
             <li>AcidSpray</li>
             <li>BGM_ResurrectionSpores</li>
             <li>BGM_ToxSpores</li>
