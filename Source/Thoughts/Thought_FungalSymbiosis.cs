@@ -40,7 +40,6 @@ namespace BiomesGeneticsMushkin
 					totalMood += pawn.needs.mood.CurLevel;
 				}
 				totalMood *= 10;
-				Log.Message($"{pawn} {totalMood}");
 				return totalMood / MapComp.pawnsWithFungalSymbiosis.Count;
 			}
 			else

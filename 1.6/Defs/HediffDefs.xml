@@ -1,227 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <!-- TODO -->
-    <HediffDef>
-        <defName>BGM_HealingSpores</defName>
-        <label>healing spores</label>
-        <description>Helpful fungal spores have made their way into the body, increasing the rate of healing.</description>
-        <hediffClass>HediffWithComps</hediffClass>
-        <maxSeverity>1</maxSeverity>
-        <isBad>false</isBad>
-        <!-- IMPORTANT -->
-        <!-- The code goes in increments of one. The stage at severity 0 is for non immune pawns -->
-        <!-- While the stage at severity 1 is for immune pawns -->
-        <stages>
-            <li>
-                <minSeverity>0</minSeverity>
-                <statFactors>
-                    <InjuryHealingFactor>3</InjuryHealingFactor>
-                </statFactors>
-                <capMods>
-                    <li>
-                        <capacity>Breathing</capacity>
-                        <offset>-0.25</offset>
-                    </li>
-                </capMods>
-            </li>
-            <li>
-                <minSeverity>1</minSeverity>
-                <statFactors>
-                    <InjuryHealingFactor>3</InjuryHealingFactor>
-                </statFactors>
-            </li>
-        </stages>
-        <comps>
-            <li Class="HediffCompProperties_Disappears">
-                <showRemainingTime>True</showRemainingTime>
-                <disappearsAfterTicks>12500</disappearsAfterTicks>
-            </li>
-        <li Class="HediffCompProperties_DisappearsOnDeath" />
-        </comps>
-    </HediffDef>
+  <!-- TODO -->
+  <HediffDef>
+    <defName>BGM_HealingSpores</defName>
+    <label>healing spores</label>
+    <description>Helpful fungal spores have made their way into the body, increasing the rate of healing.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <!-- IMPORTANT -->
+    <!-- The code goes in increments of one. The stage at severity 0 is for non immune pawns -->
+    <!-- While the stage at severity 1 is for immune pawns -->
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <statFactors>
+          <InjuryHealingFactor>3</InjuryHealingFactor>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statFactors>
+          <InjuryHealingFactor>3</InjuryHealingFactor>
+        </statFactors>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+        <disappearsAfterTicks>12500</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+  </HediffDef>
 
 
-    <!-- TODO -->
-    <HediffDef>
-        <defName>BGM_PsySpores</defName>
-        <label>psy spores</label>
-        <description>Fungal spores have made their way into the body, increasing psychic sensitivity.</description>
-        <hediffClass>HediffWithComps</hediffClass>
-        <maxSeverity>1</maxSeverity>
-        <isBad>false</isBad>
-        <!-- IMPORTANT -->
-        <!-- The code goes in increments of one. The stage at severity 0 is for non immune pawns -->
-        <!-- While the stage at severity 1 is for immune pawns -->
-        <stages>
-            <li>
-                <minSeverity>0</minSeverity>
-                <statOffsets>
-                    <PsychicSensitivity>1</PsychicSensitivity>
-                </statOffsets>
-                <capMods>
-                    <li>
-                        <capacity>Breathing</capacity>
-                        <offset>-0.25</offset>
-                    </li>
-                </capMods>
-            </li>
-            <li>
-                <minSeverity>1</minSeverity>
-                <statOffsets>
-                    <PsychicSensitivity>1</PsychicSensitivity>
-                </statOffsets>
-            </li>
-        </stages>
-        <comps>
-            <li Class="HediffCompProperties_Disappears">
-                <showRemainingTime>True</showRemainingTime>
-                <disappearsAfterTicks>12500</disappearsAfterTicks>
-            </li>
-            <li Class="HediffCompProperties_DisappearsOnDeath" />
-        </comps>
-    </HediffDef>
+  <!-- TODO -->
+  <HediffDef>
+    <defName>BGM_PsySpores</defName>
+    <label>psy spores</label>
+    <description>Fungal spores have made their way into the body, increasing psychic sensitivity.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <!-- IMPORTANT -->
+    <!-- The code goes in increments of one. The stage at severity 0 is for non immune pawns -->
+    <!-- While the stage at severity 1 is for immune pawns -->
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <statOffsets>
+          <PsychicSensitivity>1</PsychicSensitivity>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+          <PsychicSensitivity>1</PsychicSensitivity>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+        <disappearsAfterTicks>12500</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+  </HediffDef>
 
 
-    <!-- TODO -->
-    <HediffDef>
-        <defName>BGM_RapportSpores</defName>
-        <label>rapport spores</label>
-        <description>Fungal spores have made their way into the body, increasing social skills and sense of joy, but decreasing combat effectiveness.</description>
-        <hediffClass>HediffWithComps</hediffClass>
-        <maxSeverity>1</maxSeverity>
-        <isBad>false</isBad>
-        <!-- IMPORTANT -->
-        <!-- The code goes in increments of one. The stage at severity 0 is for non immune pawns -->
-        <!-- While the stage at severity 1 is for immune pawns -->
-        <stages>
-            <li>
-                <minSeverity>0</minSeverity>
-                <statFactors>
-                    <MeleeDamageFactor>0.75</MeleeDamageFactor>
-                    <MeleeCooldownFactor>1.25</MeleeCooldownFactor>
-                    <MeleeArmorPenetration>0.75</MeleeArmorPenetration>
-                    <MeleeHitChance>0.75</MeleeHitChance>
-                    <MeleeDodgeChance>0.75</MeleeDodgeChance>
-                    <RangedCooldownFactor>1.25</RangedCooldownFactor>
-                    <ShootingAccuracyPawn>0.75</ShootingAccuracyPawn>
-                    <AimingDelayFactor>1.25</AimingDelayFactor>
-                    <JoyGainFactor>1.25</JoyGainFactor>
-                </statFactors>
-                <statOffsets>
-                    <SocialImpact>0.25</SocialImpact>
-                </statOffsets>
-                <capMods>
-                    <li>
-                        <capacity>Breathing</capacity>
-                        <offset>-0.25</offset>
-                    </li>
-                </capMods>
-            </li>
-            <li>
-                <minSeverity>1</minSeverity>
-                <statFactors>
-                    <MeleeDamageFactor>0.75</MeleeDamageFactor>
-                    <MeleeCooldownFactor>1.25</MeleeCooldownFactor>
-                    <MeleeArmorPenetration>0.75</MeleeArmorPenetration>
-                    <MeleeHitChance>0.75</MeleeHitChance>
-                    <MeleeDodgeChance>0.75</MeleeDodgeChance>
-                    <RangedCooldownFactor>1.25</RangedCooldownFactor>
-                    <ShootingAccuracyPawn>0.75</ShootingAccuracyPawn>
-                    <AimingDelayFactor>1.25</AimingDelayFactor>
-                    <JoyGainFactor>1.25</JoyGainFactor>
-                </statFactors>
-                <statOffsets>
-                    <SocialImpact>0.25</SocialImpact>
-                </statOffsets>
-            </li>
-        </stages>
-        <comps>
-            <li Class="HediffCompProperties_Disappears">
-                <showRemainingTime>True</showRemainingTime>
-                <disappearsAfterTicks>12500</disappearsAfterTicks>
-            </li>
-            <li Class="HediffCompProperties_DisappearsOnDeath" />
-        </comps>
-    </HediffDef>
+  <!-- TODO -->
+  <HediffDef>
+    <defName>BGM_RapportSpores</defName>
+    <label>rapport spores</label>
+    <description>Fungal spores have made their way into the body, increasing social skills and sense of joy, but decreasing combat effectiveness.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <!-- IMPORTANT -->
+    <!-- The code goes in increments of one. The stage at severity 0 is for non immune pawns -->
+    <!-- While the stage at severity 1 is for immune pawns -->
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <statFactors>
+          <MeleeDamageFactor>0.75</MeleeDamageFactor>
+          <MeleeCooldownFactor>1.25</MeleeCooldownFactor>
+          <MeleeArmorPenetration>0.75</MeleeArmorPenetration>
+          <MeleeHitChance>0.75</MeleeHitChance>
+          <MeleeDodgeChance>0.75</MeleeDodgeChance>
+          <RangedCooldownFactor>1.25</RangedCooldownFactor>
+          <ShootingAccuracyPawn>0.75</ShootingAccuracyPawn>
+          <AimingDelayFactor>1.25</AimingDelayFactor>
+          <JoyGainFactor>1.25</JoyGainFactor>
+        </statFactors>
+        <statOffsets>
+          <SocialImpact>0.25</SocialImpact>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statFactors>
+          <MeleeDamageFactor>0.75</MeleeDamageFactor>
+          <MeleeCooldownFactor>1.25</MeleeCooldownFactor>
+          <MeleeArmorPenetration>0.75</MeleeArmorPenetration>
+          <MeleeHitChance>0.75</MeleeHitChance>
+          <MeleeDodgeChance>0.75</MeleeDodgeChance>
+          <RangedCooldownFactor>1.25</RangedCooldownFactor>
+          <ShootingAccuracyPawn>0.75</ShootingAccuracyPawn>
+          <AimingDelayFactor>1.25</AimingDelayFactor>
+          <JoyGainFactor>1.25</JoyGainFactor>
+        </statFactors>
+        <statOffsets>
+          <SocialImpact>0.25</SocialImpact>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+        <disappearsAfterTicks>12500</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+  </HediffDef>
 
-    <!-- TODO -->
-    <HediffDef>
-        <defName>BGM_FungalUndead</defName>
-        <label>fungal undead decay</label>
-        <description>Unique fungal mycelia have been embedded in this human, temporarily resurrecting them back to a twisted form of life. They will die in a few days.</description>
-        <hediffClass>HediffWithComps</hediffClass>
-        <maxSeverity>1</maxSeverity>
-        <isBad>false</isBad>
-        <stages>
-            <li>
-                <becomeVisible>false</becomeVisible>
-            </li>
-        </stages>
-        <comps>
-            <li Class="HediffCompProperties_KillAfterDays">
-                <days>6</days>
-            </li>
-        </comps>
-    </HediffDef>
+  <!-- TODO -->
+  <HediffDef>
+    <defName>BGM_FungalUndead</defName>
+    <label>fungal undead decay</label>
+    <description>Unique fungal mycelia have been embedded in this human, temporarily resurrecting them back to a twisted form of life. They will die in a few days.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_KillAfterDays">
+        <days>6</days>
+      </li>
+    </comps>
+  </HediffDef>
 
-    <HediffDef>
-        <defName>BGM_SwitchCasteExhaustion</defName>
-        <label>caste swap exhaustion</label>
-        <description>The swapping of Mushkin caste changes how the fungi in the body manifest, temporarily tiring the affected.</description>
-        <hediffClass>HediffWithComps</hediffClass>
-        <maxSeverity>1</maxSeverity>
-        <isBad>false</isBad>
-        <stages>
-            <li>
-                <statFactors>
-                    <RestFallRateFactor>1.25</RestFallRateFactor>
-                </statFactors>
-                <hungerRateFactor>1.25</hungerRateFactor>
-            </li>
-        </stages>
-        <comps>
-            <li Class="HediffCompProperties_Disappears">
-                <disappearsAfterTicks>240000</disappearsAfterTicks>
-                <showRemainingTime>true</showRemainingTime>
-            </li>
-        </comps>
-    </HediffDef>
-	
-	    <HediffDef>
-        <defName>BGM_FruitingBirthExhaustion</defName>
-        <label>fruiting birth exhaustion</label>
-        <description>Creating a genetic copy of the host and fungus within takes considerable nutrition and energy, causing increased tiredness and hunger for days afterward.</description>
-        <hediffClass>HediffWithComps</hediffClass>
-        <maxSeverity>1</maxSeverity>
-        <isBad>false</isBad>
-        <stages>
-            <li>
-                <statFactors>
-                    <RestFallRateFactor>1.25</RestFallRateFactor>
-                </statFactors>
-				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
-				<capMods>
-				<li>
-					<capacity>Moving</capacity>
-					<offset>-0.1</offset>
-				</li>
-				<li>
-					<capacity>Manipulation</capacity>
-					<offset>-0.05</offset>
-				</li>
-				</capMods>
-            </li>
-        </stages>
-        <comps>
-            <li Class="HediffCompProperties_Disappears">
-                <disappearsAfterTicks>240000</disappearsAfterTicks>
-                <showRemainingTime>true</showRemainingTime>
-            </li>
-        </comps>
-    </HediffDef>
-	
-	<HediffDef ParentName="InfectionBase">
+  <HediffDef>
+    <defName>BGM_SwitchCasteExhaustion</defName>
+    <label>caste swap exhaustion</label>
+    <description>The swapping of Mushkin caste changes how the fungi in the body manifest, temporarily tiring the affected.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statFactors>
+          <RestFallRateFactor>1.25</RestFallRateFactor>
+        </statFactors>
+        <hungerRateFactor>1.25</hungerRateFactor>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>240000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BGM_FruitingBirthProcess</defName>
+    <label>fruiting birth process</label>
+    <description>Creating a genetic copy of the host and fungus within takes considerable nutrition and energy, causing increased tiredness and hunger for days afterward.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <initialSeverity>0.01</initialSeverity>
+    <maxSeverity>1.01</maxSeverity>
+    <minSeverity>0</minSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.2</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300010</disappearsAfterTicks> <!-- 4 ~ 6 hours -->
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_GiveHediff">
+        <hediffDef>BGM_FruitingBirthExhaustion</hediffDef>
+        <atSeverity>1</atSeverity>
+        <disappearsAfterGiving>true</disappearsAfterGiving>
+        <!-- for you draeg
+        <letterDef>ThreatBig</letterDef>
+        <letterLabel>Scaria: {PAWN_nameDef}</letterLabel>
+        <letterText>{PAWN_nameDef} has developed scaria from {PAWN_possessive} infection, driving {PAWN_objective} into a berserk rage. Scaria can be cured with a special medical operation, but {PAWN_nameDef} must first be downed.</letterText>
+        -->
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BGM_FruitingBirthExhaustion</defName>
+    <label>fruiting birth exhaustion</label>
+    <description>Creating a genetic copy of the host and fungus within takes considerable nutrition and energy, causing increased tiredness and hunger for days afterward.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statFactors>
+          <RestFallRateFactor>1.25</RestFallRateFactor>
+        </statFactors>
+        <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>240000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="BiomesGeneticsMushkin.HediffCompProperties_Birth"/>
+    </comps>
+  </HediffDef>
+
+  <HediffDef ParentName="InfectionBase">
     <defName>BMT_MuscleMycelium</defName>
     <label>muscle mycelium</label>
     <description>Parasitic fungi in the muscles. These cause weakness and a lack of coordination.</description>
@@ -250,17 +281,17 @@
     </comps>
   </HediffDef>
 
-    <!-- TODO -->
-    <HediffDef>
-        <defName>BGM_FungalParasite</defName>
-        <label>fungal parasite</label>
-        <description>Unfortunately for the bearer of this fungi, it has formed a parasitic bond with its host, slowly killing them as it feeds off their body. The mycelia have a chance to invade various body parts, causing other unpleasant conditions. This can sometimes be staved off with bionics or replacing the organ.</description>
-        <hediffClass>HediffWithComps</hediffClass>
-        <maxSeverity>1</maxSeverity>
-        <lethalSeverity>1</lethalSeverity>
-        <initialSeverity>0.0001</initialSeverity>
-        <isBad>true</isBad>
-        <tendable>true</tendable>
+  <!-- TODO -->
+  <HediffDef>
+    <defName>BGM_FungalParasite</defName>
+    <label>fungal parasite</label>
+    <description>Unfortunately for the bearer of this fungi, it has formed a parasitic bond with its host, slowly killing them as it feeds off their body. The mycelia have a chance to invade various body parts, causing other unpleasant conditions. This can sometimes be staved off with bionics or replacing the organ.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1</maxSeverity>
+    <lethalSeverity>1</lethalSeverity>
+    <initialSeverity>0.0001</initialSeverity>
+    <isBad>true</isBad>
+    <tendable>true</tendable>
     <stages>
       <li>
         <label>initial</label>
@@ -275,10 +306,10 @@
             <offset>-0.05</offset>
           </li>
         </capMods>
-		    <statFactors>
-            <RestFallRateFactor>1.10</RestFallRateFactor>
-            </statFactors>
-            <hungerRateFactor>1.10</hungerRateFactor>
+        <statFactors>
+          <RestFallRateFactor>1.10</RestFallRateFactor>
+        </statFactors>
+        <hungerRateFactor>1.10</hungerRateFactor>
       </li>
       <li>
         <label>minor</label>
@@ -289,10 +320,10 @@
             <offset>-0.10</offset>
           </li>
         </capMods>
-		    <statFactors>
-            <RestFallRateFactor>1.2</RestFallRateFactor>
-            </statFactors>
-            <hungerRateFactor>1.2</hungerRateFactor>
+        <statFactors>
+          <RestFallRateFactor>1.2</RestFallRateFactor>
+        </statFactors>
+        <hungerRateFactor>1.2</hungerRateFactor>
       </li>
       <li>
         <label>moderate</label>
@@ -304,10 +335,10 @@
             <offset>-0.15</offset>
           </li>
         </capMods>
-		    <statFactors>
-            <RestFallRateFactor>1.4</RestFallRateFactor>
-            </statFactors>
-            <hungerRateFactor>1.4</hungerRateFactor>
+        <statFactors>
+          <RestFallRateFactor>1.4</RestFallRateFactor>
+        </statFactors>
+        <hungerRateFactor>1.4</hungerRateFactor>
         <hediffGivers>
           <li Class="HediffGiver_Random">
             <hediff>Cataract</hediff>
@@ -349,10 +380,10 @@
             <offset>-0.25</offset>
           </li>
         </capMods>
-		    <statFactors>
-            <RestFallRateFactor>1.6</RestFallRateFactor>
-            </statFactors>
-            <hungerRateFactor>1.6</hungerRateFactor>
+        <statFactors>
+          <RestFallRateFactor>1.6</RestFallRateFactor>
+        </statFactors>
+        <hungerRateFactor>1.6</hungerRateFactor>
         <hediffGivers>
           <li Class="HediffGiver_Random">
             <hediff>Cataract</hediff>
@@ -398,10 +429,10 @@
             <offset>-0.25</offset>
           </li>
         </capMods>
-		    <statFactors>
-            <RestFallRateFactor>2</RestFallRateFactor>
-            </statFactors>
-            <hungerRateFactor>2</hungerRateFactor>
+        <statFactors>
+          <RestFallRateFactor>2</RestFallRateFactor>
+        </statFactors>
+        <hungerRateFactor>2</hungerRateFactor>
         <hediffGivers>
           <li Class="HediffGiver_Random">
             <hediff>Cataract</hediff>
@@ -434,16 +465,16 @@
         </hediffGivers>
       </li>
     </stages>
-        <comps>
-            <li Class="HediffCompProperties_TendDuration">
-                <baseTendDurationHours>24</baseTendDurationHours>
-                <severityPerDayTended>-0.11</severityPerDayTended>
-            </li>
-            <li Class="HediffCompProperties_Immunizable">
-                <severityPerDayNotImmune>0.2</severityPerDayNotImmune>
-                <hidden>true</hidden>
-            </li>
-        </comps>
-    </HediffDef>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>24</baseTendDurationHours>
+        <severityPerDayTended>-0.11</severityPerDayTended>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.2</severityPerDayNotImmune>
+        <hidden>true</hidden>
+      </li>
+    </comps>
+  </HediffDef>
 
 </Defs>
