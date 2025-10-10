@@ -33,7 +33,7 @@
         <defName>BGM_Sovereign</defName>
         <label>sovereign</label>
         <description>The sovereign caste of mushkin act as the leaders in the social heirarchy and have unique abilities, including command over the fungus within them itself. This allows them to change the caste of other mushkin to better suit the needs of their settlement as well as turn otherwise normal humans into mushkin.\n\nTheir fungal density grants them unique regeneration capabilities and agelessness. In most mushkin societies, there is only one sovereign per settlement.</description>
-        <descriptionShort>Sovereign mushkin tend to be the leaders in their society and have unique sbilities granted by their firmer bond with the fungus.</descriptionShort>
+        <descriptionShort>Sovereign mushkin tend to be the leaders in their society and have unique abilities granted by their stronger bond with the fungus.</descriptionShort>
         <combatPowerFactor>2</combatPowerFactor>
         <genes>
             <li>BGM_SovereignCap</li>
@@ -82,6 +82,11 @@
             <li>BGM_AnimatorCap</li>
             <li>PsychicAbility_Extreme</li>
             <li>ToxicEnvironmentResistance_Total</li>
+			<li>WoundHealing_Slow</li>
+			<li>MeleeDamage_Weak</li>
+			<li>AptitudeTerrible_Plants</li>
+			<li>AptitudeTerrible_Cooking</li>
+			<li>AptitudeTerrible_Animals</li>
             <li>AcidSpray</li>
             <li>BGM_ResurrectionSpores</li>
             <li>BGM_ToxSpores</li>

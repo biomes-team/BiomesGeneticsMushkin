@@ -275,7 +275,7 @@
     <AbilityDef ParentName="AbilityTouchBase">
         <defName>BGM_CasteSwap</defName>
         <label>caste swap</label>
-        <description>The fungi that form a symbiosis the carriers of this gene allow them to produce a genetic copy of themselves off of their body without pregnancy.</description>
+        <description>The dominant strain of fungi within the user allows them to alter the expression of the fungi within others.</description>
         <iconPath>UI/Ability-Genes/CasteSwap</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <hostile>false</hostile>
@@ -314,7 +314,7 @@
     <AbilityDef ParentName="AbilityTouchBase">
         <defName>BGM_InfectiousSpores</defName>
         <label>infectious spores</label>
-        <description>The fungi that form a symbiosis the carriers of this gene allow them to produce a genetic copy of themselves off of their body without pregnancy.</description>
+        <description>The user extends fungal threads into another human, seeding the fungus within them and turning them into a mushkin.</description>
         <iconPath>UI/Ability-Genes/Infectious_Spores</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <hostile>false</hostile>
@@ -347,8 +347,8 @@
 
     <AbilityDef ParentName="AbilityTouchBase">
         <defName>BGM_FungalParasitism</defName>
-        <label>infectious spores</label>
-        <description>The fungi that form a symbiosis the carriers of this gene allow them to produce a genetic copy of themselves off of their body without pregnancy.</description>
+        <label>fungal parasitism</label>
+        <description>The user extends fungal threads into another human, seeding the fungus within them and turning them into a parasitic-variant mushkin.</description>
         <iconPath>UI/Genes/Gene_FungalParasitism</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <hostile>false</hostile>
