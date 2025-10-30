@@ -301,7 +301,6 @@
                 <hediffToGive>BGM_SwitchCasteExhaustion</hediffToGive>
                 <allowedXenotypes>
                     <li>BGM_Mushkin</li>
-                    <li>BGM_Sovereign</li>
                     <li>BGM_Socialite</li>
                     <li>BGM_Necrospores</li>
                     <li>BGM_Battalions</li>
