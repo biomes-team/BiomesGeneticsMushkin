@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef WVC_XaG_XenotypeRemoveTag="General">
+	<defName>BGM_WandererJoins_Sovereign</defName>
+	<label>sovereign join</label>
+	<category>Misc</category>
+	<targetTags>
+	  <li>Map_PlayerHome</li>
+	</targetTags>
+	<layerWhitelist>
+	  <li>Surface</li>
+	</layerWhitelist>
+	<workerClass>BiomesGeneticsMushkin.IncidentWorker_GiveQuest_Sovereign</workerClass>
+	<questScriptDef>BGM_WandererJoins_Sovereign</questScriptDef>
+	<baseChance>0.05</baseChance>
+	<pawnKind>Villager</pawnKind>
+	<populationEffect>IncreaseEasy</populationEffect>
+	<minRefireDays>268</minRefireDays>
+  </IncidentDef>
+
+  <QuestScriptDef>
+	<defName>BGM_WandererJoins_Sovereign</defName>
+	<root Class="BiomesGeneticsMushkin.QuestNode_Root_WandererJoin_WalkIn">
+	  <xenotypeDef>BGM_Sovereign</xenotypeDef>
+	</root>
+	<autoAccept>true</autoAccept>
+	<defaultHidden>true</defaultHidden>
+	<isRootSpecial>true</isRootSpecial>
+	<successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityFulfilled_WandererJoins</successHistoryEvent>
+	<failedOrExpiredHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityRefused_WandererJoins</failedOrExpiredHistoryEvent>
+	<questNameRules>
+	  <rulesStrings>
+		<li>questName->Sovereign joins</li>
+	  </rulesStrings>
+	</questNameRules>
+	<questDescriptionRules>
+	  <rulesStrings>
+		<li>questDescription-></li>
+	  </rulesStrings>
+	</questDescriptionRules>
+  </QuestScriptDef>
+
+</Defs>
