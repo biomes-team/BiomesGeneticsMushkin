@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ScenarioDef ParentName="ScenarioBase">
+        <defName>BGM_Scenario_MushkinSovereign</defName>
+        <label>The Mushkin Sovereign</label>
+        <description>You were assigned to settle a caveworld and form a new society there, you were even provided a basic mushkin you can shift to a different caste as needed, but when your ship was attacked by pirates, you were forced to escape.\n\nNote: Mushkin have unique strengths and weaknesses, which makes this a difficult scenario.</description>
+        <scenario>
+            <summary>One crashlanded sovereign needing to survive, and one human colonist.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlayerColony</factionDef>
+            </playerFaction>
+            <surfaceLayer>
+                <def>SurfaceLayerFixed</def>
+                <layer>Surface</layer>
+                <settingsDef>Surface</settingsDef>
+                <hide>True</hide>
+                <tag>Surface</tag>
+                <connections>
+                    <li>
+                        <tag>Orbit</tag>
+                        <zoomMode>ZoomOut</zoomMode>
+                    </li>
+                </connections>
+            </surfaceLayer>
+            <parts>
+                <li Class="ScenPart_PlanetLayer">
+                    <def>PlanetLayer</def>
+                    <layer>Orbit</layer>
+                    <settingsDef>Orbit</settingsDef>
+                    <hide>True</hide>
+                    <tag>Orbit</tag>
+                    <connections>
+                        <li>
+                            <tag>Surface</tag>
+                            <zoomMode>ZoomIn</zoomMode>
+                        </li>
+                    </connections>
+                </li>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+                    <def>ConfigurePawnsXenotypes</def>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                    <xenotypeCounts>
+                        <li>
+                            <requiredAtStart>True</requiredAtStart>
+                            <xenotype>BGM_Sovereign</xenotype>
+                            <allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
+                            <description>non-baby sovereign mushkin</description>
+                        </li>
+                        <li>
+                            <xenotype>BGM_Mushkin</xenotype>
+                            <allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+                        </li>
+                    </xenotypeCounts>
+                </li>
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                </li>
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>You were tasked with settling on a caveworld and forming a new society there, but your ship was attacked en-route.
+
+                        Then came the crash. Only a few made it to the escape pods. You land on an unknown rimworld and find that you are not alone. What will you do to survive?</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>2000</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>30</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>20</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>10</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>200</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Steel</thingDef>
+                    <count>200</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_LongSword</thingDef>
+                    <stuff>Steel</stuff>
+                    <quality>Masterwork</quality>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>
