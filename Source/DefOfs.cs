@@ -16,5 +16,7 @@ namespace BiomesGeneticsMushkin
 		public static XenotypeDef BGM_Sovereign;
 		public static HediffDef BGM_FungalUndead;
 		public static HediffDef BGM_FungalParasite;
-	}
+		public static SoundDef Hive_Spawn;
+
+    }
 }

@@ -20,7 +20,7 @@
 		<!-- Advanced configs. Keep these if you don't have a good reason for changes -->
 		<PlatformTarget>AnyCPU</PlatformTarget>
 		<Optimize>true</Optimize>
-		<EnableNETAnalyzers>True</EnableNETAnalyzers>
+		<EnableNETAnalyzers>False</EnableNETAnalyzers>
 		<AnalysisLevel>preview-recommended</AnalysisLevel>
 		<DebugSymbols>true</DebugSymbols>
 		<DebugType>embedded</DebugType>
