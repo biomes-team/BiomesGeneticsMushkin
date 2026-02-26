@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <ModMetaData>
-	<name>Biomes! Genetics: Mushkin</name>
-	<author>The Biomes Mod Team</author>
+	<name>Genetics!: Mushkin</name>
+	<author>The Biomes! Mod Team</author>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<packageId>BiomesTeam.BiomesGeneticsMushkin</packageId>
+	<packageId>BiomesTeam.GeneticsMushkin</packageId>
 	<modDependencies>
 		<li>
 		  <packageId>brrainz.harmony</packageId>
@@ -31,9 +31,13 @@
 		<li>brrainz.harmony</li>
 		<li>BiomesTeam.BiomesCore</li>
 	</loadAfter>
-	<description>Adds the mushkin xenotype and all the genes that come with!
+	<description>The first of a potential series centered around adding new xenotypes and improving vanilla xenotypes by the Biomes! mod team. The mushkin in this mod originate from the first version of Biomes! Caverns back in 2016 when they were an HAR mod requiring race. They have since been heavily revamped in both lore and design. They are inspired in part from myconids from Dungeon and Dragons as well as other fictional fungi folk. 
+	
+	Do you like fungi? Do you like bizarre humanoids? Well then prepare yourself for Mushkin, the xenotype formed from a fungal bond! This mod adds multiple mushkin castes/roles that each function a little differently with abilities based on their purpose. From the leader-role Sovereign to the farmer-role Tenders, you can have an entire colony of just the lovely little shroomy folk. You can even turn other pawns into mushkin if you have the right caste for it! 
+	
+	Mushkin as a whole have unique upsides and downsides, some of which are shared across the castes, but others are not. They are all however meant to be as well-balanced as possible, especially when it comes to metabolism.
 	
 	Safe to add, not safe to remove.
-	Requires Harmony.
+	Requires Harmony and the Biotech DLC.
 	</description>
 </ModMetaData>
