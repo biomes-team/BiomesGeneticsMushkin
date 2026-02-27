@@ -18,7 +18,11 @@
         <displayPriorityInXenotype>800</displayPriorityInXenotype>
     </GeneCategoryDef>
 
-    <GeneDef>
+  <BiomesCore.Defs.BMT_GeneDef Name="BMT_MushkinGenes_Base" Abstract="True">
+	<backgroundPath>UI/Xenotype/GeneBackground_Mushkin</backgroundPath>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_BlindingSpores</defName>
         <label>blinding spores</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
@@ -35,9 +39,9 @@
         </descriptionHyperlinks>
         <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_FirefoamSpores</defName>
         <label>firefoam spores</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
@@ -54,9 +58,9 @@
         </descriptionHyperlinks>
         <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_HealingSpores</defName>
         <label>healing spores</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
@@ -73,9 +77,9 @@
         </descriptionHyperlinks>
         <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_PsySpores</defName>
         <label>psy spores</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
@@ -92,9 +96,9 @@
         </descriptionHyperlinks>
         <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_RapportSpores</defName>
         <label>rapport spores</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
@@ -111,9 +115,9 @@
         </descriptionHyperlinks>
         <biostatMet>-3</biostatMet>
         <biostatCpx>1</biostatCpx>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_ToxSpores</defName>
         <label>tox spores</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
@@ -130,9 +134,9 @@
         </descriptionHyperlinks>
         <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_SproutSpores</defName>
         <label>sprout spores</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
@@ -149,9 +153,9 @@
         </descriptionHyperlinks>
         <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_ResurrectionSpores</defName>
         <label>resurrection spores</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
@@ -168,9 +172,9 @@
         </descriptionHyperlinks>
         <biostatMet>-3</biostatMet>
         <biostatCpx>2</biostatCpx>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_FungalReanimation</defName>
         <label>fungal reanimation</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
@@ -187,9 +191,9 @@
         </descriptionHyperlinks>
         <biostatMet>-3</biostatMet>
         <biostatCpx>1</biostatCpx>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_BuddingBirth</defName>
         <label>fruiting birth</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
@@ -206,9 +210,9 @@
         </descriptionHyperlinks>
         <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_FungalUndead</defName>
         <label>fungal undead</label>
         <geneClass>BiomesGeneticsMushkin.Gene_FungalUndead</geneClass>
@@ -225,9 +229,9 @@
             <li>Animals</li>
             <li>Artistic</li>
         </disabledWorkTags>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_CasteSwap</defName>
         <label>caste swap</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
@@ -244,9 +248,9 @@
         </descriptionHyperlinks>
         <biostatMet>1</biostatMet>
         <biostatCpx>1</biostatCpx>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_InfectiousSpores</defName>
         <label>infectious spores</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
@@ -263,9 +267,9 @@
         </descriptionHyperlinks>
         <biostatMet>2</biostatMet>
         <biostatCpx>1</biostatCpx>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BMT_FungalCoagulate</defName>
         <label>fungal coagulation</label>
         <labelShortAdj>coagulation</labelShortAdj>
@@ -297,9 +301,9 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_FungalParasitism</defName>
         <label>fungal parasitism</label>
         <description>The unique fungi within the host has formed a parasitic bond instead of a symbiotic one, slowly devouring the host for sustenance. The spreading mycelia within the body tends to cause increasingly negative conditions. It does however have the positive side effects of disabling pain and extending the physical limits of the host. Their gradually degrading condition can be attenuated but not ceased with periodic medical care.</description>
@@ -347,9 +351,9 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
-    <GeneDef>
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_FungalSymbiosis</defName>
         <label>fungal symbiosis</label>
         <description>The unique fungi within the host forms a symbiotic bond and is similar in nature to cordyceps, albeit a variant that has been designed to work with the human body. It grants them increased metabolism thanks to the fungus helping reduce waste chemicals and wasted nutrients in the host. This connection also grants a simple psychic connection to others with the same condition.</description>
@@ -394,5 +398,5 @@
                 <symbiosisThought>BGM_Proj_FungalSymbiosis</symbiosisThought>
             </li>
         </modExtensions>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 </Defs>

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+  <BiomesCore.Defs.BMT_GeneDef ParentName="GeneHairStyleBase" Name="BMT_MushkinGenes_GeneHairStyleBase" Abstract="True">
+	<backgroundPath>UI/Xenotype/GeneBackground_Mushkin</backgroundPath>
+  </BiomesCore.Defs.BMT_GeneDef>
+
     <!-- TODO -->
-    <GeneDef ParentName="GeneHairStyleBase">
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_GeneHairStyleBase">
         <defName>BGM_BaseCap</defName>
         <label>base mushroom cap</label>
         <labelShortAdj>base cap</labelShortAdj>
@@ -63,10 +67,10 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
     <!-- TODO -->
-    <GeneDef ParentName="GeneHairStyleBase">
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_GeneHairStyleBase">
         <defName>BGM_AnimatorCap</defName>
         <label>animator mushroom cap</label>
         <labelShortAdj>animator cap</labelShortAdj>
@@ -127,10 +131,10 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
     <!-- TODO -->
-    <GeneDef ParentName="GeneHairStyleBase">
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_GeneHairStyleBase">
         <defName>BGM_BattalionCap</defName>
         <label>battalion mushroom cap</label>
         <labelShortAdj>animator cap</labelShortAdj>
@@ -191,10 +195,10 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
     <!-- TODO -->
-    <GeneDef ParentName="GeneHairStyleBase">
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_GeneHairStyleBase">
         <defName>BGM_MycelialTenderCap</defName>
         <label>mycelia tender mushroom cap</label>
         <labelShortAdj>mycelia tender cap</labelShortAdj>
@@ -255,10 +259,10 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
     <!-- TODO -->
-    <GeneDef ParentName="GeneHairStyleBase">
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_GeneHairStyleBase">
         <defName>BGM_SocialiteCap</defName>
         <label>socialite mushroom cap</label>
         <labelShortAdj>socialite cap</labelShortAdj>
@@ -319,10 +323,10 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 
     <!-- TODO -->
-    <GeneDef ParentName="GeneHairStyleBase">
+    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_GeneHairStyleBase">
         <defName>BGM_SovereignCap</defName>
         <label>sovereign mushroom cap</label>
         <labelShortAdj>sovereign cap</labelShortAdj>
@@ -383,5 +387,5 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-    </GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef>
 </Defs>

@@ -32,6 +32,9 @@
 			CA1852;CA2201;CA3075;IDE0040;IDE0130;IDE0290;IDE0008;IDE0032-->
 		</NoWarn>
 	</PropertyGroup>
+	<ItemGroup>
+	  <Compile Remove="Harmony\GeneUIUtility_DrawGeneBasics_Transpiler.cs" />
+	</ItemGroup>
 
 	<!-- Down here we have references to dependencies -->
 	<ItemGroup>
