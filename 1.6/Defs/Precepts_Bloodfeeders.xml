@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IssueDef>
+	<defName>BGM_FungalSymbiosis</defName>
+	<label>fungal symbiosis</label>
+	<!-- REPLACE ME -->
+	<iconPath>UI/Xenotype/Mushkin</iconPath>
+  </IssueDef>
+
+  <HistoryEventDef>
+	<defName>BGM_FungalSymbiosisDied</defName>
+	<label>fungal died</label>
+  </HistoryEventDef>
+
+  <!-- <HistoryEventDef> -->
+	<!-- <defName>BGM_PropagateFungalSymbiosisGene</defName> -->
+	<!-- <label>propagate fungal gene</label> -->
+  <!-- </HistoryEventDef> -->
+
+  <PreceptDef>
+	<defName>BGM_FungalSymbiosis_Revered</defName>
+	<issue>BGM_FungalSymbiosis</issue>
+	<label>revered</label>
+	<description>Fungal symbiosis should be worshipped. Believers will be happy if there is a fungal in the colony.</description>
+	<impact>Medium</impact>
+	<comps>
+	  <li Class="PreceptComp_SituationalThought">
+		<thought>BGM_FungalSymbiosis_Revered_Opinion_Fungal</thought>
+		<description>Fungal</description>
+	  </li>
+	  <li Class="PreceptComp_KnowsMemoryThought">
+		<eventDef>BGM_FungalSymbiosisDied</eventDef>
+		<thought>BGM_FungalSymbiosisDied_Revered</thought>
+	  </li>
+	  <li Class="PreceptComp_SituationalThought">
+		<thought>Bloodfeeder_ReveredBloodfeeder</thought>
+		<description>Revered fungal</description>
+	  </li>
+	  <li Class="PreceptComp_SituationalThought">
+		<thought>BloodfeederColonist_Revered</thought>
+		<thoughtStageDescriptions>
+		  <li>No fungal</li>
+		  <li>No fungal master</li>
+		  <li>Fungal master</li>
+		</thoughtStageDescriptions>
+	  </li>
+	</comps>
+  </PreceptDef>
+
+  <PreceptDef>
+	<defName>BGM_FungalSymbiosis_Reviled</defName>
+	<issue>BGM_FungalSymbiosis</issue>
+	<label>reviled</label>
+	<description>Anyone who drinks blood to survive is a monster. REPLACE ME</description>
+	<impact>Medium</impact>
+	<comps>
+	  <!-- <li Class="PreceptComp_UnwillingToDo"> -->
+		<!-- <eventDef>BGM_PropagateFungalSymbiosisGene</eventDef> -->
+		<!-- <description>Propagate bloodfeeder gene</description> -->
+	  <!-- </li> -->
+	  <li Class="PreceptComp_SituationalThought">
+		<thought>BGM_FungalSymbiosis_Reviled_Opinion_Fungal</thought>
+		<description>Fungal</description>
+	  </li>
+	  <li Class="PreceptComp_KnowsMemoryThought">
+		<eventDef>BGM_FungalSymbiosisDied</eventDef>
+		<thought>BGM_FungalSymbiosisDied_Reviled</thought>
+	  </li>
+	  <li Class="PreceptComp_SituationalThought">
+		<thought>BGM_FungalSymbiosis_ReviledFungal</thought>
+		<description>Fungal self hatred</description>
+	  </li>
+	  <li Class="PreceptComp_SituationalThought">
+		<thought>BGM_FungalSymbiosisColonist_Reviled</thought>
+		<description>Fungal among us</description>
+	  </li>
+	</comps>
+  </PreceptDef>
+
+
+  <!-- Thoughts -->
+
+  <ThoughtDef>
+	<defName>BGM_FungalSymbiosis_Revered_Opinion_Fungal</defName>
+	<thoughtClass>Thought_SituationalSocial</thoughtClass>
+	<workerClass>BiomesGeneticsMushkin.ThoughtWorker_Precept_FungalSymbiosis_Social</workerClass>
+	<validWhileDespawned>true</validWhileDespawned>
+	<stages>
+	  <li>
+		<label>fungal</label>
+		<baseOpinionOffset>20</baseOpinionOffset>
+	  </li>
+	</stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+	<defName>BGM_FungalSymbiosis_Reviled_Opinion_Fungal</defName>
+	<thoughtClass>Thought_SituationalSocial</thoughtClass>
+	<workerClass>BiomesGeneticsMushkin.ThoughtWorker_Precept_FungalSymbiosis_Social</workerClass>
+	<validWhileDespawned>true</validWhileDespawned>
+	<stages>
+	  <li>
+		<label>fungal</label>
+		<baseOpinionOffset>-40</baseOpinionOffset>
+	  </li>
+	</stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+	<defName>BGM_FungalSymbiosisDied_Revered</defName>
+	<thoughtClass>Thought_Memory</thoughtClass>
+	<validWhileDespawned>true</validWhileDespawned>
+	<stackLimit>3</stackLimit>
+	<durationDays>10</durationDays>
+	<stages>
+	  <li>
+		<label>fungal died</label>
+		<description>The fungal stand above us, yet one has died here. We will surely be punished for this. REPLACE ME</description>
+		<baseMoodEffect>-2</baseMoodEffect>
+	  </li>
+	</stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+	<defName>BGM_FungalSymbiosisDied_Reviled</defName>
+	<thoughtClass>Thought_Memory</thoughtClass>
+	<validWhileDespawned>true</validWhileDespawned>
+	<durationDays>10</durationDays>
+	<stages>
+	  <li>
+		<label>fungal died</label>
+		<description>The only good fungal is a dead one.</description>
+		<baseMoodEffect>5</baseMoodEffect>
+	  </li>
+	</stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+	<defName>BGM_FungalSymbiosis_ReveredFungal</defName>
+	<thoughtClass>Thought_Situational</thoughtClass>
+	<workerClass>BiomesGeneticsMushkin.ThoughtWorker_Precept_IsFungalSymbiosis</workerClass>
+	<stages>
+	  <li>
+		<label>revered fungal</label>
+		<description>Let them worship me. Feeding upon them places them below me, as animals are below humans. REPLACE ME</description>
+		<baseMoodEffect>4</baseMoodEffect>
+	  </li>
+	</stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+	<defName>BGM_FungalSymbiosis_ReviledFungal</defName>
+	<thoughtClass>Thought_Situational</thoughtClass>
+	<workerClass>BiomesGeneticsMushkin.ThoughtWorker_Precept_IsFungalSymbiosis</workerClass>
+	<stages>
+	  <li>
+		<label>fungal self hatred</label>
+		<description>I am what I hate. I must rid myself of this curse.</description>
+		<baseMoodEffect>-12</baseMoodEffect>
+	  </li>
+	</stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+	<defName>BGM_FungalSymbiosisColonist_Revered</defName>
+	<thoughtClass>Thought_Situational</thoughtClass>
+	<workerClass>BiomesGeneticsMushkin.ThoughtWorker_Precept_FungalSymbiosisColonist</workerClass>
+	<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+	<stages>
+	  <li>
+		<label>no fungal</label>
+		<description>Without a fungal symbiosis, we are undirected and lost. We should make a fungal our leader.</description>
+		<baseMoodEffect>-2</baseMoodEffect>
+	  </li>
+	  <li>
+		<label>no fungal symbiosis</label>
+		<description>Without a fungal symbiosis, we lack proper direction. We should make a fungal our leader.</description>
+		<baseMoodEffect>-1</baseMoodEffect>
+	  </li>
+	  <li>
+		<label>fungal symbiosis</label>
+		<description>The fungal's presence is a great honor.</description>
+		<baseMoodEffect>2</baseMoodEffect>
+	  </li>
+	</stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+	<defName>BGM_FungalSymbiosisColonist_Reviled</defName>
+	<thoughtClass>Thought_Situational</thoughtClass>
+	<workerClass>BiomesGeneticsMushkin.ThoughtWorker_Precept_FungalSymbiosisPresent</workerClass>
+	<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+	<stages>
+	  <li>
+		<label>fungal among us</label>
+		<description>One of them walks among us. We should expel the fungal from our home.</description>
+		<baseMoodEffect>-8</baseMoodEffect>
+	  </li>
+	</stages>
+  </ThoughtDef>
+
+</Defs>

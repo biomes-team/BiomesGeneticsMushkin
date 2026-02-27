@@ -357,6 +357,7 @@
         <iconPath>UI/Genes/Gene_FungalSymbiosis</iconPath>
         <displayCategory>CoreFungal</displayCategory>
         <displayOrderInCategory>50</displayOrderInCategory>
+		<deathHistoryEvent>BGM_FungalSymbiosisDied</deathHistoryEvent>
         <biostatMet>6</biostatMet>
         <biostatCpx>2</biostatCpx>
         <symbolPack>
