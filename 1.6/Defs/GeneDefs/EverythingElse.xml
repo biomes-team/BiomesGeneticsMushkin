@@ -20,6 +20,12 @@
 
   <BiomesCore.Defs.BMT_GeneDef Name="BMT_MushkinGenes_Base" Abstract="True">
 	<backgroundPath>UI/Xenotype/GeneBackground_Mushkin</backgroundPath>
+	<!-- Used if backgroundPath is empty -->
+	<!-- <backgroundEndogenePath>UI/Xenotype/GeneBackground_Mushkin</backgroundEndogenePath> -->
+	<!-- <backgroundXenogenePath>UI/Xenotype/GeneBackground_Mushkin</backgroundXenogenePath> -->
+	<!-- <backgroundArchiteEndogenePath>UI/Xenotype/GeneBackground_Mushkin</backgroundArchiteEndogenePath> -->
+	<!-- <backgroundArchiteXenogenePath>UI/Xenotype/GeneBackground_Mushkin</backgroundArchiteXenogenePath> -->
+	<!-- Used if backgroundPath is empty -->
   </BiomesCore.Defs.BMT_GeneDef>
 
     <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
