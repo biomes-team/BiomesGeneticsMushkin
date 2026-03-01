@@ -201,10 +201,10 @@
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>0.2</severityPerDay>
       </li>
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>300010</disappearsAfterTicks> <!-- 4 ~ 6 hours -->
-        <showRemainingTime>true</showRemainingTime>
-      </li>
+      <!-- <li Class="HediffCompProperties_Disappears"> -->
+        <!-- <disappearsAfterTicks>300010</disappearsAfterTicks> -->
+        <!-- <showRemainingTime>true</showRemainingTime> -->
+      <!-- </li> -->
       <li Class="HediffCompProperties_GiveHediff">
         <hediffDef>BGM_FruitingBirthExhaustion</hediffDef>
         <atSeverity>1</atSeverity>
