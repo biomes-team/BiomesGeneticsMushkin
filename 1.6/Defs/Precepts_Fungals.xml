@@ -34,11 +34,11 @@
 		<thought>BGM_FungalSymbiosisDied_Revered</thought>
 	  </li>
 	  <li Class="PreceptComp_SituationalThought">
-		<thought>Bloodfeeder_ReveredBloodfeeder</thought>
+		<thought>BGM_FungalSymbiosis_ReveredFungal</thought>
 		<description>Revered fungal</description>
 	  </li>
 	  <li Class="PreceptComp_SituationalThought">
-		<thought>BloodfeederColonist_Revered</thought>
+		<thought>BGM_FungalSymbiosisColonist_Revered</thought>
 		<thoughtStageDescriptions>
 		  <li>No fungal</li>
 		  <li>No fungal master</li>
