@@ -129,7 +129,7 @@
 	<durationDays>10</durationDays>
 	<stages>
 	  <li>
-		<label>mushkin died</label>
+		<label>fungal one died</label>
 		<description>The only good fungal xeno is a dead one.</description>
 		<baseMoodEffect>5</baseMoodEffect>
 	  </li>
@@ -142,7 +142,7 @@
 	<workerClass>BiomesGeneticsMushkin.ThoughtWorker_Precept_IsFungalSymbiosis</workerClass>
 	<stages>
 	  <li>
-		<label>revered mushkin</label>
+		<label>revered fungal</label>
 		<description>Let them worship me. I have bound myself with the best type of lifeform and those that have not are lesser.</description>
 		<baseMoodEffect>4</baseMoodEffect>
 	  </li>
@@ -193,7 +193,7 @@
 	<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 	<stages>
 	  <li>
-		<label>mushkin among us</label>
+		<label>fungal one among us</label>
 		<description>One of them walks among us. We should expel the fungus-bound from our home.</description>
 		<baseMoodEffect>-8</baseMoodEffect>
 	  </li>
