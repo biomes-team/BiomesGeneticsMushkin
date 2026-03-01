@@ -4,9 +4,9 @@
     <ScenarioDef ParentName="ScenarioBase">
         <defName>BGM_Scenario_MushkinSovereign</defName>
         <label>The Mushkin Sovereign</label>
-        <description>You were assigned to settle a caveworld and form a new society there, you were even provided a basic mushkin you can shift to a different caste as needed, but when your ship was attacked by pirates, you were forced to escape.\n\nNote: Mushkin have unique strengths and weaknesses, which makes this a difficult scenario.</description>
+        <description>Assigned to settle a freshly terraformed caveworld and build a new subterranean society, you were provided some basic resources and a companion of the basic mushkin caste. As your ship began to grow close to its destination, passing through a sysem believed to be uninhabited, it was attacked by pirates. Forced to escape, you landed on an unknown world out in the rim. With the harsh light of the sun burning your tender fungal flesh, you rushed to shelter in the gloom.\n\nNote: Mushkin have unique strengths and weaknesses, which makes this a difficult scenario.</description>
         <scenario>
-            <summary>One crashlanded sovereign needing to survive, and one human colonist.</summary>
+            <summary>One crashlanded sovereign needing to survive, and one basic mushkin colonist who can be swapped to a different caste.</summary>
             <playerFaction>
                 <def>PlayerFaction</def>
                 <factionDef>PlayerColony</factionDef>
@@ -62,7 +62,7 @@
                     <def>GameStartDialog</def>
                     <text>You were tasked with settling on a caveworld and forming a new society there, but your ship was attacked en-route.
 
-                        Then came the crash. Only a few made it to the escape pods. You land on an unknown rimworld and find that you are not alone. What will you do to survive?</text>
+                        Then came the crash. Only a few made it to the escape pods. You land on an unknown rimworld and find that you are not alone. What will you do to survive? The answer is often cannibalism, but is it really cannibalism if your people are not entirely human?</text>
                     <closeSound>GameStartSting</closeSound>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">

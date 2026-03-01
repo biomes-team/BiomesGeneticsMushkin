@@ -22,7 +22,7 @@
 	<defName>BGM_FungalSymbiosis_Revered</defName>
 	<issue>BGM_FungalSymbiosis</issue>
 	<label>revered</label>
-	<description>Fungal symbiosis should be worshipped. Believers will be happy if there is a fungal in the colony.</description>
+	<description>Those bonded to fungi should be worshipped. Believers will be happy if there is such a xenotype in the colony.</description>
 	<impact>Medium</impact>
 	<comps>
 	  <li Class="PreceptComp_SituationalThought">
@@ -52,7 +52,7 @@
 	<defName>BGM_FungalSymbiosis_Reviled</defName>
 	<issue>BGM_FungalSymbiosis</issue>
 	<label>reviled</label>
-	<description>Anyone who drinks blood to survive is a monster. REPLACE ME</description>
+	<description>Anyone who bonds with fungi is a monster worthy of scorn and loathing.</description>
 	<impact>Medium</impact>
 	<comps>
 	  <!-- <li Class="PreceptComp_UnwillingToDo"> -->
@@ -116,7 +116,7 @@
 	<stages>
 	  <li>
 		<label>fungal died</label>
-		<description>The fungal stand above us, yet one has died here. We will surely be punished for this. REPLACE ME</description>
+		<description>Those with a fungal bond are better than us and one has died. This is a tragedy and makes the world a worse place.</description>
 		<baseMoodEffect>-2</baseMoodEffect>
 	  </li>
 	</stages>
@@ -129,8 +129,8 @@
 	<durationDays>10</durationDays>
 	<stages>
 	  <li>
-		<label>fungal died</label>
-		<description>The only good fungal is a dead one.</description>
+		<label>mushkin died</label>
+		<description>The only good fungal xeno is a dead one.</description>
 		<baseMoodEffect>5</baseMoodEffect>
 	  </li>
 	</stages>
@@ -142,8 +142,8 @@
 	<workerClass>BiomesGeneticsMushkin.ThoughtWorker_Precept_IsFungalSymbiosis</workerClass>
 	<stages>
 	  <li>
-		<label>revered fungal</label>
-		<description>Let them worship me. Feeding upon them places them below me, as animals are below humans. REPLACE ME</description>
+		<label>revered mushkin</label>
+		<description>Let them worship me. I have bound myself with the best type of lifeform and those that have not are lesser.</description>
 		<baseMoodEffect>4</baseMoodEffect>
 	  </li>
 	</stages>
@@ -169,18 +169,18 @@
 	<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 	<stages>
 	  <li>
-		<label>no fungal</label>
-		<description>Without a fungal symbiosis, we are undirected and lost. We should make a fungal our leader.</description>
+		<label>no fungals</label>
+		<description>Without one who has bonded with fungi, we are undirected and lost. We should make one with a fungal bond our leader.</description>
 		<baseMoodEffect>-2</baseMoodEffect>
 	  </li>
 	  <li>
-		<label>no fungal symbiosis</label>
-		<description>Without a fungal symbiosis, we lack proper direction. We should make a fungal our leader.</description>
+		<label>no fungals</label>
+		<description>Without one who has bonded with fungi, we lack proper direction. We should make one with a fungal bond our leader.</description>
 		<baseMoodEffect>-1</baseMoodEffect>
 	  </li>
 	  <li>
 		<label>fungal symbiosis</label>
-		<description>The fungal's presence is a great honor.</description>
+		<description>The fungally bonded's presence is a great honor.</description>
 		<baseMoodEffect>2</baseMoodEffect>
 	  </li>
 	</stages>
@@ -193,8 +193,8 @@
 	<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 	<stages>
 	  <li>
-		<label>fungal among us</label>
-		<description>One of them walks among us. We should expel the fungal from our home.</description>
+		<label>mushkin among us</label>
+		<description>One of them walks among us. We should expel the fungus-bound from our home.</description>
 		<baseMoodEffect>-8</baseMoodEffect>
 	  </li>
 	</stages>

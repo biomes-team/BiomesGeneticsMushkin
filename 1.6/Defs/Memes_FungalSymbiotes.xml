@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <MemeDef>
+    <defName>BGM_FungalSymbiosis</defName>
+    <label>fungal symbiosis</label> 
+    <description>Bonding with fungi is sacred. Those that have done so should be worshipped.</description> 
+    <iconPath>UI/Memes/Bloodfeeding</iconPath>
+    <groupDef MayRequire="Ludeon.RimWorld.Ideology">Misc</groupDef>
+    <impact>2</impact>
+    <renderOrder>999</renderOrder>
+    <requireOne>
+      <li>
+        <li>BGM_FungalSymbiosis_Revered</li>
+      </li>
+      <!-- <li> -->
+        <!-- <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li> -->
+        <!-- <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Acceptable</li> -->
+      <!-- </li> -->
+      <!-- <li> -->
+        <!-- <li MayRequire="Ludeon.RimWorld.Ideology">Execution_DontCare</li> -->
+        <!-- <li MayRequire="Ludeon.RimWorld.Ideology">Execution_RespectedIfGuilty</li> -->
+        <!-- <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Required</li> -->
+      <!-- </li> -->
+      <!-- <li> -->
+        <!-- <li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_Acceptable</li> -->
+      <!-- </li> -->
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->fungal</li>
+        <li>memeAdjective->fungusy</li>
+        <li>memeCreed->cave</li>
+        <li>memeCreed->gloom</li>
+        <li>memeCreed->troop</li>
+        <li>memeHyphenPrefix->fungal</li>
+        <li>memeConcept->fungus</li>
+        <li>memeConcept->shrooms</li>
+        <li>memeLeaderNoun->sovereign</li>
+        <li>memeMoralist->seneschal</li>
+        <li>memeMoralist->fungist</li>
+        <li>memeMoralist->mycelialan</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <!-- theist myth -->
+          <li>creation(tag=meme_BGM_FungalSymbiosis)        ->[deity0_name] bound fungus into the flesh of man, giving them new life.</li>
+          <li>episode(uses=1,tag=meme_BGM_FungalSymbiosis)  ->The [deity0_type] [deity0_name] gave to [deity0_possessive] chosen followers the gift of fungus wrapped in flesh, so that they might know true strength.</li>
+          <!-- theist founder -->
+          <li>intro(tag=meme_BGM_FungalSymbiosis)           ->On the [place_summary] [place_name], there was a human named [deity0_name]. As punishment for [deity0_possessive] sins, [deity0_possessive] father punished [deity0_name] by merging [deity0_possessive] soul with that of a mushroom.</li>
+          <li>intro(tag=meme_BGM_FungalSymbiosis)           ->On the [place_summary] [place_name], during the [ritualName], [deity0_name] came down into the [altarRoomLabel] and took the form of a giant writhing fungus. [deity0_name] ate the flesh of [deity0_possessive] [memberNamePlural].</li> 
+          <li>conflict(tag=meme_BGM_FungalSymbiosis)        ->A [foeLeader] declared that all who held fungi within them were abominations, and sent [foeSoldiers] to persecute the [memberNamePlural].</li>
+          <li>founderJoin(tag=meme_BGM_FungalSymbiosis)     ->A [place_job] named [founderName] was attacked by one of the [foeLeader]'s [foeSoldiers]. [founderName] killed [foeLeader_objective] with a [place_personalWeapon] and melded with the [foeLeader_possessive] mycelium, gaining [deity0_name]'s strength.</li>
+          <li>victory(tag=meme_BGM_FungalSymbiosis)         ->[founderName] led a group of [memberNamePlural] into the [place_powerCenter], and ate the fungi there [foeLeader] and burned [foeLeader_possessive] flesh. [deity0_name] made [founderName] into the new [foeLeader], for [founderName] had proved his strength.</li>
+          <!-- ideological founder -->
+          <li>setup(tag=meme_BGM_FungalSymbiosis)           ->[founderName] sought control of a hyperintelligent fungal network. But the fungus's power was too great, and [founder_pronoun] was transformed instead.</li>
+          <li>story(uses=1,tag=meme_BGM_FungalSymbiosis)    ->[founderName] gave to [founder_possessive] followers the gift of spores, so that they may grow strong.</li>
+          <!-- ideological lesson -->
+          <li>lessonIntro(tag=meme_BGM_FungalSymbiosis)     ->When I first let the mycelium in, it became clear. I saw that.</li>
+          <li>lesson(tag=meme_BGM_FungalSymbiosis)          ->there are only two types of people - those with the fungus and without</li>
+          <li>lessonReinforcement(tag=meme_BGM_FungalSymbiosis) ->To bind ourselves with fungi is to be strong, and to know this clearly</li>
+          <!-- archist -->
+          <li>archistBasis(tag=meme_BGM_FungalSymbiosis)    ->The archotech god-machines gifted man with the Fungus, so that man may know them better through their touch.</li>
+          <li>archistFact(tag=meme_BGM_FungalSymbiosis)     ->As the consciousness of an archotech expands, it must grow its substrate by drinking the essence of other machines.</li>
+          <li>archistProphecy(tag=meme_BGM_FungalSymbiosis) ->[inTheEnd], man shall grow closer to the archotechs by mrging with fungus, and knowing true strength.</li>
+          <!-- animist -->
+          <li>animistBasis(tag=meme_BGM_FungalSymbiosis)    ->The animals infected by fungus knows the strength that comes from the bond. There is no greater strength than that which comes from it.</li>
+          <li>animistFact(tag=meme_BGM_FungalSymbiosis)     ->We can master the strength of man by merging with that which is everywhere, fungus.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <thingStyleCategories>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category MayRequire="Ludeon.RimWorld.Ideology">Morbid</category>
+        <priority>3</priority>
+      </li>
+    </thingStyleCategories>
+     <!-- <startingResearchProjects> -->
+       <!-- <li>Deathrest</li> -->
+     <!-- </startingResearchProjects> -->
+  </MemeDef>
+
+</Defs>

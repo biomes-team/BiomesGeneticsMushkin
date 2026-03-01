@@ -258,18 +258,18 @@
 
     <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_InfectiousSpores</defName>
-        <label>infectious spores</label>
+        <label>infectious mycelia</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
-        <description>The unique fungi within the host allows them to spread it into new hosts via spores, where it bonds with their body on a cellular level.</description>
+        <description>The unique fungi within the host allows them to spread it into new hosts via mycelium, where it bonds with their body on a cellular level.</description>
         <iconPath>UI/Ability-Genes/Infectious_Spores</iconPath>
         <displayCategory>SporesFungal</displayCategory>
         <displayOrderInCategory>-1</displayOrderInCategory>
         <prerequisite>BGM_FungalSymbiosis</prerequisite>
         <abilities>
-            <li>BGM_InfectiousSpores</li>
+            <li>BGM_InfectiousMycelia</li>
         </abilities>
         <descriptionHyperlinks>
-            <AbilityDef>BGM_InfectiousSpores</AbilityDef>
+            <AbilityDef>BGM_InfectiousMycelia</AbilityDef>
         </descriptionHyperlinks>
         <biostatMet>2</biostatMet>
         <biostatCpx>1</biostatCpx>

@@ -311,9 +311,9 @@
     </AbilityDef>
 
     <AbilityDef ParentName="AbilityTouchBase">
-        <defName>BGM_InfectiousSpores</defName>
-        <label>infectious spores</label>
-        <description>The user extends fungal threads into another human, seeding the fungus within them and turning them into a mushkin.</description>
+        <defName>BGM_InfectiousMycelia</defName>
+        <label>infectious mycelia</label>
+        <description>The user extends fungal mycelia into another human, seeding the fungus within them and turning them into a mushkin.</description>
         <iconPath>UI/Ability-Genes/Infectious_Spores</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <hostile>false</hostile>
@@ -326,7 +326,7 @@
             <verbClass>Verb_CastAbilityTouch</verbClass>
             <drawAimPie>false</drawAimPie>
             <range>-1</range>
-            <warmupTime>1</warmupTime>
+            <warmupTime>4</warmupTime>
             <targetParams>
                 <canTargetBuildings>false</canTargetBuildings>
                 <canTargetAnimals>false</canTargetAnimals>
