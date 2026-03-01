@@ -5,7 +5,7 @@
     <defName>BGM_FungalSymbiosis</defName>
     <label>fungal symbiosis</label> 
     <description>Bonding with fungi is sacred. Those that have done so should be worshipped.</description> 
-    <iconPath>UI/Memes/Bloodfeeding</iconPath>
+    <iconPath>UI/Memes/FungalSymbiosis</iconPath>
     <groupDef MayRequire="Ludeon.RimWorld.Ideology">Misc</groupDef>
     <impact>2</impact>
     <renderOrder>999</renderOrder>

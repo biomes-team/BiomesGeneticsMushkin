@@ -368,6 +368,11 @@
         <displayCategory>CoreFungal</displayCategory>
         <displayOrderInCategory>50</displayOrderInCategory>
 		<deathHistoryEvent>BGM_FungalSymbiosisDied</deathHistoryEvent>
+			<forcedTraits>
+			<li>
+				<def>Undergrounder</def>
+			</li>
+			</forcedTraits>
         <biostatMet>6</biostatMet>
         <biostatCpx>2</biostatCpx>
         <symbolPack>
@@ -404,5 +409,35 @@
                 <symbiosisThought>BGM_Proj_FungalSymbiosis</symbiosisThought>
             </li>
         </modExtensions>
+    </BiomesCore.Defs.BMT_GeneDef>
+	
+	 <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+        <defName>BGM_FungalSovereignty</defName>
+        <label>fungal sovereign</label>
+        <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
+        <description>The role of leadership within mushkin groups unlocks something within those of the fungal bond, granting them superior healing and immunity to the effects of aging.</description>
+        <iconPath>UI/Genes/Gene_FungalSovereignty</iconPath>
+        <displayCategory>Fungal</displayCategory>
+        <displayOrderInCategory>-2</displayOrderInCategory>
+		<biologicalAgeTickFactorFromAgeCurve>
+		<points>
+			<li>(13, 1)</li>
+			<li>(18.5, 0)</li>
+		</points>
+		</biologicalAgeTickFactorFromAgeCurve>
+		<preventPermanentWounds>true</preventPermanentWounds>
+		<hediffGiversCannotGive>
+			<li>Carcinoma</li>
+			<li>HeartAttack</li>
+			<li>BadBack</li>
+			<li>Frail</li>
+			<li>Cataract</li>
+			<li>Dementia</li>
+			<li>Alzheimers</li>
+			<li>Asthma</li>
+			<li>HeartArteryBlockage</li>
+		</hediffGiversCannotGive>
+        <prerequisite>BGM_FungalSymbiosis</prerequisite>
+        <biostatCpx>10</biostatCpx>
     </BiomesCore.Defs.BMT_GeneDef>
 </Defs>

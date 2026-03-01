@@ -37,9 +37,7 @@
         <combatPowerFactor>2</combatPowerFactor>
         <genes>
             <li>BGM_SovereignCap</li>
-            <li>TotalHealing</li>
-            <li>DiseaseFree</li>
-            <li>Ageless</li>
+            <li>BGM_FungalSovereignty</li>
             <li>MoveSpeed_Slow</li>
             <li>Robust</li>
             <li>AptitudeRemarkable_Social</li>
