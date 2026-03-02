@@ -12,7 +12,7 @@
     <pawnsPlural>mushkin</pawnsPlural>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
-        <BGM_Mushkin>0.65</BGM_Mushkin>
+        <BGM_Mushkin>0.55</BGM_Mushkin>
         <BGM_Sovereign>0.05</BGM_Sovereign>
         <BGM_Socialite>0.10</BGM_Socialite>
         <BGM_Necrospores>0.05</BGM_Necrospores>
