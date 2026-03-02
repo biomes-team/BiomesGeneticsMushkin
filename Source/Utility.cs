@@ -1,20 +1,52 @@
-﻿using System;
+﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace BiomesGeneticsMushkin
 {
-    public static class GeneralUtility
-    {
+	public static class GeneralUtility
+	{
 
-        public static bool IsFungal(this Pawn p)
-        {
-            return p.genes?.GetFirstGeneOfType<Gene_FungalSymbiosis>() != null;
-        }
+		private static List<Pawn> fungalSymbiosisPawns = null;
+		private static List<Pawn> fungalSymbiosisPawns_Player = null;
 
-    }
+		public static void ResetCollection()
+		{
+			fungalSymbiosisPawns = null;
+			fungalSymbiosisPawns_Player = null;
+		}
+
+		public static List<Pawn> GetFungalSymbiosisPawns
+		{
+			get
+			{
+				if (fungalSymbiosisPawns == null)
+				{
+					fungalSymbiosisPawns = PawnsFinder.AllMapsAndWorld_Alive.Where((fungus) => fungus.genes?.GetFirstGeneOfType<Gene_FungalSymbiosis>() != null).ToList();
+				}
+				return fungalSymbiosisPawns;
+			}
+		}
+
+		public static List<Pawn> GetFungalSymbiosisPawns_Player
+		{
+			get
+			{
+				if (fungalSymbiosisPawns_Player == null)
+				{
+					fungalSymbiosisPawns_Player = GetFungalSymbiosisPawns.Where((fungus) => fungus.Faction == Faction.OfPlayerSilentFail).ToList();
+				}
+				return fungalSymbiosisPawns_Player;
+			}
+		}
+
+		public static bool IsFungal(this Pawn p)
+		{
+			//return p.genes?.GetFirstGeneOfType<Gene_FungalSymbiosis>() != null;
+			return GetFungalSymbiosisPawns.Contains(p);
+		}
+
+	}
 
 }

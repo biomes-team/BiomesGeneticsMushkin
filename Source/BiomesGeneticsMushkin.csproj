@@ -33,6 +33,7 @@
 		</NoWarn>
 	</PropertyGroup>
 	<ItemGroup>
+	  <Compile Remove="FungalSymbiosisMapComponent.cs" />
 	  <Compile Remove="Harmony\GeneUIUtility_DrawGeneBasics_Transpiler.cs" />
 	</ItemGroup>
 

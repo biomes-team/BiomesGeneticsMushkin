@@ -5,7 +5,7 @@ namespace BiomesGeneticsMushkin
 {
 	public class Gene_FungalSymbiosis : MushkinGene
 	{
-		private FungalSymbiosisMapComponent mapComp;
+		//private FungalSymbiosisMapComponent mapComp;
 		private ModExtension modExtension;
 		private ModExtension ModExtension
 		{
@@ -15,37 +15,39 @@ namespace BiomesGeneticsMushkin
 				return modExtension;
 			}
 		}
-		private FungalSymbiosisMapComponent MapComp
-		{
-			get
-			{
-				mapComp ??= pawn.Map.GetComponent<FungalSymbiosisMapComponent>();
-				return mapComp;
-			}
-		}
+		//private FungalSymbiosisMapComponent MapComp
+		//{
+		//	get
+		//	{
+		//		mapComp ??= pawn.Map.GetComponent<FungalSymbiosisMapComponent>();
+		//		return mapComp;
+		//	}
+		//}
 
 
 		public override void PostAdd()
 		{
 			base.PostAdd();
-			if (pawn.Spawned)
-			{
-				MapComp.pawnsWithFungalSymbiosis.AddDistinct(pawn);
-				Thought_FungalSymbiosis thought = (Thought_FungalSymbiosis)ThoughtMaker.MakeThought(ModExtension.symbiosisThought);
-				thought.permanent = true;
-				pawn.needs?.mood?.thoughts?.memories?.TryGainMemory(thought);
-			}
+			//if (pawn.Spawned)
+			//{
+			//	//MapComp.pawnsWithFungalSymbiosis.AddDistinct(pawn);
+			//}
+			Thought_FungalSymbiosis thought = (Thought_FungalSymbiosis)ThoughtMaker.MakeThought(ModExtension.symbiosisThought);
+			thought.permanent = true;
+			pawn.needs?.mood?.thoughts?.memories?.TryGainMemory(thought);
+			GeneralUtility.ResetCollection();
 		}
 
 
 		public override void PostRemove()
 		{
 			base.PostRemove();
-			if (pawn.Spawned)
-			{
-				MapComp.pawnsWithFungalSymbiosis.Remove(pawn);
-				pawn.needs?.mood?.thoughts?.memories?.RemoveMemoriesOfDef(ModExtension.symbiosisThought);
-			}
+			//if (pawn.Spawned)
+			//{
+			//	//MapComp.pawnsWithFungalSymbiosis.Remove(pawn);
+			//}
+			pawn.needs?.mood?.thoughts?.memories?.RemoveMemoriesOfDef(ModExtension.symbiosisThought);
+			GeneralUtility.ResetCollection();
 		}
 	}
 }
