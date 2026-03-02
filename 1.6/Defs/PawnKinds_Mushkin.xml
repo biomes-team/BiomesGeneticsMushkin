@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <PawnKindDef ParentName="OutlanderBase" Name="VillagerBase">
+    <defName>BGM_Mushkin_Villager</defName>
+    <label>mushkin villager</label>
+    <combatPower>45</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>Gun</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <weaponMoney>65~250</weaponMoney>
+    <apparelMoney>200~400</apparelMoney>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <techHediffsChance>0.06</techHediffsChance>
+    <techHediffsMoney>50~600</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>10~17</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <BGM_Mushkin>0.50</BGM_Mushkin>
+        <BGM_Sovereign>0.005</BGM_Sovereign>
+        <BGM_Socialite>0.15</BGM_Socialite>
+        <BGM_Necrospores>0.05</BGM_Necrospores>
+        <BGM_Battalions>0.025</BGM_Battalions>
+		<BGM_MycelialCaretaker>0.025</BGM_MycelialCaretaker>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+  
+   <PawnKindDef ParentName="Villager_Child">
+    <defName>BGM_Villager_Child_Mushkin</defName>
+    <defaultFactionDef>BGM_MushkinOutlanders</defaultFactionDef>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OutlanderBase" Name="GuardBase">
+    <defName>BGM_Mushkin_Guard</defName>
+    <label>fungal guard</label>
+    <combatPower>60</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>400~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <weaponTags>
+      <li>Gun</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <weaponMoney>250~400</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>200~700</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>15~24</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <BGM_Battalions>0.70</BGM_Battalions>
+		<BGM_Necrospores>0.15</BGM_Necrospores>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OutlanderBase" Name="TraderBase">
+    <defName>BGM_Mushkin_Trader</defName>
+    <label>mushkin trader</label>
+    <trader>true</trader>
+    <combatPower>45</combatPower>
+    <isFighter>false</isFighter>
+    <gearHealthRange>1~1</gearHealthRange>
+    <itemQuality>Normal</itemQuality>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <weaponMoney>200~200</weaponMoney>
+    <apparelMoney>400~600</apparelMoney>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_BowlerHat</li>
+    </apparelRequired>
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>600~1500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>12~20</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <BGM_Socialite>0.65</BGM_Socialite>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="OutlanderBase">
+    <defName>BGM_Mushkin_Farmer</defName>
+    <label>mushkin farmer</label>
+    <combatPower>35</combatPower>
+    <backstoryFiltersOverride>
+      <li>
+        <categoriesAdulthood>
+          <li>Farmer</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>Gun</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <weaponMoney>65~125</weaponMoney>
+    <apparelMoney>200~400</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsMoney>1000~1000</techHediffsMoney>
+    <techHediffsTags>
+      <li>FieldHand</li>
+    </techHediffsTags>
+    <techHediffsChance>0.8</techHediffsChance>
+    <techHediffsMaxAmount>1</techHediffsMaxAmount>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>10~17</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <BGM_MycelialCaretaker>0.65</BGM_MycelialCaretaker>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OutlanderBase" Name="CouncilmanBase">
+    <defName>BGM_Mushkin_Sovereign</defName>
+    <label>high sovereign</label>
+    <labelPlural>high sovereigns</labelPlural>
+    <combatPower>40</combatPower>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>18</minGenerationAge>
+    <isFighter>false</isFighter>
+    <gearHealthRange>1~1</gearHealthRange>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>200~400</weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <apparelMoney>700~1200</apparelMoney>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>1000~3000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>5~8</initialWillRange>
+    <initialResistanceRange>20~30</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <BGM_Sovereign MayRequire="Ludeon.RimWorld.Biotech">1</BGM_Sovereign>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="MercenaryMidTierBase" Name="MercenarySlasherBase" Abstract="True">
+    <defName>BGM_Mercenary_Slasher_Mushkin</defName>
+    <label>mercenary slasher</label>
+    <combatPower>140</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.7~3.2</gearHealthRange>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+    <apparelMoney>300~1400</apparelMoney>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <weaponMoney>200~500</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <initialResistanceRange>19~29</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <BGM_Battalions>0.75</BGM_Battalions>
+        <BGM_Mushkin>0.25</BGM_Mushkin>		
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="MercenarySlasherBase">
+    <defName>BGM_Mercenary_Slasher_Mushkin</defName>
+    <initialResistanceRange>10~16</initialResistanceRange>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="MercenaryEliteBase">
+    <defName>BGM_Mercenary_Elite_Mushkin</defName>
+    <label>mushkin elite</label>
+    <initialResistanceRange>15~23</initialResistanceRange>
+    <weaponTags Inherit="False">
+      <li>ShortShots</li>
+    </weaponTags>
+    <defaultFactionDef>BGM_MushkinOutlanders</defaultFactionDef>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="MercenaryMidTierBase" Name="MercenarySniperBase" Abstract="True">
+    <label>mercenary sniper mushkin</label>
+    <combatPower>110</combatPower>
+    <gearHealthRange>0.7~3.2</gearHealthRange>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+    <apparelMoney>1000~1500</apparelMoney>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <weaponMoney>600~600</weaponMoney>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+</Defs>

@@ -199,9 +199,9 @@
 
     <!-- TODO -->
     <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_GeneHairStyleBase">
-        <defName>BGM_MycelialTenderCap</defName>
-        <label>mycelia tender mushroom cap</label>
-        <labelShortAdj>mycelia tender cap</labelShortAdj>
+        <defName>BGM_MycelialCaretakerCap</defName>
+        <label>mycelia caretaker mushroom cap</label>
+        <labelShortAdj>mycelia caretaker cap</labelShortAdj>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The fungus that grants this gene makes the carrier grow a sprout-like mushroom cap in place of hair.</description>
         <iconPath>UI/Genes/Gene_MyceliaTenderCap</iconPath>

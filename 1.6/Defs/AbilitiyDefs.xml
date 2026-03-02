@@ -8,6 +8,7 @@
         <iconPath>UI/Ability-Genes/Blinding_Spores</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <targetRequired>false</targetRequired>
+		<aiCanUse>true</aiCanUse>
         <hostile>false</hostile>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
         <verbProperties>
@@ -131,6 +132,7 @@
         <charges>3</charges>
         <cooldownTicksRange>30000</cooldownTicksRange>
         <warmupStartSound>FoamSpray_Warmup</warmupStartSound>
+		<aiCanUse>true</aiCanUse>
         <hostile>false</hostile>
         <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
@@ -247,7 +249,7 @@
     <AbilityDef>
         <defName>BGM_FruitingBirth</defName>
         <label>fruiting birth</label>
-        <description>The fungi that form a symbiosis the carriers of this gene allows those of either sex to produce a genetic copy of themselves from their flesh without pregnancy.</description>
+        <description>The fungi that form a symbiosis the carriers of this gene allows those of either sex to produce a genetic copy of themselves from their flesh without pregnancy. This process takes about five days to complete.</description>
         <iconPath>UI/Genes/Gene_BuddingBirth</iconPath>
         <cooldownTicksRange>1200000</cooldownTicksRange><!-- 20 days as the process lasts 5 days -->
         <targetRequired>false</targetRequired>
@@ -304,7 +306,7 @@
                     <li>BGM_Socialite</li>
                     <li>BGM_Necrospores</li>
                     <li>BGM_Battalions</li>
-                    <li>BGM_MyceliaTender</li>
+                    <li>BGM_MycelialCaretaker</li>
                 </allowedXenotypes>
             </li>
         </comps>
@@ -376,7 +378,7 @@
                     <li>BGM_Socialite</li>
                     <li>BGM_Necrospores</li>
                     <li>BGM_Battalions</li>
-                    <li>BGM_MyceliaTender</li>
+                    <li>BGM_MycelialCaretaker</li>
                 </resistantXenotypes>
                 <parasitismGene>BGM_FungalParasitism</parasitismGene>
                 <resistanceChance>0.1</resistanceChance>

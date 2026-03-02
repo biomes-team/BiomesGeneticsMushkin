@@ -29,7 +29,7 @@
     <generalRules>
       <rulesStrings>
         <li>memeAdjective->fungal</li>
-        <li>memeAdjective->fungusy</li>
+        <li>memeAdjective->mycorrhyzal</li>
         <li>memeCreed->cave</li>
         <li>memeCreed->gloom</li>
         <li>memeCreed->troop</li>

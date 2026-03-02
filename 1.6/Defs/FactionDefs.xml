@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>BGM_MushkinOutlanders</defName>
+    <label>mushkin outlander union</label>
+    <description>A loose union of strange mushkin settlements. They're willing to make friends, even with those not bound to the fungus as they are, but they are also quite willing to use humans as fertilizer for their myriad mushrooms. If treated well, they are hardy allies and potential recruits. If angered, they will do their best to blight your lands with fungus and turn your people into more of their own.</description>
+    <factionIconPath>UI/Other/FungalTown</factionIconPath>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <pawnSingular>mushkin</pawnSingular>
+    <pawnsPlural>mushkin</pawnsPlural>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BGM_Mushkin>0.65</BGM_Mushkin>
+        <BGM_Sovereign>0.05</BGM_Sovereign>
+        <BGM_Socialite>0.10</BGM_Socialite>
+        <BGM_Necrospores>0.05</BGM_Necrospores>
+        <BGM_Battalions>0.05</BGM_Battalions>
+		<BGM_MycelialCaretaker>0.10</BGM_MycelialCaretaker>
+      </xenotypeChances>
+    </xenotypeSet>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <BGM_Mushkin_Villager>5</BGM_Mushkin_Villager>
+          <BGM_Mushkin_Guard>10</BGM_Mushkin_Guard>
+          <BGM_Mercenary_Slasher_Mushkin>10</BGM_Mercenary_Slasher_Mushkin>
+          <BGM_Mercenary_Elite_Mushkin>10</BGM_Mercenary_Elite_Mushkin>
+          <BGM_Mushkin_Sovereign>10</BGM_Mushkin_Sovereign>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <BGM_Mushkin_Villager>20</BGM_Mushkin_Villager>
+          <BGM_Villager_Child_Mushkin>10</BGM_Villager_Child_Mushkin>
+          <BGM_Mushkin_Guard>10</BGM_Mushkin_Guard>
+          <BGM_Mushkin_Sovereign>10</BGM_Mushkin_Sovereign>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <BGM_Mushkin_Trader>1</BGM_Mushkin_Trader>
+        </traders>
+        <carriers>
+          <BGM_Snailfallo>6</BGM_Snailfallo>
+        </carriers>
+        <guards>
+          <BGM_Mushkin_Villager>3</BGM_Mushkin_Villager>
+          <BGM_Mushkin_Guard>10</BGM_Mushkin_Guard>
+          <BGM_Mercenary_Slasher_Mushkin>10</BGM_Mercenary_Slasher_Mushkin>
+          <BGM_Mercenary_Elite_Mushkin>10</BGM_Mercenary_Elite_Mushkin>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <BGM_Mushkin_Villager>10</BGM_Mushkin_Villager>
+          <BGM_Mushkin_Guard>10</BGM_Mushkin_Guard>
+          <BGM_Mercenary_Slasher_Mushkin>10</BGM_Mercenary_Slasher_Mushkin>
+          <BGM_Mercenary_Elite_Mushkin>10</BGM_Mercenary_Elite_Mushkin>
+          <BGM_Mushkin_Sovereign>10</BGM_Mushkin_Sovereign>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Miner>1</Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Hunter>1</Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Logger>1</Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Farmer>1</Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+  
+</Defs>

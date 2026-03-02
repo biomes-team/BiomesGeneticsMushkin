@@ -127,13 +127,13 @@
     </XenotypeDef>
 
     <XenotypeDef ParentName="BGM_BaseMush">
-        <defName>BGM_MyceliaTender</defName>
-        <label>mycelial-Tender</label>
-        <description>Mycelial-tenders, so named for their deft hand at manipulating the growth of fungi, are most often used as farmers in any settlement fortunate enough to have one of their kind.\n\nThe fungi they are bonded with grants them natural aptitude with more tender tasks such as caring for plants, fungi, and animals. Their natural aptitude also extends to being skilled at providing nutrition both in their ability to instantly sprout various fungi as well as cooking them up into meals.\n\nTheir aptitude in caring tasks comes at the cost of being poor at more mental tasks. Unique organs within their caps allow them to produce globs of fire-retardant spores.</description>
-        <descriptionShort>The mycelial-tender caste mushkin are naturally suited to more tender tasks, from caring to food sources to preparing them as meals. They can snuff out fires with a spray of spores.</descriptionShort>
+        <defName>BGM_MycelialCaretaker</defName>
+        <label>mycelial-caretaker</label>
+        <description>Mycelial-caretakers, so named for their deft hand at manipulating the growth of fungi, are most often used as farmers in any settlement fortunate enough to have one of their kind.\n\nThe fungi they are bonded with grants them natural aptitude with more caretaker-based tasks such as caring for plants, fungi, and animals. Their natural aptitude extends to both sprouting fungi with their spores as well as cooking them up into meals.\n\nTheir aptitude in caring tasks comes at the cost of being poor at more mental tasks. Unique organs within their caps allow them to produce globs of fire-retardant spores.</description>
+        <descriptionShort>The caretaker caste mushkin are naturally suited to more tender tasks, from caring to food sources to preparing them as meals. They can snuff out fires with a spray of spores.</descriptionShort>
         <combatPowerFactor>1</combatPowerFactor>
         <genes>
-			<li>BGM_MycelialTenderCap</li>
+			<li>BGM_MycelialCaretakerCap</li>
             <li>AptitudeRemarkable_Plants</li>
             <li>AptitudeRemarkable_Animals</li>
             <li>AptitudeStrong_Cooking</li>
