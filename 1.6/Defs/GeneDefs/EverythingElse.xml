@@ -413,7 +413,7 @@
 	
 	 <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_FungalSovereignty</defName>
-        <label>fungal sovereign</label>
+        <label>fungal sovereignty</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The role of leadership within mushkin groups unlocks something within those of the fungal bond, granting them superior healing and immunity to the effects of aging.</description>
         <iconPath>UI/Genes/Gene_FungalSovereignty</iconPath>
