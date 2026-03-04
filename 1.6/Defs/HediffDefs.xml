@@ -152,10 +152,10 @@
     <description>Unique fungal mycelia have been embedded in this human, temporarily resurrecting them back to a twisted form of life. They will die in a few days.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <maxSeverity>1</maxSeverity>
-    <isBad>false</isBad>
+    <isBad>true</isBad>
     <stages>
       <li>
-        <becomeVisible>false</becomeVisible>
+        <becomeVisible>true</becomeVisible>
       </li>
     </stages>
     <comps>
