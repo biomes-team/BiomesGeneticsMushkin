@@ -24,7 +24,7 @@ namespace BiomesGeneticsMushkin
 		//	}
 		//}
 
-		private int nextTick = 0;
+		private int nextTick = 120;
 		public override void TickInterval(int delta)
 		{
 			nextTick -= delta;

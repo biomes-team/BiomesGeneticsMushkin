@@ -33,15 +33,19 @@ namespace BiomesGeneticsMushkin
 
 		public override float MoodOffset()
 		{
-			if (pawn.Faction == Faction.OfPlayerSilentFail && CurStageIndex == 0)
+			if (pawn.Faction == Faction.OfPlayerSilentFail)
 			{
-				float totalMood = 0f;
-				foreach (Pawn pawn in GeneralUtility.GetFungalSymbiosisPawns_Player)
+				if (CurStageIndex == 0)
 				{
-					totalMood += pawn.needs.mood.CurLevel;
+					float totalMood = 0f;
+					foreach (Pawn pawn in GeneralUtility.GetFungalSymbiosisPawns_Player)
+					{
+						totalMood += pawn.needs.mood.CurLevel;
+					}
+					totalMood *= 10;
+					return totalMood / GeneralUtility.GetFungalSymbiosisPawns_Player.Count;
 				}
-				totalMood *= 10;
-				return totalMood / GeneralUtility.GetFungalSymbiosisPawns_Player.Count;
+				return base.MoodOffset();
 			}
 			return 0;
 		}

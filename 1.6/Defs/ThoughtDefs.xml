@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <!-- TODO -->
-    <ThoughtDef>
-        <defName>BGM_Proj_FungalSymbiosis</defName>
-        <thoughtClass>BiomesGeneticsMushkin.Thought_FungalSymbiosis</thoughtClass>
-        <!-- <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>-->
-        <stackLimit>100</stackLimit>
-        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-        <stages>
-            <li>
-                <label>Fungal symbiosis</label>
-                <description>The psychic bond I share with others of my kind allows us to share some of what we feel when together.</description>
-                <baseMoodEffect>8</baseMoodEffect>
-            </li>
-            <li>
-                <label>Fungal symbiosis (Alone)</label>
-                <description>I feel alone without others of my kind around.</description>
-                <baseMoodEffect>-8</baseMoodEffect>
-            </li>
-        </stages>
-    </ThoughtDef>
+  <ThoughtDef>
+	<defName>BGM_Proj_FungalSymbiosis</defName>
+	<thoughtClass>BiomesGeneticsMushkin.Thought_FungalSymbiosis</thoughtClass>
+	<!-- <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>-->
+	<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+	<stackLimit>1</stackLimit>
+	<stages>
+		<li>
+			<label>Fungal symbiosis</label>
+			<description>The psychic bond I share with others of my kind allows us to share some of what we feel when together.</description>
+			<baseMoodEffect>8</baseMoodEffect>
+		</li>
+		<li>
+			<label>Fungal symbiosis (Alone)</label>
+			<description>I feel alone without others of my kind around.</description>
+			<baseMoodEffect>-8</baseMoodEffect>
+		</li>
+	</stages>
+  </ThoughtDef>
 
 </Defs>
