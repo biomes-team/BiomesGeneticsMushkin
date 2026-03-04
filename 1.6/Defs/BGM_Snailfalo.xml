@@ -26,8 +26,8 @@
 				<duration>750</duration>
 			</li>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggGiantSnailFertilized</eggFertilizedDef>
-				<eggUnfertilizedDef>BMT_EggGiantSnailUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BGM_EggSnailfaloFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BGM_EggSnailfaloUnfertilized</eggUnfertilizedDef>
 				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
@@ -167,7 +167,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BGM_EggSnailfaloFertilized</defName>
 		<label>snailfalo egg (fert.)</label>
-		<description>A fertilized snailfalo egg. If all goes well, it should hatch into a baby snailfallo. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilized snailfalo egg. If all goes well, it should hatch into a baby snailfalo. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(167,198,153)</color>
@@ -180,7 +180,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>8</hatcherDaystoHatch>
-				<hatcherPawn>BMT_GiantSnail</hatcherPawn>
+				<hatcherPawn>BGM_Snailfalo</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
