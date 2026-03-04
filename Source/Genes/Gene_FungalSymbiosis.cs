@@ -24,6 +24,18 @@ namespace BiomesGeneticsMushkin
 		//	}
 		//}
 
+		private int nextTick = 0;
+		public override void TickInterval(int delta)
+		{
+			nextTick -= delta;
+			if (nextTick > 0)
+			{
+				return;
+			}
+			nextTick = 60002;
+			Update();
+		}
+
 
 		public override void PostAdd()
 		{
@@ -32,12 +44,16 @@ namespace BiomesGeneticsMushkin
 			//{
 			//	//MapComp.pawnsWithFungalSymbiosis.AddDistinct(pawn);
 			//}
+			Update();
+		}
+
+		private void Update()
+		{
+			GeneralUtility.ResetCollection();
 			Thought_FungalSymbiosis thought = (Thought_FungalSymbiosis)ThoughtMaker.MakeThought(ModExtension.symbiosisThought);
 			thought.permanent = true;
 			pawn.needs?.mood?.thoughts?.memories?.TryGainMemory(thought);
-			GeneralUtility.ResetCollection();
 		}
-
 
 		public override void PostRemove()
 		{

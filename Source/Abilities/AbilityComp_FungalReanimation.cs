@@ -14,7 +14,11 @@ namespace BiomesGeneticsMushkin
 			if (target.Thing is Corpse corpse)
 			{
 				Pawn ressedPawn = corpse.InnerPawn;
-				ResurrectionUtility.TryResurrect(corpse.InnerPawn);
+				ResurrectionUtility.TryResurrect(ressedPawn);
+				if (ressedPawn.Faction != parent.pawn?.Faction)
+				{
+					ressedPawn.SetFaction(parent.pawn.Faction);
+				}
 				ressedPawn.genes?.AddGene(Props.reanimationGene, true);
 			}
 		}

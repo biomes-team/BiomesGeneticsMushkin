@@ -14,6 +14,7 @@ namespace BiomesGeneticsMushkin
 		//		return mapComp;
 		//	}
 		//}
+		public override bool ShouldDiscard => false;
 
 
 		public override void ThoughtInterval()
