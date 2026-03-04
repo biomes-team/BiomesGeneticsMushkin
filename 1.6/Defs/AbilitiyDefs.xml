@@ -343,6 +343,11 @@
                 <parasitismGene>BGM_FungalParasitism</parasitismGene>
                 <parasitismChance>0.1</parasitismChance>
             </li>
+			<li Class = "CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>BMT_SpreadingMycelia</hediffDef>
+				<applicableToMechs>False</applicableToMechs>
+			</li>
         </comps>
     </AbilityDef>
 
