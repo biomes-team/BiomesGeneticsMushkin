@@ -14,12 +14,12 @@ namespace BiomesGeneticsMushkin
 
 		public override void StartedNewGame()
 		{
-			GeneralUtility.ResetCollection();
+			GeneralUtility.ResetCollection(true);
 		}
 
 		public override void LoadedGame()
 		{
-			GeneralUtility.ResetCollection();
+			GeneralUtility.ResetCollection(true);
 		}
 
 	}

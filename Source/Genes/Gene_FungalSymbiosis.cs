@@ -1,5 +1,4 @@
 ﻿using RimWorld;
-using Verse;
 
 namespace BiomesGeneticsMushkin
 {
@@ -33,7 +32,7 @@ namespace BiomesGeneticsMushkin
 				return;
 			}
 			nextTick = 60002;
-			Update();
+			Update(false);
 		}
 
 
@@ -44,12 +43,12 @@ namespace BiomesGeneticsMushkin
 			//{
 			//	//MapComp.pawnsWithFungalSymbiosis.AddDistinct(pawn);
 			//}
-			Update();
+			Update(true);
 		}
 
-		private void Update()
+		private void Update(bool forcedRacache)
 		{
-			GeneralUtility.ResetCollection();
+			GeneralUtility.ResetCollection(forcedRacache);
 			Thought_FungalSymbiosis thought = (Thought_FungalSymbiosis)ThoughtMaker.MakeThought(ModExtension.symbiosisThought);
 			thought.permanent = true;
 			pawn.needs?.mood?.thoughts?.memories?.TryGainMemory(thought);
@@ -63,7 +62,7 @@ namespace BiomesGeneticsMushkin
 			//	//MapComp.pawnsWithFungalSymbiosis.Remove(pawn);
 			//}
 			pawn.needs?.mood?.thoughts?.memories?.RemoveMemoriesOfDef(ModExtension.symbiosisThought);
-			GeneralUtility.ResetCollection();
+			GeneralUtility.ResetCollection(true);
 		}
 	}
 }

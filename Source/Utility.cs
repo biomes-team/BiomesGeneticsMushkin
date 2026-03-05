@@ -11,10 +11,16 @@ namespace BiomesGeneticsMushkin
 		private static List<Pawn> fungalSymbiosisPawns = null;
 		private static List<Pawn> fungalSymbiosisPawns_Player = null;
 
-		public static void ResetCollection()
+		private static int lastRecacheTick = -1;
+
+		public static void ResetCollection(bool forcedRacache)
 		{
-			fungalSymbiosisPawns = null;
-			fungalSymbiosisPawns_Player = null;
+			if (forcedRacache || lastRecacheTick <= Find.TickManager.TicksGame + 60000)
+			{
+				fungalSymbiosisPawns = null;
+				fungalSymbiosisPawns_Player = null;
+				lastRecacheTick = Find.TickManager.TicksGame;
+			}
 		}
 
 		public static List<Pawn> GetFungalSymbiosisPawns
