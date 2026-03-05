@@ -149,13 +149,22 @@
   <HediffDef>
     <defName>BGM_FungalUndead</defName>
     <label>fungal undead decay</label>
-    <description>Unique fungal mycelia have been embedded in this human, temporarily resurrecting them back to a twisted form of life. They will die in a few days.</description>
+    <description>Unique fungal mycelia have been embedded in this human, temporarily resurrecting them back to a twisted form of life. They have no needs and will die in a few days.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <maxSeverity>1</maxSeverity>
     <isBad>true</isBad>
     <stages>
       <li>
         <becomeVisible>true</becomeVisible>
+       <disablesNeeds>
+          <li>Rest</li>
+          <li>Comfort</li>
+		  <li>Joy</li>
+		  <li>Beauty</li>
+		  <li>Outdoors</li>
+		  <li>Mood</li>
+		  <li>Food</li>
+        </disablesNeeds>
       </li>
     </stages>
     <comps>

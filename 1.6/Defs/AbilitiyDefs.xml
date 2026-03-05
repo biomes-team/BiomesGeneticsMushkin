@@ -6,7 +6,7 @@
         <label>blinding spores</label>
         <description>Release compressed smoke from fungal cap gills. Smoke-like spores reduces the accuracy of any shot fired through it, and prevents turrets from locking on entirely.</description>
         <iconPath>UI/Ability-Genes/Blinding_Spores</iconPath>
-        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <cooldownTicksRange>60000</cooldownTicksRange><!-- 1 day -->
         <targetRequired>false</targetRequired>
 		<aiCanUse>true</aiCanUse>
         <hostile>false</hostile>
@@ -35,7 +35,7 @@
         <description>Spray thick fire-retardant foam from specialized gills in the fungal cap. The foam will cover a small area and extinguish any fire it touches.</description>
         <iconPath>UI/Ability-Genes/Firefoam_Spores</iconPath>
         <charges>3</charges>
-        <cooldownTicksRange>30000</cooldownTicksRange>
+        <cooldownTicksRange>30000</cooldownTicksRange><!-- 1/2 day -->
         <warmupStartSound>FoamSpray_Warmup</warmupStartSound>
         <hostile>false</hostile>
         <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
@@ -81,7 +81,7 @@
         <label>healing spores</label>
         <description>This fungal gene allows the user to produce a puff of spores from specialized organs that induce faster healing in those around them.</description>
         <iconPath>UI/Ability-Genes/Healing_Spores</iconPath>
-        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <cooldownTicksRange>120000</cooldownTicksRange><!-- 2 days -->
         <comps>
             <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
                 <hediffDef>BGM_HealingSpores</hediffDef>
@@ -97,7 +97,7 @@
         <label>psy spores</label>
         <description>This fungal gene allows the user to produce a puff of spores from specialized organs that increase the psychic sensitivity of those around them.</description>
         <iconPath>UI/Ability-Genes/Psy_Spores</iconPath>
-        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <cooldownTicksRange>300000</cooldownTicksRange><!-- 5 days -->
         <comps>
             <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
                 <hediffDef>BGM_PsySpores</hediffDef>
@@ -113,7 +113,7 @@
         <label>rapport spores</label>
         <description>This fungal gene allows the user to produce a puff of spores from specialized organs that increase the social abilities of those around them.</description>
         <iconPath>UI/Ability-Genes/Rapport_Spores</iconPath>
-        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <cooldownTicksRange>180000</cooldownTicksRange><!-- 3 days -->
         <comps>
             <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
                 <hediffDef>BGM_RapportSpores</hediffDef>
@@ -130,7 +130,7 @@
         <description>The fungus within the host allows the carrier to produce a cloud of toxic gas-like spores in a cloud nearby.</description>
         <iconPath>UI/Ability-Genes/Tox_Spores</iconPath>
         <charges>3</charges>
-        <cooldownTicksRange>30000</cooldownTicksRange>
+        <cooldownTicksRange>30000</cooldownTicksRange><!-- 1/2 day -->
         <warmupStartSound>FoamSpray_Warmup</warmupStartSound>
 		<aiCanUse>true</aiCanUse>
         <hostile>false</hostile>
@@ -189,6 +189,7 @@
         <label>resurrection mycelia</label>
         <description>The fungi that form symbiosis with the carriers of this gene allow them to resurrect those they touch if they are still fresh. It does not always work out very well, however.</description>
         <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
+        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <stunTargetWhileCasting>true</stunTargetWhileCasting>
         <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
         <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
@@ -219,6 +220,7 @@
         <label>fungal reanimation</label>
         <description>The fungi within the carriers of this gene allow them to reanimate the dead as fungal zombies. The fungal zombies slowly deteriorate as the fungi consume their body for energy.</description>
         <iconPath>UI/Ability-Genes/FungalReanimation</iconPath>
+        <cooldownTicksRange>300000</cooldownTicksRange><!-- 5 days -->
         <stunTargetWhileCasting>true</stunTargetWhileCasting>
         <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
         <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
@@ -279,7 +281,7 @@
         <label>caste swap</label>
         <description>The dominant strain of fungi within the user allows them to alter the expression of the fungi within others.</description>
         <iconPath>UI/Ability-Genes/CasteSwap</iconPath>
-        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <cooldownTicksRange>60000</cooldownTicksRange><!-- 1 day -->
         <hostile>false</hostile>
         <jobDef>CastAbilityOnThingMelee</jobDef>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
@@ -317,7 +319,7 @@
         <label>infectious mycelia</label>
         <description>The user extends fungal mycelia into another human, seeding the fungus within them and turning them into a mushkin.</description>
         <iconPath>UI/Ability-Genes/Infectious_Spores</iconPath>
-        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <cooldownTicksRange>600000</cooldownTicksRange><!-- 10 days -->
         <hostile>false</hostile>
         <jobDef>CastAbilityOnThingMelee</jobDef>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
@@ -356,7 +358,7 @@
         <label>fungal parasitism</label>
         <description>The user extends fungal threads into another human, seeding the fungus within them and turning them into a parasitic-variant mushkin.</description>
         <iconPath>UI/Genes/Gene_FungalParasitism</iconPath>
-        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <cooldownTicksRange>600000</cooldownTicksRange><!-- 10 days -->
         <hostile>false</hostile>
         <jobDef>CastAbilityOnThingMelee</jobDef>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
@@ -404,6 +406,7 @@
     <warmupStartSound>Coagulate_Cast</warmupStartSound>
     <jobDef>CastAbilityOnThingMelee</jobDef>
     <displayOrder>400</displayOrder>
+    <cooldownTicksRange>2500</cooldownTicksRange><!-- 1 hour -->
     <hostile>false</hostile>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
@@ -413,7 +416,7 @@
       <warmupTime>1</warmupTime>
       <targetParams>
         <canTargetAnimals>true</canTargetAnimals>
-        <canTargetSelf>false</canTargetSelf>
+        <canTargetSelf>true</canTargetSelf>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetMechs>false</canTargetMechs>
         <canTargetBloodfeeders>true</canTargetBloodfeeders>
