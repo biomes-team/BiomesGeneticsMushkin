@@ -343,13 +343,14 @@
                 <xenotypeToTransform>BGM_Mushkin</xenotypeToTransform>
                 <geneOverriddenByParasitism>BGM_BaseCap</geneOverriddenByParasitism> <!-- Dummy -->
                 <parasitismGene>BGM_FungalParasitism</parasitismGene>
+				<hediffDef>BMT_SpreadingMycelia</hediffDef>
                 <parasitismChance>0.1</parasitismChance>
             </li>
-			<li Class = "CompProperties_AbilityGiveHediff">
-				<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>BMT_SpreadingMycelia</hediffDef>
-				<applicableToMechs>False</applicableToMechs>
-			</li>
+			<!-- <li Class = "CompProperties_AbilityGiveHediff"> -->
+				<!-- <compClass>CompAbilityEffect_GiveHediff</compClass> -->
+				<!-- <hediffDef>BMT_SpreadingMycelia</hediffDef> -->
+				<!-- <applicableToMechs>False</applicableToMechs> -->
+			<!-- </li> -->
         </comps>
     </AbilityDef>
 

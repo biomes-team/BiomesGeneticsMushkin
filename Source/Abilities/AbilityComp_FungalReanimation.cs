@@ -22,5 +22,19 @@ namespace BiomesGeneticsMushkin
 				ressedPawn.genes?.AddGene(Props.reanimationGene, true);
 			}
 		}
+
+		public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
+		{
+			if (target.HasThing && target.Thing is Corpse corpse && corpse.GetRotStage() == RotStage.Dessicated)
+			{
+				if (throwMessages)
+				{
+					Messages.Message("MessageCannotResurrectDessicatedCorpse".Translate(), corpse, MessageTypeDefOf.RejectInput, historical: false);
+				}
+				return false;
+			}
+			return base.Valid(target, throwMessages);
+		}
+
 	}
 }

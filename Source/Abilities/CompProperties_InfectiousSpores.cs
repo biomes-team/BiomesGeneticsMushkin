@@ -14,5 +14,7 @@ namespace BiomesGeneticsMushkin
 		public GeneDef geneOverriddenByParasitism;
 		public GeneDef parasitismGene;
 		public float parasitismChance;
+		public HediffDef hediffDef;
+
 	}
 }
