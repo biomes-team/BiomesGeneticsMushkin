@@ -3,9 +3,6 @@
 
     <XenotypeDef Name="BGM_BaseMush" Abstract="True">
         <inheritable>false</inheritable>
-    <nameMaker>BMT_NamerMushkin</nameMaker>
-    <nameMakerFemale>BMT_NamerMushkin</nameMakerFemale>
-    <chanceToUseNameMaker>1</chanceToUseNameMaker>
         <iconPath>UI/Xenotype/Mushkin</iconPath>
         <genes>
 		    <li>BGM_FungalSymbiosis</li>           
@@ -142,7 +139,7 @@
             <li>AptitudeStrong_Cooking</li>
             <li>AptitudePoor_Intellectual</li>
 			<li>AptitudePoor_Artistic</li>
-			<li>AptitudeTerrible_Shooting</li>
+			<li>AptitudeTerrible_Melee</li>
             <li>BGM_SproutSpores</li>
             <li>BGM_HealingSpores</li>
             <li>BGM_FirefoamSpores</li>
