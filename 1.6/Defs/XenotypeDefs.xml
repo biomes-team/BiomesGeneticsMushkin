@@ -3,6 +3,9 @@
 
     <XenotypeDef Name="BGM_BaseMush" Abstract="True">
         <inheritable>false</inheritable>
+    <nameMaker>BMT_NamerMushkin</nameMaker>
+    <nameMakerFemale>BMT_NamerMushkin</nameMakerFemale>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
         <iconPath>UI/Xenotype/Mushkin</iconPath>
         <genes>
 		    <li>BGM_FungalSymbiosis</li>           

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+   <RulePackDef>
+    <defName>BMT_NamerMushkin</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name(p=5)->[mush_word]</li>
+        <li>name(p=1)->[mush_syl]</li>
+        <li>name(p=7)->[mush_syl][mush_syl]</li>
+        <li>name(p=5)->[mush_syl][mush_syl][mush_syl]</li>
+        <li>name(p=3)->[mush_syl][mush_syl][mush_syl][mush_syl]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>mush_syl->Names/Mushkin_Syllables</li>
+        <li>mush_word->Names/Mushroom_Words</li>
+      </rulesFiles>
+
+    </rulePack>
+  </RulePackDef>
+
+
+</Defs>
