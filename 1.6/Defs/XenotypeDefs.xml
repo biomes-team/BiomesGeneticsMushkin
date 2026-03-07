@@ -95,8 +95,8 @@
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Battalions</defName>
         <label>battalions</label>
-        <description>Useful almost solely for combat, the battalion caste of mushkin culture is naturally quite robust. Their body's healing and resistance to most damage is bolstered by the increased density of specialized mycelia in their body.\n\nThe fungus in their brains promotes increased aggression but also aids in reducing buildup of harmful waste and sleep-inducing hormones. Their increased strength and durability makes them excel at mining.\n\nThe unique organs within their caps also allow them to produce large clouds of smoke-liike spore clouds, blocking them from view from the likes of turrets and ranged combatants.</description>
-        <descriptionShort>Battalion caste mushkin are ill-suited to anything but combat, with the fungus in their brains and body increasing aggression but making them naturally well-armored.</descriptionShort>
+        <description>Useful almost solely for combat, the battalion caste of mushkin culture host an increased healing factor and resistance to most damage. This is all bolstered by the high density of specialized mycelia in their body.\n\nThe fungus in their brains promotes increased aggression while also aiding in reducing the buildup of harmful waste and sleep-inducing hormones. Their increased strength and durability makes them excel at mining but little else.\n\nThe unique organs within their caps also allow them to produce two different types of spores, one that negates psychic sensitivity and one that produces a smoke-like effect, preventing turrets from locking on and decreasing ranged accuracy.</description>
+        <descriptionShort>Battalion caste mushkin are ill-suited to anything but combat, with the fungus in their brains and body increasing aggression while making them naturally well-armored.</descriptionShort>
         <combatPowerFactor>1.5</combatPowerFactor>
         <genes>
             <li>BGM_BattalionCap</li>
@@ -111,6 +111,7 @@
 			<li>MoveSpeed_VeryQuick</li>
 			<li>MeleeDamage_Strong</li>
             <li>BGM_BlindingSpores</li>
+            <li>BGM_PsyNegatingSpores</li>
 		    <li>FireResistant</li>
 			<li>AptitudeRemarkable_Mining</li>
 			<li>AptitudeStrong_Melee</li>
@@ -143,7 +144,7 @@
             <li>BGM_SproutSpores</li>
             <li>BGM_HealingSpores</li>
             <li>BGM_FirefoamSpores</li>
-            <li>BMT_FungalCoagulate</li>	
+            <li>BGM_FungalCoagulate</li>	
 			<li>Nearsighted</li>			
         </genes>
     </XenotypeDef>

@@ -105,6 +105,34 @@
                 <effecter>BGM_SporePuff</effecter>
                 <xenotypesImmuneToDebuff />
             </li>
+            <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
+                <hediffDef>BGM_PsySporesMushkin</hediffDef>
+                <range>10</range>
+                <effecter>BGM_SporePuff</effecter>
+                <xenotypesImmuneToDebuff />
+            </li>
+        </comps>
+    </AbilityDef>
+	
+	<AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
+        <defName>BGM_PsyNegationSpores</defName>
+        <label>psy-negating spores</label>
+        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that increase the psychic sensitivity of those around them.</description>
+        <iconPath>UI/Ability-Genes/PsyNegation_Spores</iconPath>
+        <cooldownTicksRange>300000</cooldownTicksRange><!-- 5 days -->
+        <comps>
+            <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
+                <hediffDef>BGM_PsyNegationSpores</hediffDef>
+                <range>10</range>
+                <effecter>BGM_SporePuff</effecter>
+                <xenotypesImmuneToDebuff />
+            </li>
+            <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
+                <hediffDef>BGM_PsyNegationSporesMushkin</hediffDef>
+                <range>10</range>
+                <effecter>BGM_SporePuff</effecter>
+                <xenotypesImmuneToDebuff />
+            </li>
         </comps>
     </AbilityDef>
 
@@ -395,7 +423,7 @@
     </AbilityDef>
 
   <AbilityDef ParentName="AbilityTouchBase">
-    <defName>BMT_FungalCoagulate</defName>
+    <defName>BGM_FungalCoagulate</defName>
     <label>fungal coagulation</label>
     <description>Use specialized fungal organs to patch up bleeding wounds.</description>
     <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
