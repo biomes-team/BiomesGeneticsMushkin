@@ -41,9 +41,12 @@ namespace BiomesGeneticsMushkin
 		private static bool TryResurrectWithSideEffects(Pawn pawn)
 		{
 			Corpse corpse = pawn.Corpse;
+			if (corpse.GetRotStage() == RotStage.Dessicated)
+			{
+				return false;
+			}
 			float badOutcomeChance = (corpse == null) ? 0f : (corpse.GetComp<CompRottable>().RotProgress / 60000f);
 			badOutcomeChance *= 2;
-
 			if (!ResurrectionUtility.TryResurrect(pawn))
 			{
 				Log.Message("HELLO");
