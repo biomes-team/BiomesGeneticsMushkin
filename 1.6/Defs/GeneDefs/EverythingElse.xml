@@ -270,7 +270,7 @@
         <defName>BGM_FungalUndead</defName>
         <label>fungal undead</label>
         <geneClass>BiomesGeneticsMushkin.Gene_FungalUndead</geneClass>
-        <description>This gene is given by a specialized caste of mushkin, turning what was a corpse into a temporary ally. They will die once more within days.</description>
+        <description>This gene is given by a specialized caste of mushkin, turning what was a corpse into a temporary ally animated by the fungus. They can do little more than dumb labor and combat. They are tougher to kill but will die once more within days.</description>
         <iconPath>UI/Genes/Gene_FungalUndead</iconPath>
         <displayCategory>Fungal</displayCategory>
         <biostatMet>-3</biostatMet>

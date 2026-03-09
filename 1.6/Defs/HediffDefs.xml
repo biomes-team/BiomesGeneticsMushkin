@@ -242,6 +242,8 @@
 		  <li>Mood</li>
 		  <li>Food</li>
         </disablesNeeds>
+          <totalBleedFactor>0</totalBleedFactor>
+          <painFactor>0</painFactor>
       </li>
     </stages>
     <comps>
