@@ -13,6 +13,10 @@
             <li>StrongStomach</li>
             <li>RobustDigestion</li>
             <li>Skin_SheerWhite</li>
+			<li>Skin_Green</li>
+			<li>Skin_PaleYellow</li>
+			<li>Skin_SheerWhite</li>
+			<li>Skin_LightGray</li>
             <li>BGM_BuddingBirth</li>
         </genes>
     </XenotypeDef>
