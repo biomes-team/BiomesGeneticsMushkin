@@ -139,7 +139,7 @@
     <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
         <defName>BGM_RapportSpores</defName>
         <label>rapport spores</label>
-        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that increase the social abilities of those around them.</description>
+        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that increase the social abilities and joy of those around them.</description>
         <iconPath>UI/Ability-Genes/Rapport_Spores</iconPath>
         <cooldownTicksRange>180000</cooldownTicksRange><!-- 3 days -->
         <comps>
