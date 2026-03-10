@@ -12,19 +12,34 @@ namespace BiomesGeneticsMushkin
 
 		public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
 		{
-			if (target.Pawn?.genes is null) return false;
+			//if (target.Pawn?.genes is null) return false;
 
-			if (!Props.allowedXenotypes.Contains(target.Pawn.genes.Xenotype)) return false;
+			//if (!Props.allowedXenotypes.Contains(target.Pawn.genes.Xenotype)) return false;
 
-			return base.Valid(target, throwMessages);
+			Pawn pawn = target.Pawn;
+			if (pawn?.genes != null && (pawn.IsFungal(false) || Props.allowedXenotypes.Contains(target.Pawn.genes.Xenotype)))
+			{
+				return base.Valid(target, throwMessages);
+			}
+			return false;
 		}
 
 
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{
 			base.Apply(target, dest);
-			target.Pawn.genes.SetXenotype(pickedCaste);
-			target.Pawn.health?.AddHediff(Props.hediffToGive);
+			Pawn pawn = target.Pawn;
+			if (pawn == null)
+			{
+				return;
+			}
+			bool isParasit = Props.parasitismGene != null && pawn.genes.HasActiveGene(Props.parasitismGene);
+			pawn.genes.SetXenotype(pickedCaste);
+			if (isParasit)
+			{
+				pawn.genes.AddGene(Props.parasitismGene, true);
+			}
+			pawn.health?.AddHediff(Props.hediffToGive);
 		}
 
 

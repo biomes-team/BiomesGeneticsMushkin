@@ -331,6 +331,7 @@
         <comps>
             <li Class="BiomesGeneticsMushkin.CompProperties_CasteSwap">
                 <hediffToGive>BGM_SwitchCasteExhaustion</hediffToGive>
+                <parasitismGene>BGM_FungalParasitism</parasitismGene>
                 <allowedXenotypes>
                     <li>BGM_Mushkin</li>
                     <li>BGM_Socialite</li>

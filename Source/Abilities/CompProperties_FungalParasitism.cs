@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using Verse;
 
@@ -12,7 +13,8 @@ namespace BiomesGeneticsMushkin
 		}
 
 		public GeneDef parasitismGene;
-		public List<XenotypeDef> resistantXenotypes;
+		[Obsolete]
+		public List<string> resistantXenotypes;
 		public float resistanceChance;
 	}
 }

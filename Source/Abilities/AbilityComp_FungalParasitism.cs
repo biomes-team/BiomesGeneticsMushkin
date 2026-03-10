@@ -11,18 +11,20 @@ namespace BiomesGeneticsMushkin
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{
 			base.Apply(target, dest);
-			if (target.Pawn is not null && target.Pawn.genes is not null)
+			Pawn pawn = target.Pawn;
+			if (pawn?.genes != null)
 			{
-				if (Props.resistantXenotypes.Contains(target.Pawn.genes.Xenotype))
+				// if (Props.resistantXenotypes.Contains(target.Pawn.genes.Xenotype))
+				if (pawn.IsFungal(true))
 				{
 					if (!Rand.Chance(Props.resistanceChance))
 					{
-						target.Pawn.genes.AddGene(Props.parasitismGene, true);
+						pawn.genes.AddGene(Props.parasitismGene, true);
 					}
 				}
 				else
 				{
-					target.Pawn.genes.AddGene(Props.parasitismGene, true);
+					pawn.genes.AddGene(Props.parasitismGene, true);
 				}
 			}
 		}

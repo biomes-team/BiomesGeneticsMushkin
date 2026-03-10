@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using Verse;
 
@@ -13,5 +14,6 @@ namespace BiomesGeneticsMushkin
 
 		public HediffDef hediffToGive;
 		public List<XenotypeDef> allowedXenotypes;
+		public GeneDef parasitismGene;
 	}
 }

@@ -47,11 +47,35 @@ namespace BiomesGeneticsMushkin
 			}
 		}
 
+		/// <summary>
+		/// For rare check. See AbilityComp_FungalParasitism for example.
+		/// </summary>
+		/// <param name="p"></param>
+		/// <param name="resetCollection"></param>
+		/// <returns></returns>
+		public static bool IsFungal(this Pawn p, bool resetCollection)
+		{
+			ResetCollection(resetCollection);
+			return GetFungalSymbiosisPawns.Contains(p);
+		}
+
+		/// <summary>
+		/// For passive checks. See ThoughtWorker_Precept_FungalSymbiosis_Social for example.
+		/// </summary>
+		/// <param name="p"></param>
+		/// <returns></returns>
 		public static bool IsFungal(this Pawn p)
 		{
 			//return p.genes?.GetFirstGeneOfType<Gene_FungalSymbiosis>() != null;
 			return GetFungalSymbiosisPawns.Contains(p);
 		}
+
+		//public static GeneDef FungalParasit => DefDatabase<GeneDef>.AllDefsListForReading.Where((gene) => gene.geneClass == typeof(Gene_FungalParasitism)).First();
+
+		//public static bool IsFungalParasit(this Pawn p)
+		//{
+		//	return p.genes?.GetFirstGeneOfType<Gene_FungalParasitism>() != null;
+		//}
 
 	}
 
