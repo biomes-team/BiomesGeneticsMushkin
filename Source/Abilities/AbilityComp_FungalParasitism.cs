@@ -24,6 +24,10 @@ namespace BiomesGeneticsMushkin
 				}
 				else
 				{
+					if (!Props.possibleCapGenes.NullOrEmpty())
+					{
+						pawn.genes.AddGene(Props.possibleCapGenes.RandomElement(), true);
+					}
 					pawn.genes.AddGene(Props.parasitismGene, true);
 				}
 			}

@@ -13,6 +13,7 @@ namespace BiomesGeneticsMushkin
 		}
 
 		public GeneDef parasitismGene;
+		public List<GeneDef> possibleCapGenes;
 		[Obsolete]
 		public List<string> resistantXenotypes;
 		public float resistanceChance;

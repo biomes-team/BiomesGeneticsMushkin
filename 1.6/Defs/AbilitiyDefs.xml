@@ -409,14 +409,24 @@
         </verbProperties>
         <comps>
             <li Class="BiomesGeneticsMushkin.CompProperties_FungalParasitism">
-                <resistantXenotypes>
-                    <li>BGM_Mushkin</li>
-                    <li>BGM_Sovereign</li>
-                    <li>BGM_Socialite</li>
-                    <li>BGM_Necrospores</li>
-                    <li>BGM_Battalions</li>
-                    <li>BGM_MycelialCaretaker</li>
-                </resistantXenotypes>
+				<!-- no longer req. -->
+                <!-- <resistantXenotypes> -->
+                    <!-- <li>BGM_Mushkin</li> -->
+                    <!-- <li>BGM_Sovereign</li> -->
+                    <!-- <li>BGM_Socialite</li> -->
+                    <!-- <li>BGM_Necrospores</li> -->
+                    <!-- <li>BGM_Battalions</li> -->
+                    <!-- <li>BGM_MycelialCaretaker</li> -->
+                <!-- </resistantXenotypes> -->
+				<!-- Any GeneDefs -->
+                <possibleCapGenes>
+                    <li>BGM_BaseCap</li>
+                    <li>BGM_AnimatorCap</li>
+                    <li>BGM_BattalionCap</li>
+                    <li>BGM_SocialiteCap</li>
+                    <li>BGM_MycelialCaretakerCap</li>
+                    <li>BGM_SovereignCap</li>
+                </possibleCapGenes>
                 <parasitismGene>BGM_FungalParasitism</parasitismGene>
                 <resistanceChance>0.1</resistanceChance>
             </li>
