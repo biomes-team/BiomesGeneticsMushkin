@@ -85,7 +85,7 @@
         <comps>
             <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
                 <hediffDef>BGM_HealingSpores</hediffDef>
-                <range>10</range>
+                <range>12</range>
                 <effecter>BGM_SporePuff</effecter>
                 <xenotypesImmuneToDebuff />
             </li>
@@ -105,12 +105,12 @@
                 <effecter>BGM_SporePuff</effecter>
                 <xenotypesImmuneToDebuff />
             </li>
-            <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
+           <!-- <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
                 <hediffDef>BGM_PsySporesMushkin</hediffDef>
                 <range>10</range>
                 <effecter>BGM_SporePuff</effecter>
                 <xenotypesImmuneToDebuff />
-            </li>
+            </li> -->
         </comps>
     </AbilityDef>
 	
@@ -127,12 +127,12 @@
                 <effecter>BGM_SporePuff</effecter>
                 <xenotypesImmuneToDebuff />
             </li>
-            <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
+            <!-- <li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
                 <hediffDef>BGM_PsyNegationSporesMushkin</hediffDef>
                 <range>10</range>
-                <effecter>BGM_SporePuff</effecter>
+                <effecter>BGM_SporePuff</effecter> 
                 <xenotypesImmuneToDebuff />
-            </li>
+            </li> -->
         </comps>
     </AbilityDef>
 
