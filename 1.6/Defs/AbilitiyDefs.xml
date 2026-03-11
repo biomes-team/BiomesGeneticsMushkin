@@ -79,7 +79,7 @@
     <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
         <defName>BGM_HealingSpores</defName>
         <label>healing spores</label>
-        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that induce faster healing in those around them.</description>
+        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that induce faster healing and immunity gain in those around them.</description>
         <iconPath>UI/Ability-Genes/Healing_Spores</iconPath>
         <cooldownTicksRange>120000</cooldownTicksRange><!-- 2 days -->
         <comps>

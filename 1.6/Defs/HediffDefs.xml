@@ -5,7 +5,7 @@
   <HediffDef>
     <defName>BGM_HealingSpores</defName>
     <label>healing spores</label>
-    <description>Helpful fungal spores have made their way into the body, increasing the rate of healing.</description>
+    <description>Helpful fungal spores have made their way into the body, increasing the rate of healing and immunity gain speed.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <maxSeverity>1</maxSeverity>
     <isBad>false</isBad>
@@ -24,12 +24,18 @@
             <offset>-0.25</offset>
           </li>
         </capMods>
+		<statOffsets>
+			<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+		</statOffsets>
       </li>
       <li>
         <minSeverity>1</minSeverity>
         <statFactors>
           <InjuryHealingFactor>3</InjuryHealingFactor>
         </statFactors>
+		<statOffsets>
+			<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+		</statOffsets>
       </li>
     </stages>
     <comps>
