@@ -117,7 +117,7 @@
 	<AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
         <defName>BGM_PsyNegationSpores</defName>
         <label>psy-negating spores</label>
-        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that increase the psychic sensitivity of those around them.</description>
+        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that deafen the psychic sensitivity of those around them.</description>
         <iconPath>UI/Ability-Genes/PsyNegation_Spores</iconPath>
         <cooldownTicksRange>300000</cooldownTicksRange><!-- 5 days -->
         <comps>

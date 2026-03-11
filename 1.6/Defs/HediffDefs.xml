@@ -114,7 +114,7 @@
   <HediffDef>
     <defName>BGM_PsyNegationSpores</defName>
     <label>psy-negating spores</label>
-    <description>Fungal spores have made their way into the body, deafening psychic sensitivity. It has the side effect of making the affected more sleepy.</description>
+    <description>Fungal spores have made their way into the body, deafening psychic sensitivity. It has the side effect of making the affected sleepier.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <maxSeverity>1</maxSeverity>
     <isBad>false</isBad>
@@ -250,6 +250,7 @@
         </disablesNeeds>
           <totalBleedFactor>0</totalBleedFactor>
           <painFactor>0</painFactor>
+		  <opinionOfOthersFactor>0</opinionOfOthersFactor>
       </li>
     </stages>
     <comps>
