@@ -422,11 +422,11 @@
       <li>BGM_PsySpores</li>
     </hediffGiversCannotGive> -->
 		<deathHistoryEvent>BGM_FungalSymbiosisDied</deathHistoryEvent>
-			<forcedTraits>
+		<forcedTraits>
 			<li>
 				<def>Undergrounder</def>
 			</li>
-			</forcedTraits>
+		</forcedTraits>
         <biostatMet>6</biostatMet>
         <biostatCpx>2</biostatCpx>
         <symbolPack>
@@ -458,6 +458,9 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
+		<exclusionTags>
+		  <li>BGM_FungalSymbiosis</li>
+		</exclusionTags>
         <modExtensions>
             <li Class="BiomesGeneticsMushkin.ModExtension">
                 <symbiosisThought>BGM_Proj_FungalSymbiosis</symbiosisThought>
