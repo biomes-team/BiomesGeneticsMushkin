@@ -3,5 +3,9 @@
 
     <BGM_SelectCaste_Title>Select a caste</BGM_SelectCaste_Title>
     <BGM_SelectCaste_Confirm>Confirm</BGM_SelectCaste_Confirm>
+	<!-- To-Do: Need more smart words -->
+    <BMT_TooYoungError>Too young.</BMT_TooYoungError>
+
+    <Birth>Birth</Birth>
 
 </LanguageData>

@@ -299,6 +299,7 @@
         </verbProperties>
         <comps>
             <li Class="BiomesGeneticsMushkin.CompProperties_AddHediffOnSelf">
+                <checkAge>true</checkAge>
                 <hediffDef>BGM_FruitingBirthProcess</hediffDef>
             </li>
         </comps>

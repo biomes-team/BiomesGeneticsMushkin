@@ -5,6 +5,9 @@ namespace BiomesGeneticsMushkin
 {
 	public class CompProperties_AddHediffOnSelf : CompProperties_AbilityEffect
 	{
+
+		public bool checkAge = false;
+
 		public CompProperties_AddHediffOnSelf()
 		{
 			compClass = typeof(AbilityComp_AddHediffOnSelf);
