@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>BMT_FungalStaff</defName>
+		<label>fungal Staff</label>
+		<description>A staff made from living fungus. It can fling globs of noxious spores at range.</description>
+		<graphicData>
+			<texPath>Things/Item/FungalStaff</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>
+		<techLevel>Neolithic</techLevel>
+		<equipmentType>Primary</equipmentType>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>200</MarketValue>
+			<Mass>3</Mass>
+			<Flammability>2.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+			<SellPriceFactor>0.10</SellPriceFactor>
+		</statBases>
+    <equippedAngleOffset>-95</equippedAngleOffset>
+    <costList>
+      <RawFungus>50</RawFungus>
+    </costList>
+		<stackLimit>10</stackLimit>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<verbs>
+			<li>
+				<label>fling spores</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>13</range>
+				<warmupTime>1</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>BGM_Proj_ToxSpores</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_Explosive">
+				<explosiveRadius>1.1</explosiveRadius>
+				<explosiveDamageType>ToxGas</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+				<postExplosionGasType>ToxGas</postExplosionGasType>
+				<explosiveExpandPerStackcount>0.025</explosiveExpandPerStackcount>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>70~150</wickTicks>
+			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+</Defs>
