@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="ResourceBase">
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt">
 		<defName>BMT_FungalStaff</defName>
 		<label>fungal Staff</label>
 		<description>A staff made from living fungus. It can fling globs of noxious spores at range.</description>
 		<graphicData>
-			<texPath>Things/Item/FungalStaff</texPath>
+			<texPath>Things/Item/FungalStaff/FungalStaff</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<tickerType>Normal</tickerType>
@@ -42,6 +42,31 @@
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
 		<verbs>
 			<li>
 				<label>fling spores</label>
