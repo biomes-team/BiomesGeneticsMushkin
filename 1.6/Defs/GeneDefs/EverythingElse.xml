@@ -180,7 +180,7 @@
         <biostatCpx>1</biostatCpx>
     </BiomesCore.Defs.BMT_GeneDef>
 	
-    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+<!--    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
 		<defName>BGM_AcidSpores</defName>
 		<label>acidic spores</label>
 		<description>Carriers grow specialized sacs in their necks, allowing them to upchuck globs of skin-sizzling spores onto threats.</description>
@@ -207,7 +207,7 @@
 			<li><symbol>spitter</symbol></li>
 		</suffixSymbols>
 		</symbolPack>
-    </BiomesCore.Defs.BMT_GeneDef>
+    </BiomesCore.Defs.BMT_GeneDef> -->
 
     <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_ResurrectionSpores</defName>
