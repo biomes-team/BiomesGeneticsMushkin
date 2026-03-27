@@ -34,7 +34,7 @@
         <label>foam spores</label>
         <description>Spray thick fire-retardant foam from specialized gills in the fungal cap. The foam will cover a small area and extinguish any fire it touches.</description>
         <iconPath>UI/Ability-Genes/Firefoam_Spores</iconPath>
-        <charges>3</charges>
+        <charges>2</charges>
         <cooldownTicksRange>30000</cooldownTicksRange><!-- 1/2 day -->
         <warmupStartSound>FoamSpray_Warmup</warmupStartSound>
         <hostile>false</hostile>
@@ -42,7 +42,7 @@
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
-            <range>4.9</range>
+            <range>8.9</range>
             <warmupTime>1</warmupTime>
             <soundCast>FoamSpray_Resolve</soundCast>
             <targetParams>
@@ -52,7 +52,7 @@
         <comps>
             <li Class="CompProperties_AbilitySprayLiquid">
                 <projectileDef>Proj_Foam_Ability</projectileDef>
-                <numCellsToHit>9</numCellsToHit>
+                <numCellsToHit>12</numCellsToHit>
                 <sprayEffecter>FoamSpray_Directional</sprayEffecter>
             </li>
         </comps>
