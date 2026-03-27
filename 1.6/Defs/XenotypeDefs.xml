@@ -120,7 +120,7 @@
 			<li>AptitudeTerrible_Plants</li>
 			<li>AptitudeTerrible_Cooking</li>
 			<li>AptitudeTerrible_Animals</li>
-            <li>AcidSpray</li>
+            <li>BGM_AcidSpores</li>
             <li>BGM_ResurrectionSpores</li>
             <li>BGM_ToxSpores</li>
             <li>BGM_FungalReanimation</li>
@@ -171,9 +171,9 @@
     </XenotypeDef>
 
     <XenotypeDef ParentName="BGM_BaseMush">
-        <defName>BGM_MycelialCaretaker</defName>
-        <label>mycelial-caretaker</label>
-        <description>Mycelial-caretakers, so named for their deft hand at manipulating the growth of fungi, are most often used as farmers in any settlement fortunate enough to have one of their kind.\n\nThe fungi they are bonded with grants them natural aptitude with more caretaker-based tasks such as caring for plants, fungi, and animals. Their natural aptitude extends to both sprouting fungi with their spores as well as cooking them up into meals.\n\nTheir aptitude in caring tasks comes at the cost of being poor at more mental tasks. Unique organs within their caps allow them to produce globs of fire-retardant spores.</description>
+        <defName>BGM_Caretaker</defName>
+        <label>caretaker</label>
+        <description>Caretakers, so named for their deft hand at caring for both fungi and mushkin, are most often used as farmers in any settlement fortunate enough to have one of their kind.\n\nThe fungi they are bonded with grants them natural aptitude with more caretaker-based tasks such as caring for plants, fungi, and animals. Their natural aptitude extends to both sprouting fungi with their spores as well as cooking them up into meals.\n\nTheir aptitude in caring tasks comes at the cost of being poor at more mental tasks. Unique organs within their caps allow them to produce globs of fire-retardant spores.</description>
         <descriptionShort>The caretaker caste mushkin are naturally suited to more tender tasks, from caring to food sources to preparing them as meals. They can snuff out fires with a spray of spores.</descriptionShort>
         <combatPowerFactor>1</combatPowerFactor>
 		<doubleXenotypeChances>
