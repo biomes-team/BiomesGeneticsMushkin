@@ -362,7 +362,7 @@
     <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
         <defName>BGM_FungalParasitism</defName>
         <label>fungal parasitism</label>
-        <description>The unique fungi within the host has formed a parasitic bond instead of a symbiotic one, slowly devouring the host for sustenance. The spreading mycelia within the body tends to cause increasingly negative conditions. It does however have the positive side effects of disabling pain and extending the physical limits of the host. Their gradually degrading condition can be attenuated but not ceased with periodic medical care.</description>
+        <description>The unique fungi within the host has formed a parasitic bond instead of a symbiotic one, slowly devouring the host for sustenance. The spreading mycelia within the body tends to cause increasingly negative conditions, eventually leading to death. It does however have the positive side effects of disabling pain and extending the physical limits of the host. Their gradually degrading condition can be attenuated but not ceased with periodic medical care.</description>
         <geneClass>BiomesGeneticsMushkin.Gene_FungalParasitism</geneClass>
         <iconPath>UI/Genes/Gene_FungalParasitism</iconPath>
         <displayCategory>Fungal</displayCategory>
