@@ -138,7 +138,7 @@
         <descriptionHyperlinks>
             <AbilityDef>BGM_RapportSpores</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>-3</biostatMet>
+        <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
     </BiomesCore.Defs.BMT_GeneDef>
 
@@ -273,7 +273,6 @@
         <description>This gene is given by a specialized caste of mushkin, turning what was a corpse into a temporary ally animated by the fungus. They can do little more than dumb labor and combat. They are tougher to kill but will die once more within days.</description>
         <iconPath>UI/Genes/Gene_FungalUndead</iconPath>
         <displayCategory>Fungal</displayCategory>
-        <biostatMet>-3</biostatMet>
         <biostatCpx>1</biostatCpx>
         <disabledWorkTags>
             <li>ManualSkilled</li>
@@ -300,7 +299,7 @@
         <descriptionHyperlinks>
             <AbilityDef>BGM_CasteSwap</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>1</biostatMet>
+        <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
     </BiomesCore.Defs.BMT_GeneDef>
 
@@ -319,7 +318,7 @@
         <descriptionHyperlinks>
             <AbilityDef>BGM_InfectiousMycelia</AbilityDef>
         </descriptionHyperlinks>
-        <biostatMet>2</biostatMet>
+        <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
     </BiomesCore.Defs.BMT_GeneDef>
 	
@@ -495,6 +494,7 @@
 			<li>HeartArteryBlockage</li>
 		</hediffGiversCannotGive>
         <prerequisite>BGM_FungalSymbiosis</prerequisite>
-        <biostatCpx>10</biostatCpx>
+		<biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
     </BiomesCore.Defs.BMT_GeneDef>
 </Defs>

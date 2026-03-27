@@ -100,7 +100,7 @@
     <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Necrospores</defName>
         <label>necrospores</label>
-        <description>Biological necromancers, the necrospore mushkin caste have the ability to resurrect the recently dead and raise corpses as temporary allies until the fungus consumes them.\n\nWhile they can resurrect the freshly dead, it is not foolproof and is best used as a last resort. Many lives have been lost once again when the resurrection does not stick.\n\nShould they be forced into combat, necrospores can use toxic spore clouds and acid sprays to debilitate their enemies.</description>
+        <description>Biological necromancers, the necrospore mushkin caste have the ability to resurrect the recently dead and raise corpses as temporary allies until the fungus consumes them.\n\nWhile they can resurrect the freshly dead, it is not foolproof and is best used as a last resort. Many lives have been lost once again when the resurrection does not stick.\n\nShould they be forced into combat, necrospores can use toxic spore clouds and sprays of acid to debilitate their enemies.</description>
         <descriptionShort>Necrospore caste mushkin can resurrect the recently dead, turn corpses into temporary allies, and debilitate enemies with acid and toxic spores.</descriptionShort>
         <combatPowerFactor>1.25</combatPowerFactor>
 		<doubleXenotypeChances>
@@ -120,7 +120,8 @@
 			<li>AptitudeTerrible_Plants</li>
 			<li>AptitudeTerrible_Cooking</li>
 			<li>AptitudeTerrible_Animals</li>
-            <li>BGM_AcidSpores</li>
+			<li>AptitudeTerrible_Artistic</li>
+            <li>AcidSpray</li>
             <li>BGM_ResurrectionSpores</li>
             <li>BGM_ToxSpores</li>
             <li>BGM_FungalReanimation</li>
@@ -190,7 +191,7 @@
             <li>AptitudeRemarkable_Animals</li>
             <li>AptitudeStrong_Cooking</li>
             <li>AptitudePoor_Intellectual</li>
-			<li>AptitudePoor_Artistic</li>
+			<li>AptitudeTerrible_Artistic</li>
 			<li>AptitudeTerrible_Melee</li>
             <li>BGM_SproutSpores</li>
             <li>BGM_HealingSpores</li>
@@ -199,4 +200,5 @@
 			<li>Nearsighted</li>			
         </genes>
     </XenotypeDef>
+	
 </Defs>

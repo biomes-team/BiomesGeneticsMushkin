@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- TODO -->
   <HediffDef>
     <defName>BGM_HealingSpores</defName>
     <label>healing spores</label>
@@ -47,8 +46,6 @@
     </comps>
   </HediffDef>
 
-
-  <!-- TODO -->
   <HediffDef>
     <defName>BGM_PsySpores</defName>
     <label>psy spores</label>
@@ -110,7 +107,7 @@
     </comps>
   </HediffDef>
 
-  <!-- TODO -->
+
   <HediffDef>
     <defName>BGM_PsyNegationSpores</defName>
     <label>psy-negating spores</label>
@@ -166,7 +163,7 @@
     </comps>
   </HediffDef>
   
-  <!-- TODO -->
+
   <HediffDef>
     <defName>BGM_RapportSpores</defName>
     <label>rapport spores</label>
@@ -228,17 +225,20 @@
     </comps>
   </HediffDef>
 
-  <!-- TODO -->
+ 
   <HediffDef>
     <defName>BGM_FungalUndead</defName>
-    <label>fungal undead decay</label>
+    <label>fungal undead</label>
     <description>Unique fungal mycelia have been embedded in this human, temporarily resurrecting them back to a twisted form of life. They have no needs and will die in a few days.</description>
     <hediffClass>HediffWithComps</hediffClass>
+    <minSeverity>0.001</minSeverity>
+    <initialSeverity>0.001</initialSeverity>
     <maxSeverity>1</maxSeverity>
     <isBad>true</isBad>
     <stages>
       <li>
         <becomeVisible>true</becomeVisible>
+       <label>initial mycelial breakdown</label>
        <disablesNeeds>
           <li>Rest</li>
           <li>Comfort</li>
@@ -251,14 +251,90 @@
           <totalBleedFactor>0</totalBleedFactor>
           <painFactor>0</painFactor>
 		  <opinionOfOthersFactor>0</opinionOfOthersFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>increasing mycelial breakdown</label>
+        <minSeverity>0.25</minSeverity>
+       <disablesNeeds>
+          <li>Rest</li>
+          <li>Comfort</li>
+		  <li>Joy</li>
+		  <li>Beauty</li>
+		  <li>Outdoors</li>
+		  <li>Mood</li>
+		  <li>Food</li>
+        </disablesNeeds>
+          <totalBleedFactor>0</totalBleedFactor>
+          <painFactor>0</painFactor>
+		  <opinionOfOthersFactor>0</opinionOfOthersFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>considerable mycelial breakdown</label>
+        <minSeverity>0.50</minSeverity>
+       <disablesNeeds>
+          <li>Rest</li>
+          <li>Comfort</li>
+		  <li>Joy</li>
+		  <li>Beauty</li>
+		  <li>Outdoors</li>
+		  <li>Mood</li>
+		  <li>Food</li>
+        </disablesNeeds>
+          <totalBleedFactor>0</totalBleedFactor>
+          <painFactor>0</painFactor>
+		  <opinionOfOthersFactor>0</opinionOfOthersFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.50</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>terminal mycelial breakdown</label>
+        <minSeverity>0.75</minSeverity>
+       <disablesNeeds>
+          <li>Rest</li>
+          <li>Comfort</li>
+		  <li>Joy</li>
+		  <li>Beauty</li>
+		  <li>Outdoors</li>
+		  <li>Mood</li>
+		  <li>Food</li>
+        </disablesNeeds>
+          <totalBleedFactor>0</totalBleedFactor>
+          <painFactor>0</painFactor>
+		  <opinionOfOthersFactor>0</opinionOfOthersFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.50</offset>
+          </li>
+        </capMods>
       </li>
     </stages>
     <comps>
       <li Class="HediffCompProperties_KillAfterDays">
         <days>6</days>
       </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.16</severityPerDayNotImmune>
+      </li>
     </comps>
   </HediffDef>
+  
 
   <HediffDef>
     <defName>BGM_SwitchCasteExhaustion</defName>
@@ -304,13 +380,44 @@
         <hediffDef>BGM_FruitingBirthExhaustion</hediffDef>
         <atSeverity>1</atSeverity>
         <disappearsAfterGiving>true</disappearsAfterGiving>
-        <!-- for you draeg
-        <letterDef>ThreatBig</letterDef>
-        <letterLabel>Scaria: {PAWN_nameDef}</letterLabel>
-        <letterText>{PAWN_nameDef} has developed scaria from {PAWN_possessive} infection, driving {PAWN_objective} into a berserk rage. Scaria can be cured with a special medical operation, but {PAWN_nameDef} must first be downed.</letterText>
-        -->
       </li>
     </comps>
+    <stages>
+      <li>
+        <label>fruiting start</label>
+        <hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+      </li>
+      <li>
+        <label>fruiting midway</label>
+        <minSeverity>0.333</minSeverity>
+        <hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.05</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.025</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>fruting full</label>
+        <minSeverity>0.666</minSeverity>
+        <hungerRateFactorOffset>0.45</hungerRateFactorOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
   </HediffDef>
 
   <HediffDef>
@@ -329,11 +436,11 @@
         <capMods>
           <li>
             <capacity>Moving</capacity>
-            <offset>-0.1</offset>
+            <offset>-0.2</offset>
           </li>
           <li>
             <capacity>Manipulation</capacity>
-            <offset>-0.05</offset>
+            <offset>-0.1</offset>
           </li>
         </capMods>
       </li>
@@ -376,11 +483,11 @@
     </comps>
   </HediffDef>
 
-  <!-- TODO -->
+
   <HediffDef>
     <defName>BGM_FungalParasite</defName>
     <label>fungal parasite</label>
-    <description>Unfortunately for the bearer of this fungi, it has formed a parasitic bond with its host, slowly killing them as it feeds off their body. The mycelia have a chance to invade various body parts, causing other unpleasant conditions. This can sometimes be staved off with bionics or replacing the organ.</description>
+    <description>Unfortunately for the bearer of this fungi, it has formed a parasitic bond with its host, slowly killing them as it feeds off their body. The mycelia have a chance to invade various body parts, causing other unpleasant conditions. This can sometimes be staved off temporarily with bionics or replacing the organ.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <maxSeverity>1</maxSeverity>
     <lethalSeverity>1</lethalSeverity>
@@ -390,7 +497,7 @@
     <stages>
       <li>
         <label>initial</label>
-        <becomeVisible>false</becomeVisible>
+        <becomeVisible>true</becomeVisible>
       </li>
       <li>
         <label>initial</label>
@@ -563,11 +670,11 @@
     <comps>
       <li Class="HediffCompProperties_TendDuration">
         <baseTendDurationHours>24</baseTendDurationHours>
-        <severityPerDayTended>-0.11</severityPerDayTended>
+        <severityPerDayTended>-0.12</severityPerDayTended>
       </li>
       <li Class="HediffCompProperties_Immunizable">
-        <severityPerDayNotImmune>0.2</severityPerDayNotImmune>
-        <hidden>true</hidden>
+        <severityPerDayNotImmune>0.15</severityPerDayNotImmune>
+        <hidden>false</hidden>
       </li>
     </comps>
   </HediffDef>

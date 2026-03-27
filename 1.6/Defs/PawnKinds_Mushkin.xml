@@ -31,7 +31,7 @@
         <BGM_Socialite>0.15</BGM_Socialite>
         <BGM_Necrospores>0.05</BGM_Necrospores>
         <BGM_Battalions>0.025</BGM_Battalions>
-		<BGM_MycelialCaretaker>0.025</BGM_MycelialCaretaker>
+		<BGM_Caretaker>0.025</BGM_Caretaker>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
@@ -144,7 +144,7 @@
     <initialResistanceRange>10~17</initialResistanceRange>
     <xenotypeSet>
       <xenotypeChances>
-        <BGM_MycelialCaretaker>0.65</BGM_MycelialCaretaker>
+        <BGM_Caretaker>0.65</BGM_Caretaker>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
