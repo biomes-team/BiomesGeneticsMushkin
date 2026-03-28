@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+
+
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/XenotypeDef[defName="VRE_Fungoid"]/description</xpath>
+                    <value>
+                        <description>Fungoids were initially developed to serve as a more controlled, unbound militarized mycelium symbiote as a response to the Mushkin initiative. The project was developed hastily to be deployed against the increasingly prevalent Insectoid threat, which lead to an absolute genetic disaster. Subjects eventually succumb to degradation of higher reasoning skills but develop increasing resistance to injury and subsequent recovery. Can infect non-carriers through melee attacks, which is their main method of reproduction, if left untreated.\n\nDuring initial testing phases, the fungoid genome successfully infected numerous insectoid test subjects which were then released into controlled sites to determine their actual viability. In order to reduce their reliance on archite capsules, carriers were capable of transmitting infections through touch or airborne particles. However, foreign insectoids destroyed them as well as any of their own that showed signs of infection. Further still, due to the infectivity of the mycelium, any humans that were working on the project became infected.\n\nDue to concerns and misunderstandings on treatment, the operation site was glassed, but many of those present had managed to flee into orbit, only to become carriers themselves and infect others.</description>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/XenotypeDef[defName="VRE_Fungoid"]/descriptionShort</xpath>
+                    <value>
+                        <descriptionShort>Fungoids were initially developed to serve as a more controlled, unbound militarized mycelium symbiote as a response to the Mushkin initiative. The project was developed hastily to be deployed against the increasingly prevalent Insectoid threat, which lead to an absolute genetic disaster. Subjects eventually succumb to degradation of higher reasoning skills but develop increasing resistance to injury and subsequent recovery. Can infect non-carriers through melee attacks, which is their main method of reproduction, if left untreated.</descriptionShort>
+                    </value>
+                </Operation>
+
+
+
+                <!-- <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/GeneDef[defName="VRE_FungalRegeneration"]</xpath>
+                    <value>
+                        <backgroundPath>UI/Xenotype/GeneBackground_Mushkin</backgroundPath>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/GeneDef[defName="VRE_FungalArmor"]</xpath>
+                    <value>
+                        <backgroundPath>UI/Xenotype/GeneBackground_Mushkin</backgroundPath>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/GeneDef[defName="VRE_FungalCrest"]</xpath>
+                    <value>
+                        <backgroundPath>UI/Xenotype/GeneBackground_Mushkin</backgroundPath>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/GeneDef[defName="VRE_HairMushroom"]</xpath>
+                    <value>
+                        <backgroundPath>UI/Xenotype/GeneBackground_Mushkin</backgroundPath>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/GeneDef[defName="VRE_FungalFlesh"]</xpath>
+                    <value>
+                        <backgroundPath>UI/Xenotype/GeneBackground_Mushkin</backgroundPath>
+                    </value>
+                </Operation> -->
+
+</Patch>
