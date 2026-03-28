@@ -267,6 +267,10 @@
             <targetParams>
                 <canTargetCorpses>true</canTargetCorpses>
                 <onlyTargetCorpses>true</onlyTargetCorpses>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetEntities>false</canTargetEntities>
             </targetParams>
         </verbProperties>
         <comps>
