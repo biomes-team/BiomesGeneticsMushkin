@@ -3,10 +3,10 @@
 
     <ScenarioDef ParentName="ScenarioBase">
         <defName>BGM_Scenario_MushkinSovereign</defName>
-        <label>The Mushkin Sovereign</label>
+        <label>Sovereign Mushkin</label>
         <description>Assigned to settle a freshly terraformed caveworld and build a new subterranean society, you were provided some basic resources and a companion of the basic mushkin caste. As your ship began to grow close to its destination, passing through a sysem believed to be uninhabited, it was attacked by pirates. Forced to escape, you landed on an unknown world out in the rim. With the harsh light of the sun burning your tender fungal flesh, you rushed to shelter in the gloom.\n\nNote: Mushkin have unique strengths and weaknesses, which makes this a difficult scenario.</description>
         <scenario>
-            <summary>One crashlanded sovereign needing to survive, and one basic mushkin colonist who can be swapped to a different caste.</summary>
+            <summary>One crashlanded crowncap, ruling a basic mushkin who can be swapped to a caste of choice.</summary>
             <playerFaction>
                 <def>PlayerFaction</def>
                 <factionDef>PlayerColony</factionDef>
@@ -46,7 +46,7 @@
                             <requiredAtStart>True</requiredAtStart>
                             <xenotype>BGM_Sovereign</xenotype>
                             <allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
-                            <description>non-baby sovereign mushkin</description>
+                            <description>non-baby crowncap mushkin</description>
                         </li>
                         <li>
                             <xenotype>BGM_Mushkin</xenotype>
