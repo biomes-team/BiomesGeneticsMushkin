@@ -210,8 +210,8 @@
     </BiomesCore.Defs.BMT_GeneDef> -->
 
     <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
-        <defName>BGM_ResurrectionSpores</defName>
-        <label>resurrection spores</label>
+        <defName>BGM_ResurrectionMycelia</defName>
+        <label>resurrection mycelia</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The unique fungi within the host allow them to resurrect the recently dead they touch thanks to specialized mycelia that temporarily spread into the corpse.</description>
         <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
@@ -304,7 +304,7 @@
     </BiomesCore.Defs.BMT_GeneDef>
 
     <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
-        <defName>BGM_InfectiousSpores</defName>
+        <defName>BGM_InfectiousMycelia</defName>
         <label>infectious mycelia</label>
         <geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
         <description>The unique fungi within the host allows them to spread it into new hosts via mycelium, where it bonds with their body on a cellular level.</description>

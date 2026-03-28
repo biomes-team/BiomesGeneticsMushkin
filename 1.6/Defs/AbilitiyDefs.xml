@@ -217,7 +217,7 @@
         <label>resurrection mycelia</label>
         <description>Resurrect a fresh corpse with an invasive fungal growth. It does not always work out very well, however.</description>
         <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
-        <cooldownTicksRange>1800000</cooldownTicksRange><!-- 15 days -->
+        <cooldownTicksRange>1800000</cooldownTicksRange><!-- 30 days -->
         <stunTargetWhileCasting>true</stunTargetWhileCasting>
         <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
         <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
@@ -339,10 +339,10 @@
                 <parasitismGene>BGM_FungalParasitism</parasitismGene>
                 <allowedXenotypes>
                     <li>BGM_Mushkin</li>
-                    <li>BGM_Socialite</li>
-                    <li>BGM_Necrospores</li>
-                    <li>BGM_Battalions</li>
-                    <li>BGM_Caretaker</li>
+                    <li>BGM_Tallcap</li>
+                    <li>BGM_Necrospore</li>
+                    <li>BGM_Ironcap</li>
+                    <li>BGM_Patchphae</li>
                 </allowedXenotypes>
             </li>
         </comps>

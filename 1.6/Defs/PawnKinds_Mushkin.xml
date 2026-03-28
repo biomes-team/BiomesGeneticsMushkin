@@ -28,10 +28,10 @@
       <xenotypeChances>
         <BGM_Mushkin>0.50</BGM_Mushkin>
         <BGM_Sovereign>0.005</BGM_Sovereign>
-        <BGM_Socialite>0.15</BGM_Socialite>
-        <BGM_Necrospores>0.05</BGM_Necrospores>
-        <BGM_Battalions>0.025</BGM_Battalions>
-		<BGM_Caretaker>0.025</BGM_Caretaker>
+        <BGM_Tallcap>0.15</BGM_Tallcap>
+        <BGM_Necrospore>0.05</BGM_Necrospore>
+        <BGM_Ironcap>0.025</BGM_Ironcap>
+		<BGM_Patchphae>0.025</BGM_Patchphae>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
@@ -69,8 +69,8 @@
     <initialResistanceRange>15~24</initialResistanceRange>
     <xenotypeSet>
       <xenotypeChances>
-        <BGM_Battalions>0.70</BGM_Battalions>
-		<BGM_Necrospores>0.15</BGM_Necrospores>
+        <BGM_Ironcap>0.70</BGM_Ironcap>
+		<BGM_Necrospore>0.15</BGM_Necrospore>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
@@ -108,7 +108,7 @@
     <initialResistanceRange>12~20</initialResistanceRange>
     <xenotypeSet>
       <xenotypeChances>
-        <BGM_Socialite>0.65</BGM_Socialite>
+        <BGM_Tallcap>0.65</BGM_Tallcap>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
@@ -144,7 +144,7 @@
     <initialResistanceRange>10~17</initialResistanceRange>
     <xenotypeSet>
       <xenotypeChances>
-        <BGM_Caretaker>0.65</BGM_Caretaker>
+        <BGM_Patchphae>0.65</BGM_Patchphae>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
@@ -179,7 +179,7 @@
     <initialResistanceRange>20~30</initialResistanceRange>
     <xenotypeSet>
       <xenotypeChances>
-        <BGM_Sovereign MayRequire="Ludeon.RimWorld.Biotech">1</BGM_Sovereign>
+        <BGM_Sovereign>1</BGM_Sovereign>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
@@ -218,7 +218,7 @@
     <initialResistanceRange>19~29</initialResistanceRange>
     <xenotypeSet>
       <xenotypeChances>
-        <BGM_Battalions>0.75</BGM_Battalions>
+        <BGM_Ironcap>0.75</BGM_Ironcap>
         <BGM_Mushkin>0.25</BGM_Mushkin>		
       </xenotypeChances>
     </xenotypeSet>

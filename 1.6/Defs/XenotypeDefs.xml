@@ -61,12 +61,12 @@
             <li>Robust</li>
             <li>AptitudeRemarkable_Social</li>
             <li>BGM_CasteSwap</li>
-            <li>BGM_InfectiousSpores</li>
+            <li>BGM_InfectiousMycelia</li>
         </genes>
     </XenotypeDef>
 
     <XenotypeDef ParentName="BGM_BaseMush">
-        <defName>BGM_Socialite</defName>
+        <defName>BGM_Tallcap</defName>
         <label>tallcap</label>
         <description>The socialite caste of mushkin are especially suited to social situations and lack in strength compared to even normal humans.\n\nTheir bond with the fungus within their body especially affects the structure of their neural tissue, making violence and cruelty more difficult for them and granting increased psychic sensitivity.\n\nDue to their lack of physical traits, socialites tend to be in the back lines using their spores and improving morale.</description>
         <descriptionShort>A unique strand of mushkin, humans bonded with a symbiotic genetically engineered fungus. Tallcap mushkin are best suited to avoiding danger, instead assisting in social capacities such as trade.</descriptionShort>
@@ -98,7 +98,7 @@
     </XenotypeDef>
 
     <XenotypeDef ParentName="BGM_BaseMush">
-        <defName>BGM_Necrospores</defName>
+        <defName>BGM_Necrospore</defName>
         <label>necrospore</label>
         <description>Biological necromancers, the necrospore mushkin caste have the ability to resurrect the recently dead and raise corpses as temporary allies until the fungus consumes them.\n\nWhile they can resurrect the freshly dead, it is not foolproof and is best used as a last resort. Many lives have been lost once again when the resurrection does not stick.\n\nShould they be forced into combat, necrospores can use toxic spore clouds and sprays of acid to debilitate their enemies.</description>
         <descriptionShort>A unique strand of mushkin, humans bonded with a symbiotic genetically engineered fungus. Necrospores can resurrect the recently dead, turn corpses into temporary allies, and debilitate enemies with acid and toxic spores.</descriptionShort>
@@ -122,14 +122,14 @@
 			<li>AptitudeTerrible_Animals</li>
 			<li>AptitudeTerrible_Artistic</li>
             <li>AcidSpray</li>
-            <li>BGM_ResurrectionSpores</li>
+            <li>BGM_ResurrectionMycelia</li>
             <li>BGM_ToxSpores</li>
             <li>BGM_FungalReanimation</li>
         </genes>
     </XenotypeDef>
 
     <XenotypeDef ParentName="BGM_BaseMush">
-        <defName>BGM_Battalions</defName>
+        <defName>BGM_Ironcap</defName>
         <label>ironcap</label>
         <description>Useful almost solely for combat, the ironcap caste of mushkin culture host an increased healing factor and resistance to most damage. This is all bolstered by the high density of specialized mycelia in their body.\n\nThe fungus in their brains promotes increased aggression while also aiding in reducing the buildup of harmful waste and sleep-inducing hormones. Their increased strength and durability makes them excel at mining but little else.\n\nThe unique organs within their caps also allow them to produce two different types of spores, one that negates psychic sensitivity and one that produces a smoke-like effect, preventing turrets from locking on and decreasing ranged accuracy.</description>
         <descriptionShort>A unique strand of mushkin, humans bonded with a symbiotic genetically engineered fungus. Ironcaps are ill-suited to anything but combat, with the fungus in their brains and body increasing aggression while making them naturally well-armored.</descriptionShort>
@@ -172,7 +172,7 @@
     </XenotypeDef>
 
     <XenotypeDef ParentName="BGM_BaseMush">
-        <defName>BGM_Caretaker</defName>
+        <defName>BGM_Patchphae</defName>
         <label>patchphae</label>
         <description>Patchphae, so named for their deft hand at caring for both fungi and mushkin, are most often used as farmers in any settlement fortunate enough to have one of their kind.\n\nThe fungi they are bonded with grants them natural aptitude with more caretaker-based tasks such as caring for plants, fungi, and animals. Their natural aptitude extends to both sprouting fungi with their spores as well as cooking them up into meals.\n\nTheir aptitude in caring tasks comes at the cost of being poor at more mental tasks. Unique organs within their caps allow them to produce globs of fire-retardant spores.</description>
         <descriptionShort>The caretaker caste mushkin are naturally suited to more tender tasks, from caring to food sources to preparing them as meals. They can snuff out fires with a spray of spores.</descriptionShort>

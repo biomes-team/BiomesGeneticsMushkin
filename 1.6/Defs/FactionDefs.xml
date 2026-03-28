@@ -14,10 +14,10 @@
       <xenotypeChances>
         <BGM_Mushkin>0.55</BGM_Mushkin>
         <BGM_Sovereign>0.05</BGM_Sovereign>
-        <BGM_Socialite>0.10</BGM_Socialite>
-        <BGM_Necrospores>0.05</BGM_Necrospores>
-        <BGM_Battalions>0.05</BGM_Battalions>
-		<BGM_Caretaker>0.10</BGM_Caretaker>
+        <BGM_Tallcap>0.10</BGM_Tallcap>
+        <BGM_Necrospore>0.05</BGM_Necrospore>
+        <BGM_Ironcap>0.05</BGM_Ironcap>
+		<BGM_Patchphae>0.10</BGM_Patchphae>
       </xenotypeChances>
     </xenotypeSet>
     <pawnGroupMakers Inherit="False">
