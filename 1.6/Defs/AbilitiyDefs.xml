@@ -314,7 +314,7 @@
         <label>caste swap</label>
         <description>The dominant strain of fungi within the user allows them to alter the expression of the fungi within others.</description>
         <iconPath>UI/Ability-Genes/CasteSwap</iconPath>
-        <cooldownTicksRange>60000</cooldownTicksRange><!-- 1 day -->
+        <cooldownTicksRange>180000</cooldownTicksRange><!-- 1 day -->
         <hostile>false</hostile>
         <jobDef>CastAbilityOnThingMelee</jobDef>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
