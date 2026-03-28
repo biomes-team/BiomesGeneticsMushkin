@@ -79,7 +79,7 @@
     <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
         <defName>BGM_HealingSpores</defName>
         <label>healing spores</label>
-        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that induce faster healing and immunity gain in those around them.</description>
+        <description>Produce a puff of spores from specialized organs that induce faster healing and immunity gain in those intaking it.</description>
         <iconPath>UI/Ability-Genes/Healing_Spores</iconPath>
         <cooldownTicksRange>120000</cooldownTicksRange><!-- 2 days -->
         <comps>
@@ -95,7 +95,7 @@
     <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
         <defName>BGM_PsySpores</defName>
         <label>psy spores</label>
-        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that increase the psychic sensitivity of those around them.</description>
+        <description>Produce a puff of spores from specialized organs that increase the psychic sensitivity of those intaking it.</description>
         <iconPath>UI/Ability-Genes/Psy_Spores</iconPath>
         <cooldownTicksRange>300000</cooldownTicksRange><!-- 5 days -->
         <comps>
@@ -117,7 +117,7 @@
 	<AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
         <defName>BGM_PsyNegationSpores</defName>
         <label>psy-negating spores</label>
-        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that deafen the psychic sensitivity of those around them.</description>
+        <description>Produce a puff of spores from specialized organs that deafen the psychic sensitivity of those intaking it.</description>
         <iconPath>UI/Ability-Genes/PsyNegation_Spores</iconPath>
         <cooldownTicksRange>300000</cooldownTicksRange><!-- 5 days -->
         <comps>
@@ -139,7 +139,7 @@
     <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
         <defName>BGM_RapportSpores</defName>
         <label>rapport spores</label>
-        <description>This fungal gene allows the user to produce a puff of spores from specialized organs that increase the social abilities and joy of those around them.</description>
+        <description>Produce a puff of spores from specialized organs that increase the social abilities and joy of those intaking it.</description>
         <iconPath>UI/Ability-Genes/Rapport_Spores</iconPath>
         <cooldownTicksRange>180000</cooldownTicksRange><!-- 3 days -->
         <comps>
@@ -155,7 +155,7 @@
     <AbilityDef>
         <defName>BGM_ToxSpores</defName>
         <label>tox spores</label>
-        <description>The fungus within the host allows the carrier to produce a cloud of toxic gas-like spores in a cloud nearby.</description>
+        <description>Produce a cloud of toxic gas-like spores from specialized organs.</description>
         <iconPath>UI/Ability-Genes/Tox_Spores</iconPath>
         <charges>3</charges>
         <cooldownTicksRange>30000</cooldownTicksRange><!-- 1/2 day -->
@@ -185,7 +185,7 @@
     <AbilityDef>
         <defName>BGM_SproutSpores</defName>
         <label>sprout spores</label>
-        <description>The fungi that live within the host also form a symbiosis with other fungi, allowing them to sprout normal fungi around them, some more useful than others.</description>
+        <description>Produce a burst of various fungus that emerges from the surrounding ground.</description>
         <iconPath>UI/Ability-Genes/Sprout_Spores</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <targetRequired>false</targetRequired>
@@ -215,7 +215,7 @@
     <AbilityDef ParentName="AbilityTouchBase">
         <defName>BGM_ResurrectionMycelia</defName>
         <label>resurrection mycelia</label>
-        <description>The fungi that form symbiosis with the carriers of this gene allow them to resurrect those they touch if they are still fresh. It does not always work out very well, however.</description>
+        <description>Resurrect a fresh corpse with an invasive fungal growth. It does not always work out very well, however.</description>
         <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
         <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
         <stunTargetWhileCasting>true</stunTargetWhileCasting>
