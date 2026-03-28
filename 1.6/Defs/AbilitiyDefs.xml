@@ -217,7 +217,7 @@
         <label>resurrection mycelia</label>
         <description>Resurrect a fresh corpse with an invasive fungal growth. It does not always work out very well, however.</description>
         <iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
-        <cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+        <cooldownTicksRange>1800000</cooldownTicksRange><!-- 15 days -->
         <stunTargetWhileCasting>true</stunTargetWhileCasting>
         <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
         <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
