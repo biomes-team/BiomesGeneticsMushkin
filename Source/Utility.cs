@@ -76,6 +76,22 @@ namespace BiomesGeneticsMushkin
 		//{
 		//	return p.genes?.GetFirstGeneOfType<Gene_FungalParasitism>() != null;
 		//}
+		public static bool HasGene(Pawn pawn, GeneDef geneDef)
+		{
+			if (geneDef == null || pawn.genes == null)
+			{
+				return false;
+			}
+			List<Gene> genesListForReading = pawn.genes.GenesListForReading;
+			for (int i = 0; i < genesListForReading.Count; i++)
+			{
+				if (genesListForReading[i].def == geneDef)
+				{
+					return true;
+				}
+			}
+			return false;
+		}
 
 	}
 

@@ -239,7 +239,12 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="BiomesGeneticsMushkin.CompProperties_ResurrectionSpores" />
+            <li Class="BiomesGeneticsMushkin.CompProperties_ResurrectionSpores">
+				<!-- Any geneDefs -->
+                <!-- <geneDefs> -->
+				  <!-- <li>BGM_FungalUndead</li> -->
+				<!-- </geneDefs> -->
+            </li>
         </comps>
     </AbilityDef>
 

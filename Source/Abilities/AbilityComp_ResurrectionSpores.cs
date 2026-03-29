@@ -38,7 +38,7 @@ namespace BiomesGeneticsMushkin
 		}
 
 
-		private static bool TryResurrectWithSideEffects(Pawn pawn)
+		private bool TryResurrectWithSideEffects(Pawn pawn)
 		{
 			Corpse corpse = pawn.Corpse;
 			if (corpse.GetRotStage() == RotStage.Dessicated)
@@ -80,6 +80,16 @@ namespace BiomesGeneticsMushkin
 			{
 				Log.Error("The pawn has died while being resurrected.");
 				ResurrectionUtility.TryResurrect(pawn);
+			}
+			if (Props.geneDefs != null)
+			{
+				foreach (GeneDef def in Props.geneDefs)
+				{
+					if (!GeneralUtility.HasGene(pawn, def))
+					{
+						pawn.genes?.AddGene(def, true);
+					}
+				}
 			}
 			return true;
 		}
