@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef MayRequire="biomesteam.biomescore" ParentName="AnimalThingBase">
 		<defName>BGM_Snailfalo</defName>
 		<label>snailfalo</label>
 		<description>Some nitwit mushkin tweaked the genes of the common giant cave snail, changing its color to be similar in appearance to the fur of a muffalo. It is however just as reliable as one, so it works out in the end.</description>
@@ -102,7 +102,7 @@
 			<BMT_Molluskshell>45</BMT_Molluskshell>
 		</butcherProducts>
 	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef MayRequire="biomesteam.biomescore" ParentName="AnimalKindBase">
 		<defName>BGM_Snailfalo</defName>
 		<label>smailfalo</label>
 		<race>BGM_Snailfalo</race>
@@ -142,7 +142,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	<HediffDef>
+	<HediffDef MayRequire="biomesteam.biomescore">
 		<defName>BMT_GiantSnailDefense</defName>
 		<label>retracted into shell</label>
 		<description>Retracted into shell for defense.</description>
@@ -164,7 +164,7 @@
 			</li>
 		</stages>
 	</HediffDef>
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef MayRequire="biomesteam.biomescore" ParentName="EggFertBase">
 		<defName>BGM_EggSnailfaloFertilized</defName>
 		<label>snailfalo egg (fert.)</label>
 		<description>A fertilized snailfalo egg. If all goes well, it should hatch into a baby snailfalo. It can be eaten raw, but it's much better cooked.</description>
@@ -184,7 +184,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
+	<ThingDef MayRequire="biomesteam.biomescore" ParentName="EggUnfertBase">
 		<defName>BGM_EggSnailfaloUnfertilized</defName>
 		<label>snailfalo egg (unfert.)</label>
 		<description>An unfertilized snailfalo egg. It can be eaten raw, but it's much, much better cooked.</description>
