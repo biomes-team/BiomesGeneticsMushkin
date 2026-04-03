@@ -129,38 +129,6 @@
     </XenotypeDef>
 
     <XenotypeDef ParentName="BGM_BaseMush">
-        <defName>BGM_Necrokin</defName>
-        <label>necrokin</label>
-        <iconPath>UI/Genes/Gene_Necrokin</iconPath>
-        <description>A dead human given new life through an invasive fungus. They are able to do lower-level harnessing of this fungus to temporarily reanimate the dead, and have trouble doing various forms of labor.</description>
-        <descriptionShort>A dead human given new life through an invasive fungus. They are able to do lower-level harnessing of this fungus to temporarily reanimate the dead, and have trouble doing various forms of labor.</descriptionShort>
-        <combatPowerFactor>1</combatPowerFactor>
-        <genes Inherit="False">
-            <li>BGM_AnimatorCap</li>
-            <li>ToxicEnvironmentResistance_Total</li>
-			<li>WoundHealing_Slow</li>
-			<li>MeleeDamage_Weak</li>
-			<li>AptitudeTerrible_Plants</li>
-			<li>AptitudeTerrible_Cooking</li>
-			<li>AptitudeTerrible_Animals</li>
-			<li>AptitudeTerrible_Artistic</li>
-            <li>AcidSpray</li>
-            <li>BGM_ToxSpores</li>
-            <li>BGM_FungalReanimation</li>
-		    <li>BGM_FungalSymbiosis</li>           
-		    <li>UVSensitivity_Intense</li>
-            <li>Sterile</li>
-            <li>Beard_NoBeardOnly</li>
-            <li>DarkVision</li>
-            <li>StrongStomach</li>
-            <li>RobustDigestion</li>
-			<li>Skin_InkBlack</li>
-            <li>BGM_BuddingBirth</li>
-            <li>Head_Gaunt</li>
-        </genes>
-    </XenotypeDef>
-
-    <XenotypeDef ParentName="BGM_BaseMush">
         <defName>BGM_Ironcap</defName>
         <label>ironcap</label>
         <description>Useful almost solely for combat, the ironcap caste of mushkin culture host an increased healing factor and resistance to most damage. This is all bolstered by the high density of specialized mycelia in their body.\n\nThe fungus in their brains promotes increased aggression while also aiding in reducing the buildup of harmful waste and sleep-inducing hormones. Their increased strength and durability makes them excel at mining but little else.\n\nThe unique organs within their caps also allow them to produce two different types of spores, one that negates psychic sensitivity and one that produces a smoke-like effect, preventing turrets from locking on and decreasing ranged accuracy.</description>
