@@ -26,8 +26,13 @@
 		</statBases>
     <equippedAngleOffset>-95</equippedAngleOffset>
     <costList>
-      <RawFungus>50</RawFungus>
+      <RawFungus>45</RawFungus>
     </costList>
+    <costStuffCount>5</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
 		<stackLimit>10</stackLimit>
 		<weaponClasses>
 			<li>Ranged</li>
