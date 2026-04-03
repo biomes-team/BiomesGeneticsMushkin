@@ -16,6 +16,7 @@
 		<alwaysHaulable>true</alwaysHaulable>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<statBases>
+			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>150</MaxHitPoints>
 			<MarketValue>200</MarketValue>
 			<Mass>3</Mass>
