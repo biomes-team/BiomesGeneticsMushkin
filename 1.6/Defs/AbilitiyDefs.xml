@@ -191,6 +191,7 @@
         <targetRequired>false</targetRequired>
         <hostile>false</hostile>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <warmupTime>1</warmupTime>
