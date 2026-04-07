@@ -63,11 +63,13 @@
                 <useSkinShader>false</useSkinShader>
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
-                <drawData>
-                    <defaultData>
-                        <layer>70</layer>
-                    </defaultData>
-                </drawData>
+				<baseLayer>70</baseLayer>
+				<skipFlag>Hair</skipFlag>
+                <!-- <drawData> -->
+                    <!-- <defaultData> -->
+                        <!-- <layer>70</layer> -->
+                    <!-- </defaultData> -->
+                <!-- </drawData> -->
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>
@@ -90,11 +92,8 @@
                 <useSkinShader>false</useSkinShader>
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
-                <drawData>
-                    <defaultData>
-                        <layer>70</layer>
-                    </defaultData>
-                </drawData>
+				<baseLayer>70</baseLayer>
+				<skipFlag>Hair</skipFlag>
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>
@@ -117,11 +116,8 @@
                 <useSkinShader>false</useSkinShader>
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
-                <drawData>
-                    <defaultData>
-                        <layer>70</layer>
-                    </defaultData>
-                </drawData>
+				<baseLayer>70</baseLayer>
+				<skipFlag>Hair</skipFlag>
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>
@@ -144,11 +140,8 @@
                 <useSkinShader>false</useSkinShader>
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
-                <drawData>
-                    <defaultData>
-                        <layer>70</layer>
-                    </defaultData>
-                </drawData>
+				<baseLayer>70</baseLayer>
+				<skipFlag>Hair</skipFlag>
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>
@@ -171,11 +164,8 @@
                 <useSkinShader>false</useSkinShader>
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
-                <drawData>
-                    <defaultData>
-                        <layer>70</layer>
-                    </defaultData>
-                </drawData>
+				<baseLayer>70</baseLayer>
+				<skipFlag>Hair</skipFlag>
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>
@@ -198,11 +188,8 @@
                 <useSkinShader>false</useSkinShader>
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
-                <drawData>
-                    <defaultData>
-                        <layer>70</layer>
-                    </defaultData>
-                </drawData>
+				<baseLayer>70</baseLayer>
+				<skipFlag>Hair</skipFlag>
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>
@@ -225,11 +212,8 @@
                 <useSkinShader>false</useSkinShader>
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
-                <drawData>
-                    <defaultData>
-                        <layer>70</layer>
-                    </defaultData>
-                </drawData>
+				<baseLayer>70</baseLayer>
+				<skipFlag>Hair</skipFlag>
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>	
