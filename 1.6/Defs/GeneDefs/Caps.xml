@@ -64,7 +64,7 @@
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<baseLayer>70</baseLayer>
-				<skipFlag>Hair</skipFlag>
+				<!-- <skipFlag>Hair</skipFlag> -->
                 <!-- <drawData> -->
                     <!-- <defaultData> -->
                         <!-- <layer>70</layer> -->
@@ -93,7 +93,7 @@
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<baseLayer>70</baseLayer>
-				<skipFlag>Hair</skipFlag>
+				<!-- <skipFlag>Hair</skipFlag> -->
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>
@@ -117,7 +117,7 @@
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<baseLayer>70</baseLayer>
-				<skipFlag>Hair</skipFlag>
+				<!-- <skipFlag>Hair</skipFlag> -->
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>
@@ -141,7 +141,7 @@
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<baseLayer>70</baseLayer>
-				<skipFlag>Hair</skipFlag>
+				<!-- <skipFlag>Hair</skipFlag> -->
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>
@@ -165,7 +165,7 @@
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<baseLayer>70</baseLayer>
-				<skipFlag>Hair</skipFlag>
+				<!-- <skipFlag>Hair</skipFlag> -->
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>
@@ -189,7 +189,7 @@
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<baseLayer>70</baseLayer>
-				<skipFlag>Hair</skipFlag>
+				<!-- <skipFlag>Hair</skipFlag> -->
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>
@@ -213,7 +213,7 @@
                 <useRottenColor>true</useRottenColor>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<baseLayer>70</baseLayer>
-				<skipFlag>Hair</skipFlag>
+				<!-- <skipFlag>Hair</skipFlag> -->
             </li>
         </renderNodeProperties>
     </BiomesCore.Defs.BMT_GeneDef>	

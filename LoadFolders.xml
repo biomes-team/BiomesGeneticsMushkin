@@ -3,5 +3,6 @@
     <li>/</li>
     <li>1.6</li>
     <li IfModActive="vanillaracesexpanded.fungoid">1.6/Mods/VRE Fungoid</li>
+    <li IfModActive="vanillaracesexpanded.fungoid.forked">1.6/Mods/VRE Fungoid</li>
   </v1.6>
 </loadFolders>
