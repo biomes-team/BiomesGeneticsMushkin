@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BaseMeleeWeapon_Blunt">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>BMT_FungalStaff</defName>
 		<label>fungal Staff</label>
 		<description>A staff made from living fungus. It can fling globs of noxious spores at range.</description>
@@ -38,6 +38,9 @@
 		<weaponClasses>
 			<li>Ranged</li>
 		</weaponClasses>
+    <weaponTags Inherit="False">
+      <li>HeavyTox</li>
+    </weaponTags>
 		<thingCategories>
 			<li>ItemsMisc</li>
 		</thingCategories>
