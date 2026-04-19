@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+	<defName>BGM_ToxSpores</defName>
+	<label>tox spores</label>
+	<geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
+	<description>The unique fungi within the host allows them to spew clouds of toxic fungal spores that burn the lungs and poison those within.</description>
+	<iconPath>UI/Ability-Genes/Tox_Spores</iconPath>
+	<displayCategory>SporesFungal</displayCategory>
+	<displayOrderInCategory>-1</displayOrderInCategory>
+	<prerequisite>BGM_FungalSymbiosis</prerequisite>
+	<abilities>
+		<li>BGM_ToxSpores</li>
+	</abilities>
+	<descriptionHyperlinks>
+		<AbilityDef>BGM_ToxSpores</AbilityDef>
+	</descriptionHyperlinks>
+	<biostatMet>-2</biostatMet>
+	<biostatCpx>1</biostatCpx>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+  <!-- ======================== -->
+
+  <AbilityDef>
+	<defName>BGM_ToxSpores</defName>
+	<label>tox spores</label>
+	<description>Produce a cloud of toxic gas-like spores from specialized organs.</description>
+	<iconPath>UI/Ability-Genes/Tox_Spores</iconPath>
+	<charges>3</charges>
+	<cooldownTicksRange>30000</cooldownTicksRange><!-- 1/2 day -->
+	<warmupStartSound>FoamSpray_Warmup</warmupStartSound>
+	<aiCanUse>true</aiCanUse>
+	<hostile>false</hostile>
+	<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<verbProperties>
+		<verbClass>Verb_CastAbility</verbClass>
+		<range>4.9</range>
+		<warmupTime>1</warmupTime>
+		<soundCast>FoamSpray_Resolve</soundCast>
+		<targetParams>
+			<canTargetLocations>true</canTargetLocations>
+		</targetParams>
+	</verbProperties>
+	<comps>
+		<li Class="CompProperties_AbilitySprayLiquid">
+			<projectileDef>BGM_Proj_ToxSpores</projectileDef>
+			<numCellsToHit>9</numCellsToHit>
+			<sprayEffecter>FoamSpray_Directional</sprayEffecter>
+		</li>
+	</comps>
+  </AbilityDef>
+
+</Defs>

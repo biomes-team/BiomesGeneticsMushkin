@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+	<defName>BGM_SproutSpores</defName>
+	<label>sprout spores</label>
+	<geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
+	<description>Specialized symbiosis with other fungi allows the host to sprout circles of fungi around them. Unfortunately the type cannot be chosen at will, so some sprouts are more useful than others.</description>
+	<iconPath>UI/Ability-Genes/Sprout_Spores</iconPath>
+	<displayCategory>SporesFungal</displayCategory>
+	<displayOrderInCategory>-1</displayOrderInCategory>
+	<prerequisite>BGM_FungalSymbiosis</prerequisite>
+	<abilities>
+		<li>BGM_SproutSpores</li>
+	</abilities>
+	<descriptionHyperlinks>
+		<AbilityDef>BGM_SproutSpores</AbilityDef>
+	</descriptionHyperlinks>
+	<biostatMet>-2</biostatMet>
+	<biostatCpx>1</biostatCpx>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+  <!-- ======================== -->
+
+  <AbilityDef>
+	<defName>BGM_SproutSpores</defName>
+	<label>sprout spores</label>
+	<description>Produce a burst of various fungus that emerges from the surrounding ground.</description>
+	<iconPath>UI/Ability-Genes/Sprout_Spores</iconPath>
+	<cooldownTicksRange>900000</cooldownTicksRange><!-- 15 days -->
+	<targetRequired>false</targetRequired>
+	<hostile>false</hostile>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+	<verbProperties>
+		<verbClass>Verb_CastAbility</verbClass>
+		<warmupTime>1</warmupTime>
+		<range>3.9</range>
+		<drawAimPie>false</drawAimPie>
+		<targetParams>
+			<canTargetSelf>true</canTargetSelf>
+		</targetParams>
+	</verbProperties>
+	<comps>
+		<li Class="BiomesGeneticsMushkin.CompProperties_SpawnMushrooms">
+			<range>3.5</range>
+			<plantsToSpawn>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_Nutrifungus</li>
+				<li MayRequire="Ludeon.Rimworld.Odyssey">Boomshroom</li>
+				<li>Glowstool</li>
+			</plantsToSpawn>
+		</li>
+	</comps>
+  </AbilityDef>
+
+</Defs>

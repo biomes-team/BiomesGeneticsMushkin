@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_GeneHairStyleBase">
+	<defName>BGM_MycelialCaretakerCap</defName>
+	<label>patchphae mushroom cap</label>
+	<labelShortAdj>patchphae cap</labelShortAdj>
+	<description>The fungus that grants this gene makes the carrier grow a sprout-like mushroom cap in place of hair.</description>
+	<iconPath>UI/Genes/Gene_MyceliaTenderCap</iconPath>
+	<displayCategory>Fungal</displayCategory>
+	<displayOrderInCategory>55.03</displayOrderInCategory>
+	<renderNodeProperties>
+		<li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Things/Pawn/Humanlike/HeadAttachments/Myceliatender/Myceliatender</texPath>
+			<colorType>Hair</colorType>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>false</useSkinShader>
+			<useRottenColor>true</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<baseLayer>70</baseLayer>
+			<!-- <skipFlag>Hair</skipFlag> -->
+		</li>
+	</renderNodeProperties>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+</Defs>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+	<defName>BGM_RapportSpores</defName>
+	<label>rapport spores</label>
+	<geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
+	<description>The unique fungi within the host allows them to produce fungal spores that increase the social skills and recreation gain of those affected.</description>
+	<iconPath>UI/Ability-Genes/Rapport_Spores</iconPath>
+	<displayCategory>SporesFungal</displayCategory>
+	<displayOrderInCategory>-1</displayOrderInCategory>
+	<prerequisite>BGM_FungalSymbiosis</prerequisite>
+	<abilities>
+		<li>BGM_RapportSpores</li>
+	</abilities>
+	<descriptionHyperlinks>
+		<AbilityDef>BGM_RapportSpores</AbilityDef>
+	</descriptionHyperlinks>
+	<biostatMet>-1</biostatMet>
+	<biostatCpx>1</biostatCpx>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+  <!-- ======================== -->
+
+  <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
+	<defName>BGM_RapportSpores</defName>
+	<label>rapport spores</label>
+	<description>Produce a puff of spores from specialized organs that increase the social abilities and joy of those intaking it.</description>
+	<iconPath>UI/Ability-Genes/Rapport_Spores</iconPath>
+	<cooldownTicksRange>180000</cooldownTicksRange><!-- 3 days -->
+	<comps>
+		<li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
+			<hediffDef>BGM_RapportSpores</hediffDef>
+			<range>10</range>
+			<effecter>BGM_SporePuff</effecter>
+			<xenotypesImmuneToDebuff />
+		</li>
+	</comps>
+  </AbilityDef>
+
+</Defs>

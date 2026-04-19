@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+	<defName>BGM_FungalUndead</defName>
+	<label>fungal undead</label>
+	<geneClass>BiomesGeneticsMushkin.Gene_FungalUndead</geneClass>
+	<description>This gene is given by a specialized caste of mushkin, turning what was a corpse into a temporary ally animated by the fungus. They can do little more than dumb labor and combat. They are tougher to kill but will die once more within days.</description>
+	<iconPath>UI/Genes/Gene_FungalUndead</iconPath>
+	<displayCategory>Fungal</displayCategory>
+	<biostatCpx>1</biostatCpx>
+	<disabledWorkTags>
+		<li>ManualSkilled</li>
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Intellectual</li>
+		<li>Animals</li>
+		<li>Artistic</li>
+	</disabledWorkTags>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+</Defs>

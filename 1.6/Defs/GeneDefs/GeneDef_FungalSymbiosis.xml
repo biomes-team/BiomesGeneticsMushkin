@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+	<defName>BGM_FungalSymbiosis</defName>
+	<label>fungal symbiosis</label>
+	<description>The unique fungi within the host forms a symbiotic bond and is similar in nature to cordyceps, albeit a variant that has been designed to work with the human body. It grants them increased metabolism thanks to the fungus helping reduce waste chemicals and wasted nutrients in the host. This connection also grants a simple psychic connection to others with the same condition.</description>
+	<geneClass>BiomesGeneticsMushkin.Gene_FungalSymbiosis</geneClass>
+	<iconPath>UI/Genes/Gene_FungalSymbiosis</iconPath>
+	<displayCategory>CoreFungal</displayCategory>
+	<displayOrderInCategory>50</displayOrderInCategory>
+	<deathHistoryEvent>BGM_FungalSymbiosisDied</deathHistoryEvent>
+	<forcedTraits>
+		<li>
+			<def>Undergrounder</def>
+		</li>
+	</forcedTraits>
+	<biostatMet>6</biostatMet>
+	<biostatCpx>2</biostatCpx>
+	<symbolPack>
+		<wholeNameSymbols>
+			<li>
+				<symbol>fungal</symbol>
+			</li>
+		</wholeNameSymbols>
+		<prefixSymbols>
+			<li>
+				<symbol>mush</symbol>
+			</li>
+			<li>
+				<symbol>fungi</symbol>
+			</li>
+			<li>
+				<symbol>mycelial</symbol>
+			</li>
+		</prefixSymbols>
+		<suffixSymbols>
+			<li>
+				<symbol>mushroom</symbol>
+			</li>
+			<li>
+				<symbol>fungus</symbol>
+			</li>
+			<li>
+				<symbol>shroom</symbol>
+			</li>
+		</suffixSymbols>
+	</symbolPack>
+	<exclusionTags>
+	  <li>BGM_FungalSymbiosis</li>
+	</exclusionTags>
+	<modExtensions>
+		<li Class="BiomesGeneticsMushkin.ModExtension">
+			<symbiosisThought>BGM_Proj_FungalSymbiosis</symbiosisThought>
+		</li>
+	</modExtensions>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+</Defs>

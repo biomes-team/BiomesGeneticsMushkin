@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_GeneHairStyleBase">
+	<defName>BGM_SovereignCap</defName>
+	<label>crowncap head</label>
+	<labelShortAdj>crowncap head</labelShortAdj>
+	<description>The fungus that grants this gene makes the carrier grow a large, grand mushroom cap in place of hair, fit for a ruler.</description>
+	<iconPath>UI/Genes/Gene_SovereignCap</iconPath>
+	<displayCategory>Fungal</displayCategory>
+	<displayOrderInCategory>55.05</displayOrderInCategory>
+	<renderNodeProperties>
+		<li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Things/Pawn/Humanlike/HeadAttachments/Sovereign/Sovereign</texPath>
+			<colorType>Hair</colorType>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>false</useSkinShader>
+			<useRottenColor>true</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<baseLayer>70</baseLayer>
+			<!-- <skipFlag>Hair</skipFlag> -->
+		</li>
+	</renderNodeProperties>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+</Defs>

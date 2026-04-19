@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+	<defName>BGM_BuddingBirth</defName>
+	<label>fruiting birth</label>
+	<geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
+	<description>The symbiotic fungi within the host grants them the ability to sprout a genetic clone of themselves off of their body without pregnancy.</description>
+	<iconPath>UI/Genes/Gene_BuddingBirth</iconPath>
+	<displayCategory>Fungal</displayCategory>
+	<displayOrderInCategory>-1</displayOrderInCategory>
+	<prerequisite>BGM_FungalSymbiosis</prerequisite>
+	<abilities>
+		<li>BGM_FruitingBirth</li>
+	</abilities>
+	<descriptionHyperlinks>
+		<AbilityDef>BGM_FruitingBirth</AbilityDef>
+	</descriptionHyperlinks>
+	<biostatMet>-1</biostatMet>
+	<biostatCpx>1</biostatCpx>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+  <!-- ======================== -->
+
+  <AbilityDef>
+	<defName>BGM_FruitingBirth</defName>
+	<label>fruiting birth</label>
+	<description>The fungi that form a symbiosis the carriers of this gene allows those of either sex to produce a genetic copy of themselves from their flesh without pregnancy. This process takes about five days to complete.</description>
+	<iconPath>UI/Genes/Gene_BuddingBirth</iconPath>
+	<cooldownTicksRange>1200000</cooldownTicksRange><!-- 20 days as the process lasts 5 days -->
+	<targetRequired>false</targetRequired>
+	<hostile>false</hostile>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+	<showWhenDrafted>false</showWhenDrafted>
+	<verbProperties>
+		<verbClass>Verb_CastAbility</verbClass>
+		<warmupTime>1</warmupTime>
+		<range>-1</range>
+		<drawAimPie>false</drawAimPie>
+		<targetParams>
+			<canTargetSelf>true</canTargetSelf>
+		</targetParams>
+	</verbProperties>
+	<comps>
+		<li Class="BiomesGeneticsMushkin.CompProperties_AddHediffOnSelf">
+			<checkAge>true</checkAge>
+			<hediffDef>BGM_FruitingBirthProcess</hediffDef>
+		</li>
+	</comps>
+  </AbilityDef>
+
+</Defs>

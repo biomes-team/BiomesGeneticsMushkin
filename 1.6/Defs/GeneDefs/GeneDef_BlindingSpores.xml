@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+	<defName>BGM_BlindingSpores</defName>
+	<label>blinding spores</label>
+	<geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
+	<description>The unique fungi within the host grants the ability to produce a thick cloud of smoke-like fungal spores. The cloud decreases the vision of those within and prevents turrets from targetting those within.</description>
+	<iconPath>UI/Ability-Genes/Blinding_Spores</iconPath>
+	<displayCategory>SporesFungal</displayCategory>
+	<displayOrderInCategory>-1</displayOrderInCategory>
+	<prerequisite>BGM_FungalSymbiosis</prerequisite>
+	<abilities>
+		<li>BGM_BlindingSpores</li>
+	</abilities>
+	<descriptionHyperlinks>
+		<AbilityDef>BGM_BlindingSpores</AbilityDef>
+	</descriptionHyperlinks>
+	<biostatMet>-1</biostatMet>
+	<biostatCpx>1</biostatCpx>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+  <!-- ======================== -->
+
+  <AbilityDef>
+	<defName>BGM_BlindingSpores</defName>
+	<label>blinding spores</label>
+	<description>Release compressed smoke from fungal cap gills. Smoke-like spores reduces the accuracy of any shot fired through it, and prevents turrets from locking on entirely.</description>
+	<iconPath>UI/Ability-Genes/Blinding_Spores</iconPath>
+	<cooldownTicksRange>60000</cooldownTicksRange><!-- 1 day -->
+	<targetRequired>false</targetRequired>
+	<aiCanUse>true</aiCanUse>
+	<hostile>false</hostile>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<verbProperties>
+		<verbClass>Verb_CastAbility</verbClass>
+		<warmupTime>1</warmupTime>
+		<range>3.9</range>
+		<drawAimPie>false</drawAimPie>
+		<targetParams>
+			<canTargetSelf>true</canTargetSelf>
+		</targetParams>
+	</verbProperties>
+	<comps>
+		<li Class="CompProperties_AbilitySmokepop">
+			<smokeRadius>3.5</smokeRadius>
+			<clamorType>Ability</clamorType>
+			<clamorRadius>15</clamorRadius>
+		</li>
+	</comps>
+  </AbilityDef>
+
+</Defs>

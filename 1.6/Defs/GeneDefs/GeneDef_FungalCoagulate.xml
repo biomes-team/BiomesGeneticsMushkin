@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+	<defName>BGM_FungalCoagulate</defName>
+	<label>fungal coagulation</label>
+	<labelShortAdj>coagulation</labelShortAdj>
+	<geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
+	<description>The unique fungi within the host allows them to instantly patch up wounds with special fast-growing mycelia, instantly stopping bleeding.</description>
+	<iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
+	<prerequisite>BGM_FungalSymbiosis</prerequisite>
+	<displayCategory>Fungal</displayCategory>
+	<displayOrderInCategory>-1</displayOrderInCategory>
+	<abilities>
+		<li>BGM_FungalCoagulate</li>
+	</abilities>
+	<descriptionHyperlinks>
+		<AbilityDef>BGM_FungalCoagulate</AbilityDef>
+	</descriptionHyperlinks>
+	<biostatMet>-1</biostatMet>
+	<biostatCpx>1</biostatCpx>
+	<minAgeActive>3</minAgeActive>
+	<symbolPack>
+		<suffixSymbols>
+			<li>
+				<symbol>life</symbol>
+			</li>
+			<li>
+				<symbol>clotter</symbol>
+			</li>
+			<li>
+				<symbol>tender</symbol>
+			</li>
+		</suffixSymbols>
+	</symbolPack>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+  <!-- ======================== -->
+
+  <AbilityDef ParentName="AbilityTouchBase">
+	<defName>BGM_FungalCoagulate</defName>
+	<label>fungal coagulation</label>
+	<description>Use specialized fungal organs to patch up bleeding wounds.</description>
+	<iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
+	<stunTargetWhileCasting>true</stunTargetWhileCasting>
+	<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+	<warmupMote>Mote_CoagulateStencil</warmupMote>
+	<warmupEffecter>Coagulate</warmupEffecter>
+	<warmupStartSound>Coagulate_Cast</warmupStartSound>
+	<jobDef>CastAbilityOnThingMelee</jobDef>
+	<displayOrder>400</displayOrder>
+	<cooldownTicksRange>2500</cooldownTicksRange><!-- 1 hour -->
+	<hostile>false</hostile>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<verbProperties>
+	  <verbClass>Verb_CastAbilityTouch</verbClass>
+	  <drawAimPie>false</drawAimPie>
+	  <range>-1</range>
+	  <warmupTime>1</warmupTime>
+	  <targetParams>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetBuildings>false</canTargetBuildings>
+		<canTargetMechs>false</canTargetMechs>
+		<canTargetBloodfeeders>true</canTargetBloodfeeders>
+	  </targetParams>
+	</verbProperties>
+	<comps>
+	  <li Class="CompProperties_AbilityCoagulate">
+		<tendQualityRange>0.4~0.8</tendQualityRange>
+	  </li>
+	  <li Class="CompProperties_AbilityRequiresCapacity">
+		<capacity>Manipulation</capacity>
+	  </li>
+	</comps>
+  </AbilityDef>
+
+</Defs>

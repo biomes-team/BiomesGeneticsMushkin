@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+	<defName>BGM_FungalParasitism</defName>
+	<label>fungal parasitism</label>
+	<description>The unique fungi within the host has formed a parasitic bond instead of a symbiotic one, slowly devouring the host for sustenance. The spreading mycelia within the body tends to cause increasingly negative conditions, eventually leading to death. It does however have the positive side effects of disabling pain and extending the physical limits of the host. Their gradually degrading condition can be attenuated but not ceased with periodic medical care.</description>
+	<geneClass>BiomesGeneticsMushkin.Gene_FungalParasitism</geneClass>
+	<iconPath>UI/Genes/Gene_FungalParasitism</iconPath>
+	<displayCategory>Fungal</displayCategory>
+	<displayOrderInCategory>40</displayOrderInCategory>
+	<aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
+	<abilities>
+		<li>BGM_FungalParasitism</li>
+	</abilities>
+	<descriptionHyperlinks>
+		<AbilityDef>BGM_FungalParasitism</AbilityDef>
+	</descriptionHyperlinks>
+	<biostatMet>-5</biostatMet>
+	<biostatCpx>1</biostatCpx>
+	<painFactor>0</painFactor>
+	<statFactors>
+		<LifespanFactor>0.6</LifespanFactor>
+		<CancerRate>5</CancerRate>
+		<ImmunityGainSpeed>0.92</ImmunityGainSpeed>
+		<MeleeDamageFactor>1.5</MeleeDamageFactor>
+		<CarryingCapacity>1.25</CarryingCapacity>
+	</statFactors>
+	<symbolPack>
+		<wholeNameSymbols>
+			<li>
+				<symbol>parasitic</symbol>
+			</li>
+		</wholeNameSymbols>
+		<prefixSymbols>
+			<li>
+				<symbol>infected</symbol>
+			</li>
+			<li>
+				<symbol>infested</symbol>
+			</li>
+			<li>
+				<symbol>parasite</symbol>
+			</li>
+		</prefixSymbols>
+		<suffixSymbols>
+			<li>
+				<symbol>host</symbol>
+			</li>
+		</suffixSymbols>
+	</symbolPack>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+  <!-- ======================== -->
+
+  <AbilityDef ParentName="AbilityTouchBase">
+	<defName>BGM_FungalParasitism</defName>
+	<label>fungal parasitism</label>
+	<description>The user extends fungal threads into another human, seeding the fungus within them and turning them into little more than a vessel for the parasitic strain.</description>
+	<iconPath>UI/Genes/Gene_FungalParasitism</iconPath>
+	<cooldownTicksRange>60000</cooldownTicksRange><!-- 1 day -->
+	<hostile>true</hostile>
+	<jobDef>CastAbilityOnThingMelee</jobDef>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+	<showWhenDrafted>false</showWhenDrafted>
+	<verbProperties>
+		<verbClass>Verb_CastAbilityTouch</verbClass>
+		<drawAimPie>false</drawAimPie>
+		<range>-1</range>
+		<warmupTime>1</warmupTime>
+		<targetParams>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetMechs>false</canTargetMechs>
+			<canTargetEntities>false</canTargetEntities>
+		</targetParams>
+	</verbProperties>
+	<comps>
+	  <li Class="BiomesGeneticsMushkin.CompProperties_FungalParasitism">
+			<!-- no longer req. -->
+			<!-- <resistantXenotypes> -->
+				<!-- <li>BGM_Mushkin</li> -->
+				<!-- <li>BGM_Sovereign</li> -->
+				<!-- <li>BGM_Socialite</li> -->
+				<!-- <li>BGM_Necrospores</li> -->
+				<!-- <li>BGM_Battalions</li> -->
+				<!-- <li>BGM_MycelialCaretaker</li> -->
+			<!-- </resistantXenotypes> -->
+			<!-- Any GeneDefs -->
+			<possibleCapGenes>
+				<li>BGM_ParasiteCap</li>
+			</possibleCapGenes>
+			<parasitismGene>BGM_FungalParasitism</parasitismGene>
+			<resistanceChance>0.1</resistanceChance>
+		</li>
+	</comps>
+  </AbilityDef>
+
+</Defs>

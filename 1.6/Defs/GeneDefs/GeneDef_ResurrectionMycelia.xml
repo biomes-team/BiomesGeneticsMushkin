@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+	<defName>BGM_ResurrectionMycelia</defName>
+	<label>resurrection mycelia</label>
+	<geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
+	<description>The unique fungi within the host allow them to resurrect the recently dead they touch thanks to specialized mycelia that temporarily spread into the corpse.</description>
+	<iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
+	<displayCategory>SporesFungal</displayCategory>
+	<displayOrderInCategory>-1</displayOrderInCategory>
+	<prerequisite>BGM_FungalSymbiosis</prerequisite>
+	<abilities>
+		<li>BGM_ResurrectionMycelia</li>
+	</abilities>
+	<descriptionHyperlinks>
+		<AbilityDef>BGM_ResurrectionMycelia</AbilityDef>
+	</descriptionHyperlinks>
+	<biostatMet>-3</biostatMet>
+	<biostatCpx>2</biostatCpx>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+  <!-- ======================== -->
+
+  <AbilityDef ParentName="AbilityTouchBase">
+	<defName>BGM_ResurrectionMycelia</defName>
+	<label>resurrection mycelia</label>
+	<description>Resurrect a fresh corpse with an invasive fungal growth. It does not always work out very well, however, and leaves the resurrected somewhat changed and worse for wear.</description>
+	<iconPath>UI/Ability-Genes/Resurrection_Spores</iconPath>
+	<cooldownTicksRange>1800000</cooldownTicksRange><!-- 30 days -->
+	<stunTargetWhileCasting>true</stunTargetWhileCasting>
+	<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+	<warmupMote>Mote_CoagulateStencil</warmupMote>
+	<warmupEffecter>Coagulate</warmupEffecter>
+	<warmupStartSound>Coagulate_Cast</warmupStartSound>
+	<jobDef>CastAbilityOnThingMelee</jobDef>
+	<displayOrder>400</displayOrder>
+	<hostile>false</hostile>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<verbProperties>
+		<verbClass>Verb_CastAbilityTouch</verbClass>
+		<drawAimPie>false</drawAimPie>
+		<range>-1</range>
+		<warmupTime>1</warmupTime>
+		<targetParams>
+			<canTargetCorpses>true</canTargetCorpses>
+			<onlyTargetCorpses>true</onlyTargetCorpses>
+		</targetParams>
+	</verbProperties>
+	<comps>
+		<li Class="BiomesGeneticsMushkin.CompProperties_ResurrectionSpores">
+			<!-- Any geneDefs -->
+			 <geneDefs> 
+				<li>Head_Gaunt</li>
+				<li>Sterile</li>
+				<li>UVSensitivity_Mild</li>
+				<li>WoundHealing_Slow</li>
+				<li>Immunity_Weak</li>	
+				<li>MoveSpeed_Slow</li>						
+				<li>Skin_InkBlack</li>
+				<li>Skin_SlateGray</li>	
+				<li>Skin_LightGray</li>	
+				<li>Skin_SheerWhite</li>						
+			</geneDefs>
+		</li>
+	</comps>
+  </AbilityDef>
+
+</Defs>

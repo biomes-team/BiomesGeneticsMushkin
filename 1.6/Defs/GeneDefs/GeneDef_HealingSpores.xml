@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+	<defName>BGM_HealingSpores</defName>
+	<label>healing spores</label>
+	<geneClass>BiomesGeneticsMushkin.MushkinGene</geneClass>
+	<description>The unique fungi within the host allows them to produce a puff of fungal spores from specialized organs that enhance the healing abilities of any nearby.</description>
+	<iconPath>UI/Ability-Genes/Healing_Spores</iconPath>
+	<displayCategory>SporesFungal</displayCategory>
+	<displayOrderInCategory>-1</displayOrderInCategory>
+	<prerequisite>BGM_FungalSymbiosis</prerequisite>
+	<abilities>
+		<li>BGM_HealingSpores</li>
+	</abilities>
+	<descriptionHyperlinks>
+		<AbilityDef>BGM_HealingSpores</AbilityDef>
+	</descriptionHyperlinks>
+	<biostatMet>-2</biostatMet>
+	<biostatCpx>1</biostatCpx>
+  </BiomesCore.Defs.BMT_GeneDef>
+
+  <!-- ======================== -->
+
+  <AbilityDef ParentName="BGM_GeneAbility_HediffGivingSpores">
+	<defName>BGM_HealingSpores</defName>
+	<label>healing spores</label>
+	<description>Produce a puff of spores from specialized organs that induce faster healing and immunity gain in those intaking it.</description>
+	<iconPath>UI/Ability-Genes/Healing_Spores</iconPath>
+	<cooldownTicksRange>120000</cooldownTicksRange><!-- 2 days -->
+	<comps>
+		<li Class="BiomesGeneticsMushkin.CompProperties_HediffGiverArea">
+			<hediffDef>BGM_HealingSpores</hediffDef>
+			<range>12</range>
+			<effecter>BGM_SporePuff</effecter>
+			<xenotypesImmuneToDebuff />
+		</li>
+	</comps>
+  </AbilityDef>
+
+</Defs>

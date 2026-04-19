@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!--    <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MushkinGenes_Base">
+		<defName>BGM_AcidSpores</defName>
+		<label>acidic spores</label>
+		<description>Carriers grow specialized sacs in their necks, allowing them to upchuck globs of skin-sizzling spores onto threats.</description>
+		<iconPath>UI/Icons/Genes/Gene_AcidSpray</iconPath>
+		<displayCategory>SporesFungal</displayCategory>
+		<marketValueFactor>1.5</marketValueFactor>
+		<prerequisite>BGM_FungalSymbiosis</prerequisite>
+		<abilities>
+			<li>AcidSpray</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>AcidSpray</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatMet>-2</biostatMet>
+		<symbolPack>
+		<prefixSymbols>
+			<li><symbol>acid</symbol></li>
+			<li><symbol>acer</symbol></li>
+			<li><symbol>acri</symbol></li>
+			<li><symbol>oxo</symbol></li>
+		</prefixSymbols>
+		<suffixSymbols>
+			<li><symbol>sprayer</symbol></li>
+			<li><symbol>spitter</symbol></li>
+		</suffixSymbols>
+		</symbolPack>
+    </BiomesCore.Defs.BMT_GeneDef> -->
+
+</Defs>
