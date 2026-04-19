@@ -51,11 +51,11 @@ namespace BiomesGeneticsMushkin
 		/// For rare check. See AbilityComp_FungalParasitism for example.
 		/// </summary>
 		/// <param name="p"></param>
-		/// <param name="resetCollection"></param>
+		/// <param name="forceRecache"></param>
 		/// <returns></returns>
-		public static bool IsFungal(this Pawn p, bool resetCollection)
+		public static bool IsFungal(this Pawn p, bool forceRecache)
 		{
-			ResetCollection(resetCollection);
+			ResetCollection(forceRecache);
 			return GetFungalSymbiosisPawns.Contains(p);
 		}
 

@@ -43,7 +43,7 @@ namespace BiomesGeneticsMushkin
 			}
 			try
 			{
-				if (SymbiosisPawns_Player.Contains(pawn))
+				if (pawn.needs?.mood != null && SymbiosisPawns_Player.Contains(pawn))
 				{
 					if (CurStageIndex == 0)
 					{

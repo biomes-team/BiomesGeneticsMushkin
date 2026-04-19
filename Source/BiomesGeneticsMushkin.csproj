@@ -35,6 +35,7 @@
 	<ItemGroup>
 	  <Compile Remove="FungalSymbiosisMapComponent.cs" />
 	  <Compile Remove="Harmony\GeneUIUtility_DrawGeneBasics_Transpiler.cs" />
+	  <Compile Remove="Harmony\HarmonyInit.cs" />
 	</ItemGroup>
 
 	<!-- Down here we have references to dependencies -->
@@ -67,5 +68,8 @@
 		<!-- The API for zetrith's prepatcher mod. This is an advanced more powerful alternative to Harmony -->
 		<!-- <PackageReference Include="Zetrith.Prepatcher" Version="1.*" /> -->
 		<!-- Details with wiki here: https://github.com/Zetrith/Prepatcher -->
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Harmony\" />
 	</ItemGroup>
 </Project>
