@@ -1,4 +1,6 @@
 ﻿using RimWorld;
+using System;
+using System.Collections.Generic;
 using Verse;
 
 namespace BiomesGeneticsMushkin
@@ -14,13 +16,15 @@ namespace BiomesGeneticsMushkin
 		//		return mapComp;
 		//	}
 		//}
-		public override bool ShouldDiscard => false;
+		public override bool ShouldDiscard => disabled;
+
+		private static List<Pawn> SymbiosisPawns_Player => GeneralUtility.GetFungalSymbiosisPawns_Player;
 
 
 		public override void ThoughtInterval()
 		{
 			base.ThoughtInterval();
-			if (GeneralUtility.GetFungalSymbiosisPawns_Player.Count <= 1)
+			if (SymbiosisPawns_Player.Count <= 1)
 			{
 				SetForcedStage(1);
 			}
@@ -30,22 +34,35 @@ namespace BiomesGeneticsMushkin
 			}
 		}
 
-
+		private bool disabled = false;
 		public override float MoodOffset()
 		{
-			if (pawn.Faction == Faction.OfPlayerSilentFail)
+			if (disabled)
 			{
-				if (CurStageIndex == 0)
+				return 0f;
+			}
+			try
+			{
+				if (SymbiosisPawns_Player.Contains(pawn))
 				{
-					float totalMood = 0f;
-					foreach (Pawn pawn in GeneralUtility.GetFungalSymbiosisPawns_Player)
+					if (CurStageIndex == 0)
 					{
-						totalMood += pawn.needs.mood.CurLevel;
+						float totalMood = 0f;
+						foreach (Pawn pawn in SymbiosisPawns_Player)
+						{
+							totalMood += pawn.needs.mood.CurLevel;
+						}
+						totalMood *= 10;
+						return totalMood / SymbiosisPawns_Player.Count;
 					}
-					totalMood *= 10;
-					return totalMood / GeneralUtility.GetFungalSymbiosisPawns_Player.Count;
+					return base.MoodOffset();
 				}
-				return base.MoodOffset();
+			}
+			catch (Exception arg)
+			{
+				disabled = true;
+				// Non-critical error. Warning catch.
+				Log.Warning("Failed offset mood for pawn: " + (pawn?.Name).ToStringSafe() + ". Removing thought. Reason: " + arg.Message);
 			}
 			return 0;
 		}
