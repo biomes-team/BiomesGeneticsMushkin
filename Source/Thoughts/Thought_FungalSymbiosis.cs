@@ -50,6 +50,10 @@ namespace BiomesGeneticsMushkin
 						float totalMood = 0f;
 						foreach (Pawn pawn in SymbiosisPawns_Player)
 						{
+							if (pawn?.needs?.mood == null)
+							{
+								continue;
+							}
 							totalMood += pawn.needs.mood.CurLevel;
 						}
 						totalMood *= 10;
