@@ -29,7 +29,7 @@ namespace BiomesGeneticsMushkin
 		{
 			base.Apply(target, dest);
 			Pawn pawn = target.Pawn;
-			if (pawn == null)
+			if (pawn == null || pickedCaste == null)
 			{
 				return;
 			}
